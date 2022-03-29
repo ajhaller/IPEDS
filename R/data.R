@@ -7,6 +7,43 @@
 #' \describe{
 #' \item{UNITID}{Unique identification number of the institution}
 #' \item{ADMCON1}{Secondary school GPA}
+#' \item{ADMCON2}{Secondary school rank}
+#' \item{ADMCON3}{Secondary school record}
+#' \item{ADMCON4}{Completion of college-preparatory program}
+#' \item{ADMCON5}{Recommendations}
+#' \item{ADMCON6}{Formal demonstration of competencies}
+#' \item{ADMCON7}{Admission test scores}
+#' \item{ADMCON8}{TOEFL (Test of English as a Foreign Language}
+#' \item{ADMCON9}{Other Test (Wonderlic, WISC-III, etc.}
+#' \item{APPLCN}{Applicants total}
+#' \item{APPLCNM}{Applicants men}
+#' \item{APPLCNW}{Applicants men}
+#' \item{ADMSSN}{Admissions total}
+#' \item{ADMSSNM}{Admissions men}
+#' \item{ADMSSNW}{Admissions women}
+#' \item{ENRLT}{Enrolled total}
+#' \item{ENRLTM}{Enrolled men}
+#' \item{ENRLTW}{Enrolled women}
+#' \item{ENRLFT}{Enrolled full time total}
+#' \item{ENRLFTM}{Enrolled full time men}
+#' \item{ENRLFTW}{Enrolled full time women}
+#' \item{ENRLPT}{Enrolled part time total}
+#' \item{ENRLPTM}{Enrolled part time men}
+#' \item{ENRLPTW}{Enrolled part time women}
+#' \item{SATNUM}{Number of first-time degree/certificate-seeking students submitting SAT scores}
+#' \item{SATPCT}{Percent of first-time degree/certificate-seeking students submitting SAT scores}
+#' \item{ACTNUM}{Number of first-time degree/certificate-seeking students submitting ACT scores}
+#' \item{ACTPCT}{Percent of first-time degree/certificate-seeking students submitting ACT scores}
+#' \item{SATVR25}{SAT Evidence-Based Reading and Writing 25th percentile score}
+#' \item{SATVR75}{SAT Evidence-Based Reading and Writing 75th percentile score}
+#' \item{SATMT25}{SAT Math 25th percentile score}
+#' \item{SATMT75}{SAT Math 75th percentile score}
+#' \item{ACTCM25}{ACT Composite 25th percentile score}
+#' \item{ACTCM75}{ACT Composite 75th percentile score}
+#' \item{ACTEN25}{ACT English 75th percentile score}
+#' \item{ACTEN75}{ACT English 75th percentile score}
+#' \item{ACTMT25}{ACT Math 25th percentile score}
+#' \item{ACTMT75}{ACT Math 75th percentile score}
 #' }
 #'
 #' @source Download from Integrated Postsecondary Education Data System,
