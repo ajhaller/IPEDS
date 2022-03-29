@@ -8,7 +8,7 @@
 A data frame of XXX rows representing hourly measurements and 40 variables
 
 \describe{
-\item{UNITID}{Unique identification number of the institution}
+\item{UNITID}{Unique identification number of the institution: a factor with 4 levels: }
 \item{ADMCON1}{Secondary school GPA}
 \item{ADMCON2}{Secondary school rank}
 \item{ADMCON3}{Secondary school record}

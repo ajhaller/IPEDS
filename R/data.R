@@ -5,16 +5,16 @@
 #' @format A data frame of XXX rows representing hourly measurements and 40 variables
 #'
 #' \describe{
-#' \item{UNITID}{Unique identification number of the institution}
-#' \item{ADMCON1}{Secondary school GPA}
-#' \item{ADMCON2}{Secondary school rank}
-#' \item{ADMCON3}{Secondary school record}
-#' \item{ADMCON4}{Completion of college-preparatory program}
-#' \item{ADMCON5}{Recommendations}
-#' \item{ADMCON6}{Formal demonstration of competencies}
-#' \item{ADMCON7}{Admission test scores}
-#' \item{ADMCON8}{TOEFL (Test of English as a Foreign Language}
-#' \item{ADMCON9}{Other Test (Wonderlic, WISC-III, etc.}
+#' \item{UNITID}{Unique identification number of the institution: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON1}{Secondary school GPA: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON2}{Secondary school rank: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON3}{Secondary school record: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON4}{Completion of college-preparatory program: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON5}{Recommendations: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON6}{Formal demonstration of competencies: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON7}{Admission test scores: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON8}{TOEFL (Test of English as a Foreign Language: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{ADMCON9}{Other Test (Wonderlic, WISC-III, etc.: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
 #' \item{APPLCN}{Applicants total}
 #' \item{APPLCNM}{Applicants men}
 #' \item{APPLCNW}{Applicants men}
