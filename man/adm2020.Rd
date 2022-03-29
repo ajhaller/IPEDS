@@ -5,19 +5,19 @@
 \alias{adm2020}
 \title{Admissions and Test Scores 2020 Data}
 \format{
-A data frame of XXX rows representing hourly measurements and 40 variables
+A data frame of 1989 rows representing hourly measurements and 39 variables
 
 \describe{
-\item{UNITID}{Unique identification number of the institution: a factor with 4 levels: }
-\item{ADMCON1}{Secondary school GPA}
-\item{ADMCON2}{Secondary school rank}
-\item{ADMCON3}{Secondary school record}
-\item{ADMCON4}{Completion of college-preparatory program}
-\item{ADMCON5}{Recommendations}
-\item{ADMCON6}{Formal demonstration of competencies}
-\item{ADMCON7}{Admission test scores}
-\item{ADMCON8}{TOEFL (Test of English as a Foreign Language}
-\item{ADMCON9}{Other Test (Wonderlic, WISC-III, etc.}
+\item{UNITID}{Unique identification number of the institution: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON1}{Secondary school GPA: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON2}{Secondary school rank: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON3}{Secondary school record: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON4}{Completion of college-preparatory program: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON5}{Recommendations: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON6}{Formal demonstration of competencies: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON7}{Admission test scores: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON8}{TOEFL (Test of English as a Foreign Language: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{ADMCON9}{Other Test (Wonderlic, WISC-III, etc.: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
 \item{APPLCN}{Applicants total}
 \item{APPLCNM}{Applicants men}
 \item{APPLCNW}{Applicants men}
@@ -57,6 +57,9 @@ Download from Integrated Postsecondary Education Data System,
 adm2020
 }
 \description{
-This file contains information about the undergraduate selection process for entering first-time, degree/certificate-seeking students. This includes information about admission considerations,  applicants, applicants that were admitted, and admitted students who enrolled. SAT and ACT test scores are included for institutions, that require test scores for admission. These data are applicable for institutions that do not have an open admissions policy for entering first-time students. Beginning with 2016, writing scores for both SAT and ACT are no longer collected. The possible values for the admission consideration variables have changed from data prior to 2016.  ""Do not know"" is no longer an option and ""considered but not required"" was added.  See frequencies for complete listing.
+This file contains information about the undergraduate selection process for entering first-time, degree/certificate-seeking students. This includes information about admission considerations,  applicants, applicants that were admitted, and admitted students who enrolled. SAT and ACT test scores are included for institutions, that require test scores for admission. These data are applicable for institutions that do not have an open admissions policy for entering first-time students. Beginning with 2016, writing scores for both SAT and ACT are no longer collected. The possible values for the admission consideration variables have changed from data prior to 2016.
+}
+\details{
+Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
 }
 \keyword{datasets}
