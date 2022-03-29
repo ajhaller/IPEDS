@@ -24,8 +24,8 @@
 #' \item{ADMSSNM}{Admissions men}
 #' \item{ADMSSNW}{Admissions women}
 #' \item{ENRLT}{Enrolled total}
-#' \item{ENRLTM}{Enrolled men}
-#' \item{ENRLTW}{Enrolled women}
+#' \item{ENRLM}{Enrolled men}
+#' \item{ENRLW}{Enrolled women}
 #' \item{ENRLFT}{Enrolled full time total}
 #' \item{ENRLFTM}{Enrolled full time men}
 #' \item{ENRLFTW}{Enrolled full time women}
