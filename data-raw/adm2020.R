@@ -22,10 +22,6 @@ adm2020 <- adm2020 %>%
          SATVR25, SATVR75, SATMT25, SATMT75, ACTCM25, ACTCM75, ACTEN25, ACTEN75, ACTMT25,
          ACTMT75)
 
-unlink(temp)
-
-usethis::use_data(adm2020, overwrite = TRUE)
-
 # renaming variables
 
 adm2020 <- adm2020 %>%
@@ -62,4 +58,7 @@ adm2020 <- adm2020 %>%
     eng_ACT_75 = ACTEN75
   )
 
+unlink(temp)
+
+usethis::use_data(adm2020, overwrite = TRUE)
 

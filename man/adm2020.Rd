@@ -8,16 +8,16 @@
 A data frame of 1989 rows representing hourly measurements and 39 variables
 
 \describe{
-\item{UNITID}{Unique identification number of the institution: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON1}{Secondary school GPA: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON2}{Secondary school rank: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON3}{Secondary school record: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON4}{Completion of college-preparatory program: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON5}{Recommendations: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON6}{Formal demonstration of competencies: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON7}{Admission test scores: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON8}{TOEFL (Test of English as a Foreign Language: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
-\item{ADMCON9}{Other Test (Wonderlic, WISC-III, etc.: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{institution_id}{Unique identification number of the institution: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{hs_gpa}{Secondary school GPA: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{hs_rank}{Secondary school rank: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{hs_record}{Secondary school record: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{cprep_program}{Completion of college-preparatory program: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{recs}{Recommendations: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{competencies}{Formal demonstration of competencies: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{adm_tscores}{Admission test scores: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{test_eng_FL}{TOEFL (Test of English as a Foreign Language: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{other_test}{Other Test (Wonderlic, WISC-III, etc.: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
 \item{APPLCN}{Applicants total}
 \item{APPLCNM}{Applicants men}
 \item{APPLCNW}{Applicants men}
@@ -27,26 +27,26 @@ A data frame of 1989 rows representing hourly measurements and 39 variables
 \item{ENRLT}{Enrolled total}
 \item{ENRLM}{Enrolled men}
 \item{ENRLW}{Enrolled women}
-\item{ENRLFT}{Enrolled full time total}
-\item{ENRLFTM}{Enrolled full time men}
-\item{ENRLFTW}{Enrolled full time women}
-\item{ENRLPT}{Enrolled part time total}
-\item{ENRLPTM}{Enrolled part time men}
-\item{ENRLPTW}{Enrolled part time women}
-\item{SATNUM}{Number of first-time degree/certificate-seeking students submitting SAT scores}
-\item{SATPCT}{Percent of first-time degree/certificate-seeking students submitting SAT scores}
-\item{ACTNUM}{Number of first-time degree/certificate-seeking students submitting ACT scores}
-\item{ACTPCT}{Percent of first-time degree/certificate-seeking students submitting ACT scores}
-\item{SATVR25}{SAT Evidence-Based Reading and Writing 25th percentile score}
-\item{SATVR75}{SAT Evidence-Based Reading and Writing 75th percentile score}
-\item{SATMT25}{SAT Math 25th percentile score}
-\item{SATMT75}{SAT Math 75th percentile score}
-\item{ACTCM25}{ACT Composite 25th percentile score}
-\item{ACTCM75}{ACT Composite 75th percentile score}
-\item{ACTEN25}{ACT English 75th percentile score}
-\item{ACTEN75}{ACT English 75th percentile score}
-\item{ACTMT25}{ACT Math 25th percentile score}
-\item{ACTMT75}{ACT Math 75th percentile score}
+\item{FT_enroll}{Enrolled full time total}
+\item{FT_enroll_M}{Enrolled full time men}
+\item{FT_enroll_W}{Enrolled full time women}
+\item{PT_enroll}{Enrolled part time total}
+\item{PT_enroll_M}{Enrolled part time men}
+\item{PT_enroll_W}{Enrolled part time women}
+\item{SAT_num}{Number of first-time degree/certificate-seeking students submitting SAT scores}
+\item{SAT_pct}{Percent of first-time degree/certificate-seeking students submitting SAT scores}
+\item{ACT_num}{Number of first-time degree/certificate-seeking students submitting ACT scores}
+\item{ACT_pct}{Percent of first-time degree/certificate-seeking students submitting ACT scores}
+\item{RW_SAT_25}{SAT Evidence-Based Reading and Writing 25th percentile score}
+\item{RW_SAT_75}{SAT Evidence-Based Reading and Writing 75th percentile score}
+\item{MTH_SAT_25}{SAT Math 25th percentile score}
+\item{MTH_SAT_75}{SAT Math 75th percentile score}
+\item{ACT_25}{ACT Composite 25th percentile score}
+\item{ACT_75}{ACT Composite 75th percentile score}
+\item{eng_ACT_25}{ACT English 25th percentile score}
+\item{eng_ACT_75}{ACT English 75th percentile score}
+\item{MTH_ACT_25}{ACT Math 25th percentile score}
+\item{MTH_ACT_75}{ACT Math 75th percentile score}
 }
 }
 \source{
