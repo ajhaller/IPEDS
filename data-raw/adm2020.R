@@ -26,3 +26,40 @@ unlink(temp)
 
 usethis::use_data(adm2020, overwrite = TRUE)
 
+# renaming variables
+
+adm2020 <- adm2020 %>%
+  rename(
+    institution_id = UNITID,
+    hs_gpa = ADMCON1,
+    hs_rank = ADMCON2,
+    hs_record = ADMCON3,
+    cprep_program = ADMCON4,
+    recs = ADMCON5,
+    competencies = ADMCON6,
+    adm_tscores = ADMCON7,
+    test_eng_FL = ADMCON8,
+    other_test = ADMCON9,
+    FT_enroll = ENRLFT,
+    FT_enroll_M = ENRLFTM,
+    FT_enroll_W = ENRLFTW,
+    PT_enroll = ENRLPT,
+    PT_enroll_M = ENRLPTM,
+    PT_enroll_W = ENRLPTW,
+    SAT_num = SATNUM,
+    SAT_pct = SATPCT,
+    ACT_num = ACTNUM,
+    ACT_pct = ACTPCT,
+    RW_SAT_25 = SATVR25,
+    RW_SAT_75 = SATVR75,
+    MTH_SAT_25 = SATMT25,
+    MTH_SAT_75 = SATMT75,
+    ACT_25 = ACTCM25,
+    ACT_75 = ACTCM75,
+    MTH_ACT_25 = ACTMT25,
+    MTH_ACT_75 = ACTMT75,
+    eng_ACT_25 = ACTEN25,
+    eng_ACT_75 = ACTEN75
+  )
+
+
