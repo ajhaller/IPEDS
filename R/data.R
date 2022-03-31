@@ -4,7 +4,7 @@
 #'
 #' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
 #'
-#' @format A data frame of 1989 rows representing hourly measurements and 39 variables
+#' @format A data frame of 1989 rows representing institutions and 39 variables
 #'
 #' \describe{
 #' \item{institution_id}{Unique identification number of the institution: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
