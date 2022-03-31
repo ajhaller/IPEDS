@@ -5,7 +5,7 @@
 \alias{adm2020}
 \title{Admissions and Test Scores 2020 Data}
 \format{
-A data frame of 1989 rows representing hourly measurements and 39 variables
+A data frame of 1989 rows representing institutions and 39 variables
 
 \describe{
 \item{institution_id}{Unique identification number of the institution: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
