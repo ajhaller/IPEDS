@@ -1,4 +1,5 @@
 library(testthat)
+library(dplyr)
 
 
 testthat::test_that("number of columns in Admissions Fall 2020 df is correct", {
