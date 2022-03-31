@@ -3,25 +3,25 @@ library(dplyr)
 
 
 testthat::test_that("number of columns in Admissions Fall 2020 df is correct", {
-  expect_equal(ncol(adm2020) , 39)
+  expect_equal(ncol(adm2020), 39)
 })
 
 
 test_that("number of rows in Admissions Fall 2020 df is correct", {
-  expect_equal(nrow(adm2020) , 1989)
+  expect_equal(nrow(adm2020), 1989)
 })
 
 
 test_that("Number of unique institution IDs is 1989", {
   adm2020_2 <- adm2020 %>%
-    dplyr::group_by(institution_id)%>%
-    dplyr::summarise( n = dplyr::n())
+    dplyr::group_by(institution_id) %>%
+    dplyr::summarise(n = dplyr::n())
   expect_equal(nrow(adm2020_2), 1989)
 })
 
 
 test_that("number of rows in Admissions Fall 2020 df is correct", {
-  expect_equal(nrow(adm2020) , 1989)
+  expect_equal(nrow(adm2020), 1989)
 })
 
 
@@ -31,7 +31,6 @@ test_that("number of full time enrollment combined with part time enrollment equ
     na.omit(PT_enroll) %>%
     na.omit(ENRLT)
   expect_equal(sum(adm_2020_enrl$FT_enroll + adm_2020_enrl$PT_enroll), sum(adm_2020_enrl$ENRLT))
-
 })
 
 test_that("the possible range of Reading-Writing SAT scores 25th percentile in Admissions Fall 2020 df is correct", {
@@ -73,4 +72,3 @@ test_that("the possible range of ACT Math scores 25th percentile in Admissions F
 test_that("the possible range of ACT Math scores 75th percentile in Admissions Fall 2020 df is correct", {
   expect_true(min(adm2020$MTH_ACT_75, na.rm = TRUE) >= 1 & max(adm2020$MTH_ACT_75, na.rm = TRUE) <= 36)
 })
-
