@@ -42,11 +42,11 @@ library(IPEDS)
 ## Example: Admissions and Test Scores for Fall 2020
 
 ``` r
-head(adm2020[,c(1:2, 11, 17, 30)], 5)
-#>   institution_id   hs_gpa APPLCN ENRLT RW_SAT_25
-#> 1         100654 Required   9855  1664       430
-#> 2         100663 Required  10391  2154       560
-#> 3         100706 Required   5793  1345       590
-#> 4         100724 Required   7027   975       438
-#> 5         100751 Required  39560  6507       540
+head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
+#>   institution_id   hs_gpa APPLCN ENRLT RW_SAT_25 RW_SAT_75 ACT_25 ACT_75
+#> 1         100654 Required   9855  1664       430       520     15     20
+#> 2         100663 Required  10391  2154       560       668     22     30
+#> 3         100706 Required   5793  1345       590       700     24     31
+#> 4         100724 Required   7027   975       438       531     14     20
+#> 5         100751 Required  39560  6507       540       660     23     31
 ```
