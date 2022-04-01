@@ -44,6 +44,6 @@ library(IPEDS)
 ## Example: Admissions and Test Scores for Fall 2020
 
 ```{r}
-head(adm2020)
+head(adm2020[,c(1:2, 11, 17, 30)], 5)
 ```
 
