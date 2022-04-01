@@ -50,3 +50,8 @@ head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
 #> 4         100724 Required   7027   975       438       531     14     20
 #> 5         100751 Required  39560  6507       540       660     23     31
 ```
+
+## Contributors
+
+-   [Aushanae Haller](https://github.com/ajhaller)
+-   [Alejandra Munoz Garcia](https://github.com/alejanmg)

@@ -46,4 +46,7 @@ library(IPEDS)
 ```{r}
 head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
 ```
+## Contributors
 
+- [Aushanae Haller](https://github.com/ajhaller)
+- [Alejandra Munoz Garcia](https://github.com/alejanmg)
