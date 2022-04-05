@@ -1,0 +1,24 @@
+## code to prepare `fin_aid1920` dataset goes here
+
+library(tidyverse)
+
+temp <- tempfile()
+download.file("https://nces.ed.gov/ipeds/datacenter/data/SFA1920.zip", temp)
+fin_aid1920 <- read.table(unz(temp, "sfa1920.csv"), sep = ",", header = TRUE)
+
+fin_aid1920 <- fin_aid1920 %>%
+  select(-starts_with("X")) %>%
+  select(UNITID, SCFY2, UAGRNTP, UAGRNTA, UPGRNTA, UFLOANA, AGRNT_A, FGRNT_A, PGRNT_A,
+         OFGRT_A, SGRNT_A, IGRNT_A, LOAN_A, FLOAN_A, OLOAN_A, GISTA2, GISTA1, GISTA0,
+         GIS4A2, GIS4A12, GIS4A22, GIS4A32, GIS4A42, GIS4A52, GIS4A1, GIS4A11, GIS4A21,
+         GIS4A31, GIS4A41, GIS4A51, GIS4A0, GIS4A10, GIS4A20, GIS4A30, GIS4A40, GIS4A50,
+         NPIST2, NPIST1, NPIST0, NPIS412, NPIS422, NPIS432, NPIS442, NPIS452, NPIS411,
+         NPIS421, NPIS431, NPIS441, NPIS451, NPIS410, NPIS420, NPIS430, NPIS440, NPIS450,
+         GRNTA0, GRN4A2, GRN4A12, GRN4A22, GRN4A32, GRN4A42, GRN4A52, GRN4A1, GRN4A11,
+         GRN4A21, GRN4A31, GRN4A41, GRN4A51, GRN4A0, GRN4A10, GRN4A20, GRN4A30, GRN4A40,
+         GRN4A50, NPGRN2, NPGRN1, NPGRN0, NPT412, NPT422, NPT432, NPT442, NPT452, NPT411,
+         NPT421, NPT431, NPT441, NPT451, NPT410, NPT420, NPT430, NPT440, NPT450)
+
+unlink(temp)
+
+usethis::use_data(fin_aid1920, overwrite = TRUE)
