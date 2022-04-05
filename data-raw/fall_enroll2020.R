@@ -3,14 +3,14 @@
 library(tidyverse)
 
 temp <- tempfile()
-download.file("https://nces.ed.gov/ipeds/datacenter/data/EF2020CP.zip", temp)
-fall_enroll2020 <- read.table(unz(temp, "ef2020cp.csv"), sep = ",", header = TRUE)
+download.file("https://nces.ed.gov/ipeds/datacenter/data/EF2020A.zip", temp)
+fall_enroll2020 <- read.table(unz(temp, "ef2020a.csv"), sep = ",", header = TRUE)
 
 fall_enroll2020 <- fall_enroll2020 %>%
-  select(-starts_with("X"))
-
-instit <- fall_enroll2020 %>%
-  count(UNITID)
+  select(-starts_with("X")) %>%
+  select(-EFALEVEL, -LINE, -SECTION, -LSTUDY) %>%
+  group_by(UNITID) %>%
+  summarise_all(sum)
 
 unlink(temp)
 
