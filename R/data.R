@@ -7,7 +7,7 @@
 #' @format A data frame of 1989 rows representing institutions and 39 variables
 #'
 #' \describe{
-#' \item{INSTITUTION_ID}{Unique identification number of the institution: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{INSTITUTION_ID}{Unique identification number of the institution}
 #' \item{hs_gpa}{Secondary school GPA: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
 #' \item{hs_rank}{Secondary school rank: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
 #' \item{hs_record}{Secondary school record: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
@@ -64,13 +64,51 @@
 #' @format A data frame of 6220 rows representing institutions and 47 variables
 #'
 #' \describe{
-#' \item{INSTITUTION_ID}{Unique identification number of the institution: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
-#' \item{hs_gpa}{Secondary school GPA: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
-#' \item{hs_rank}{Secondary school rank: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
-
-
-
-
-
-
+#' \item{INSTITUTION_ID}{Unique identification number of the institution}
+#' \item{INSTITUTION}{}
+#' \item{ADDRESS}{}
+#' \item{CITY}{}
+#' \item{STATE}{}
+#' \item{ZIP}{}
+#' \item{FIPS}{}
+#' \item{BEA_REG}{}
+#' \item{AID_ELIG}{}
+#' \item{WEBSITE}{}
+#' \item{ADMIN_WEB}{}
+#' \item{FINAID_WEB}{}
+#' \item{APPLICATION}{}
+#' \item{NPRICE_CALC}{}
+#' \item{VET_TUITION}{}
+#' \item{ATH_GRAD_RATE}{}
+#' \item{DISABILITY_WEB}{}
+#' \item{INT_LEVEL}{}
+#' \item{INT_CONTROL}{}
+#' \item{UNGRAD_OFFER}{}
+#' \item{GRAD_OFFER}{}
+#' \item{HD_OFFER}{}
+#' \item{HBCU}{}
+#' \item{HOSPITAL}{}
+#' \item{MEDICAL}{}
+#' \item{TRIBAL}{}
+#' \item{LOCALE}{}
+#' \item{OPENPUBL}{}
+#' \item{INT_STATUS}{}
+#' \item{CLOSE_DATE}{}
+#' \item{POST_SEC}{}
+#' \item{RPTMTH}{}
+#' \item{CC_U2018}{}
+#' \item{CC_G2018}{}
+#' \item{CC18_U_PROFILE}{}
+#' \item{CC18_ENROLL}{}
+#' \item{CC18_SIZE_SET}{}
+#' \item{C_PROGRAMS}{}
+#' \item{INT_SIZE}{}
+#' \item{MULT_ORG}{}
+#' \item{MULT_ORG_NAME}{}
+#' \item{MULT_ORG_CODE}{}
+#' \item{COUNTYCD}{}
+#' \item{COUNTYNM}{}
+#' \item{CONGRESS_DIS_ID}{}
+#' \item{LONGITUD}{}
+#' \item{LATITUDE}{}
 
