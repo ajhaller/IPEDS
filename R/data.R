@@ -65,50 +65,56 @@
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
-#' \item{INSTITUTION}{}
-#' \item{ADDRESS}{}
-#' \item{CITY}{}
-#' \item{STATE}{}
-#' \item{ZIP}{}
-#' \item{FIPS}{}
-#' \item{BEA_REG}{}
-#' \item{AID_ELIG}{}
-#' \item{WEBSITE}{}
-#' \item{ADMIN_WEB}{}
-#' \item{FINAID_WEB}{}
-#' \item{APPLICATION}{}
-#' \item{NPRICE_CALC}{}
-#' \item{VET_TUITION}{}
-#' \item{ATH_GRAD_RATE}{}
-#' \item{DISABILITY_WEB}{}
-#' \item{INT_LEVEL}{}
-#' \item{INT_CONTROL}{}
-#' \item{UNGRAD_OFFER}{}
-#' \item{GRAD_OFFER}{}
-#' \item{HD_OFFER}{}
-#' \item{HBCU}{}
-#' \item{HOSPITAL}{}
-#' \item{MEDICAL}{}
-#' \item{TRIBAL}{}
-#' \item{LOCALE}{}
-#' \item{OPENPUBL}{}
-#' \item{INT_STATUS}{}
-#' \item{CLOSE_DATE}{}
-#' \item{POST_SEC}{}
-#' \item{RPTMTH}{}
-#' \item{CC_U2018}{}
-#' \item{CC_G2018}{}
-#' \item{CC18_U_PROFILE}{}
-#' \item{CC18_ENROLL}{}
-#' \item{CC18_SIZE_SET}{}
-#' \item{C_PROGRAMS}{}
-#' \item{INT_SIZE}{}
-#' \item{MULT_ORG}{}
-#' \item{MULT_ORG_NAME}{}
-#' \item{MULT_ORG_CODE}{}
-#' \item{COUNTYCD}{}
-#' \item{COUNTYNM}{}
-#' \item{CONGRESS_DIS_ID}{}
-#' \item{LONGITUD}{}
-#' \item{LATITUDE}{}
-
+#' \item{INSTITUTION}{Institution (entity) name}
+#' \item{ADDRESS}{Street address or post office box}
+#' \item{CITY}{City location of institution}
+#' \item{STATE}{State abbreviation}
+#' \item{ZIP}{ZIP code}
+#' \item{FIPS}{FIPS state code}
+#' \item{BEA_REG}{Bureau of Economic Analysis (BEA) regions}
+#' \item{AID_ELIG}{OPE Title IV eligibility indicator code}
+#' \item{WEBSITE}{Institution's internet website address}
+#' \item{ADMIN_WEB}{Admissions office web address}
+#' \item{FINAID_WEB}{Financial aid office web address}
+#' \item{APPLICATION}{Online application web address}
+#' \item{NPRICE_CALC}{Net price calculator web address}
+#' \item{VET_TUITION}{Veterans and Military Servicemembers tuition policies web address}
+#' \item{ATH_GRAD_RATE}{Student-Right-to-Know student athlete graduation rate web address}
+#' \item{DISABILITY_WEB}{Disability Services Web Address}
+#' \item{INT_LEVEL}{Level of institution}
+#' \item{INT_CONTROL}{Control of institution}
+#' \item{UNGRAD_OFFER}{Undergraduate offering}
+#' \item{GRAD_OFFER}{Graduate offering}
+#' \item{HD_OFFER}{Degree-granting status}
+#' \item{HBCU}{Historically Black College or University}
+#' \item{HOSPITAL}{Institution has hospital}
+#' \item{MEDICAL}{Institution grants a medical degree}
+#' \item{TRIBAL}{Tribal college}
+#' \item{LOCALE}{Degree of urbanization (Urban-centric locale)}
+#' \item{OPENPUBL}{Institution open to the general public}
+#' \item{INT_STATUS}{Status of institution}
+#' \item{CLOSE_DATE}{Date institution closed}
+#' \item{POST_SEC}{Postsecondary institution indicator}
+#' \item{RPTMTH}{Reporting method for student charges, graduation rates, retention rates and student financial aid}
+#' \item{CC_U2018}{Carnegie Classification 2018: Undergraduate Instructional Program}
+#' \item{CC_G2018}{Carnegie Classification 2018: Graduate Instructional Program}
+#' \item{CC18_U_PROFILE}{Carnegie Classification 2018: Undergraduate Profile}
+#' \item{CC18_ENROLL}{Carnegie Classification 2018: Enrollment Profile}
+#' \item{CC18_SIZE_SET}{Carnegie Classification 2018: Size and Setting}
+#' \item{C_PROGRAMS}{Carnegie Classification 2000}
+#' \item{INT_SIZE}{Institution size category}
+#' \item{MULT_ORG}{Multi-institution or multi-campus organization}
+#' \item{MULT_ORG_NAME}{Name of multi-institution or multi-campus organization}
+#' \item{MULT_ORG_CODE}{Identification number of multi-institution or multi-campus organization}
+#' \item{COUNTYCD}{Fips County code}
+#' \item{COUNTYNM}{County name}
+#' \item{CONGRESS_DIS_ID}{State and 114TH Congressional District ID}
+#' \item{LONGITUD}{Longitude location of institution}
+#' \item{LATITUDE}{Latitude location of institution}
+#' }
+#'
+#' @source Download from Integrated Postsecondary Education Data System,
+#'   <https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip>.
+#'
+#' @docType data
+"dir_info2020"
