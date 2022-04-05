@@ -8,7 +8,7 @@
 A data frame of 1989 rows representing institutions and 39 variables
 
 \describe{
-\item{institution_id}{Unique identification number of the institution: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
+\item{INSTITUTION_ID}{Unique identification number of the institution}
 \item{hs_gpa}{Secondary school GPA: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
 \item{hs_rank}{Secondary school rank: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
 \item{hs_record}{Secondary school record: a factor with 4 levels: \code{Required}, \code{Recommended}, \code{Neither_required_nor_recommended}, and \code{Considered_but_not_required}}
