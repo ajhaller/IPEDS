@@ -15,6 +15,7 @@ dir_info2020 <- dir_info2020 %>%
 
 dir_info2020 <- dir_info2020 %>%
   rename(
+    INSTITUTION_ID = UNITID,
     INSTITUTION = INSTNM,
     ADDRESS = ADDR,
     STATE = STABBR,

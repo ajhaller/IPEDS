@@ -7,7 +7,7 @@
 #' @format A data frame of 1989 rows representing institutions and 39 variables
 #'
 #' \describe{
-#' \item{institution_id}{Unique identification number of the institution: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{INSTITUTION_ID}{Unique identification number of the institution: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
 #' \item{hs_gpa}{Secondary school GPA: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
 #' \item{hs_rank}{Secondary school rank: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
 #' \item{hs_record}{Secondary school record: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
@@ -53,3 +53,24 @@
 #'
 #' @docType data
 "adm2020"
+
+
+#' Directory Info 2020 Data
+#'
+#' This file contains directory information for every institution in the 2020-21 IPEDS universe. Includes name, address, city, state, zip code and various URL links to the institution's home page, admissions, financial aid offices and the net price calculator. Identifies institutions as currently active, institutions that participate in Title IV federal financial aid programs for which IPEDS is mandatory. It also includes variables derived from the 2020-21 Institutional Characteristics survey, such as control and level of institution, highest level and highest degree offered and Carnegie classifications.
+#'
+#' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
+#'
+#' @format A data frame of 6220 rows representing institutions and 47 variables
+#'
+#' \describe{
+#' \item{INSTITUTION_ID}{Unique identification number of the institution: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{hs_gpa}{Secondary school GPA: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+#' \item{hs_rank}{Secondary school rank: a factor with 4 levels: `Required`, `Recommended`, `Neither_required_nor_recommended`, and `Considered_but_not_required`}
+
+
+
+
+
+
+
