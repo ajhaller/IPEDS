@@ -4,7 +4,7 @@ library(tidyverse)
 
 temp <- tempfile()
 download.file("https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip", temp)
-dir_info2020 <- read.table(unz(temp, "hd2020.csv"), sep = ",", header = TRUE)
+dir_info2020 <- read.table(unz(temp, "hd2020.csv"), sep = ",", header = TRUE, encoding = "UTF-8")
 
 dir_info2020 <- dir_info2020 %>%
   select(-IALIAS, -CHFNM, -CHFTITLE, -GENTELE, -EIN, -DUNS, -OPEID, -SECTOR,
@@ -49,7 +49,6 @@ dir_info2020 <- dir_info2020 %>%
     MULT_ORG_CODE = F1SYSCOD,
     CONGRESS_DIS_ID = CNGDSTCD
   )
-
 
 unlink(temp)
 
