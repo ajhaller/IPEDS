@@ -1,6 +1,7 @@
 library(testthat)
 library(dplyr)
 
+#adm2020 tests
 
 testthat::test_that("number of columns in Admissions Fall 2020 df is correct", {
   expect_equal(ncol(adm2020), 39)
@@ -71,4 +72,27 @@ test_that("the possible range of ACT Math scores 25th percentile in Admissions F
 
 test_that("the possible range of ACT Math scores 75th percentile in Admissions Fall 2020 df is correct", {
   expect_true(min(adm2020$MTH_ACT_75, na.rm = TRUE) >= 1 & max(adm2020$MTH_ACT_75, na.rm = TRUE) <= 36)
+})
+
+#dir_info2020 tests
+
+testthat::test_that("number of columns in Directory Information 2020 df is correct", {
+  expect_equal(ncol(dir_info2020), 47)
+})
+
+
+test_that("number of rows in Directory Information 2020 df is correct", {
+  expect_equal(nrow(dir_info2020), 6220)
+})
+
+
+test_that("Number of unique institution IDs is 1989", {
+  dir_info2020_2 <- adm2020 %>%
+    dplyr::group_by(INSTITUTION_ID) %>%
+    dplyr::summarise(n = dplyr::n())
+  expect_equal(nrow(dir_info2020), 6220)
+})
+
+testthat::test_that("length of institution id in Directory Information 2020 df is correct", {
+  expect_equal(nchar(dir_info2020$INSTITUTION_ID), rep(6, 6220))
 })
