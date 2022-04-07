@@ -278,15 +278,15 @@
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
-#' \item{UG_NUM}{}
-#' \item{PCT_AID}{}
-#' \item{AVG_AID}{}
-#' \item{AVG_PELL}{}
-#' \item{AVG_FLOAN}{}
-#' \item{AVG_AWARD}{}
-#' \item{AVG_FGRANT_FTFT}{}
-#' \item{AVG_PGRANT_FTFT}{}
-#' \item{AVG_FOTHER_FTFT}{}
+#' \item{UG_NUM}{Total number of undergraduates - full-year cohort}
+#' \item{PCT_AID}{Percent of undergraduate students awarded federal, state, local, institutional or other sources of grant aid}
+#' \item{AVG_AID}{Average amount of federal, state, local, institutional or other sources of grant aid awarded to undergraduate students}
+#' \item{AVG_PELL}{Average amount Pell grant aid awarded to undergraduate students}
+#' \item{AVG_FLOAN}{Average amount of federal student loans awarded to undergraduate students}
+#' \item{AVG_AWARD}{Average amount of federal, state, local or institutional grant aid awarded}
+#' \item{AVG_FGRANT_FTFT}{Average amount of federal grant aid awarded to full-time first-time undergraduates}
+#' \item{AVG_PGRANT_FTFT}{Average amount of Pell grant aid awarded to full-time first-time undergraduates}
+#' \item{AVG_FOTHER_FTFT}{Average amount of other federal grant aid awarded to full-time first-time undergraduates}
 #' \item{AVG_STGGRANT_FTFT}{}
 #' \item{AVG_INST_AID_FTFT}{}
 #' \item{AVG_LOAN_AID_FTFT}{}
@@ -368,6 +368,13 @@
 #' \item{OS_AVG_NPRICE_L3_1718}{}
 #' \item{OS_AVG_NPRICE_L4_1718}{}
 #' \item{OS_AVG_NPRICE_L5_1718}{}
+#' }
+#'
+#' @docType data
+"fin_aid1920"
+
+
+
 
 #' Staff Categories Data
 #'
