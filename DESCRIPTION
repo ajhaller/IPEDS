@@ -20,4 +20,5 @@ LazyData: true
 Imports: 
     dplyr,
     tidyverse,
-    tidyr
+    tidyr,
+    purrr
