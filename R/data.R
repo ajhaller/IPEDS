@@ -369,6 +369,19 @@
 #' \item{OS_AVG_NPRICE_L4_1718}{}
 #' \item{OS_AVG_NPRICE_L5_1718}{}
 
-
+#' Staff Categories Data
+#'
+#' This file contains the details for staff categories in the Administration 2020 (`admin2020`) dataset.
+#'
+#' @format A data frame of 65 rows representing institutions and 2 variables
+#'
+#' \describe{
+#' \item{Numeric_Code}{Numeric code representing a staff category}
+#' \item{Category}{Explaination of numeric code}
+#' }
+#'
+#'
+#' @docType data
+"staff_cat"
 
 
