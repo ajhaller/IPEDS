@@ -1,3 +1,6 @@
+globalVariables(c("adm2020", "dir_info2020", "hs_gpa", "hs_record", "adm_tscores", "test_eng_FL", "hs_rank",
+                  "cprep_program", "competencies", "recs", "other_test", "Priority"))
+
 #' Function for Admission Requirements for an Institution
 #'
 #' Lists and orders requirements for admission by priority

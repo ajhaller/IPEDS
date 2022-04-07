@@ -1,3 +1,8 @@
+globalVariables(c("dir_info2020", "fin_aid1920", "fall_enroll2020", "admin2020", "INSTITUTION", "PCT_AID", "INT_SIZE",
+                  "BEA_REG", "WHITE_ENROLL", "ENROLL", "TOTAL", "WHITE_TOTAL", "UNKNOWN_RACE_ENROLL", "UNKNOWN_TOTAL",
+                  "Student Diversity", "Staff Diversity", "Institution", "% of Students Recieved Aid", "Institution Size",
+                  "Region"))
+
 #' Function for Selecting Institution by Preferences
 #'
 #' Lists the names of institutions that fit inputted preferences
@@ -10,12 +15,16 @@
 #' @return A dataframe of the institution that fit inputted preferences. For arguments that return percentages, the user can expect institutions that meet that percentage or higher.
 #' @examples
 #' preferences(70, 2, "New England", 20, 40)
-#' preferences((50, 4, "Southwest", 10, 20)
+#' preferences(50, 4, "Southwest", 10, 20)
 #' @import dplyr
 #' @import tidyr
 #' @export
 
 preferences <- function (financial_aid, size, region, diversity_students, diversity_staff) {
+
+  # Error Handling
+
+
 
   # Join dataframes together
 
@@ -42,6 +51,6 @@ preferences <- function (financial_aid, size, region, diversity_students, divers
            ) %>%
     select(Institution, `% of Students Recieved Aid`, `Institution Size`, `Region`, `Student Diversity`, `Staff Diversity`)
 
-  return(View(df))
+  return(df)
 
 }

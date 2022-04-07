@@ -46,7 +46,7 @@ A data frame of 6220 rows representing institutions and 47 variables
 \item{CC18_ENROLL}{Carnegie Classification 2018: Enrollment Profile}
 \item{CC18_SIZE_SET}{Carnegie Classification 2018: Size and Setting}
 \item{C_PROGRAMS}{Carnegie Classification 2000}
-\item{INT_SIZE}{Institution size category}
+\item{INT_SIZE}{Institution size category (1	= Under 1,000; 2 = 1,000 - 4,999; 3	= 5,000 - 9,999; 4 = 10,000 - 19,999; 5	= 20,000 and above; -1 = Not reported; -2	= Not applicable)}
 \item{MULT_ORG}{Multi-institution or multi-campus organization}
 \item{MULT_ORG_NAME}{Name of multi-institution or multi-campus organization}
 \item{MULT_ORG_CODE}{Identification number of multi-institution or multi-campus organization}
