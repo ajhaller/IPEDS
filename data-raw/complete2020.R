@@ -12,7 +12,7 @@ complete2020 <- complete2020 %>%
          AWARD_LVL = AWLEVELC,
          TOTAL = CSTOTLT,
          TOTAL_M = CSTOTLM,
-         TOTAL_W = CSTOTLM,
+         TOTAL_W = CSTOTLW,
          TOTAL_NATIVE = CSAIANT,
          TOTAL_ASIAN = CSASIAT,
          TOTAL_BLACK = CSBKAAT,
