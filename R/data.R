@@ -105,6 +105,43 @@
 #' @docType data
 "admin2020"
 
+#' Completions 2020 Data
+#'
+#' This file contains the number of students receiving a degree or certificate by level of award and by race/ethnicity,  gender and age categories. Data covers awards granted between July 1, 2019 and June 30, 2020. This file contains multiple records per institution. Each record will contain the total number of students receiving awards;  number of  men and women receiving awards: number of students receiving awards for all nine race/ethnicity categories; number of students receiving awards are also available for the following age groups: under 18, 18-24, 25-39, 40 and above.
+#'
+#' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
+#'
+#' @format A data frame of 15937 rows representing institutions and 19 variables
+#'
+#' \describe{
+#' \item{INSTITUTION_ID}{Unique identification number of the institution}
+#' \item{AWARD_LVL}{Award Level code}
+#' \item{TOTAL}{Grand total individuals}
+#' \item{TOTAL_M}{Grand total men}
+#' \item{TOTAL_W}{Grand total women}
+#' \item{TOTAL_NATIVE}{American Indian or Alaska Native total}
+#' \item{TOTAL_ASIAN}{Asian total}
+#' \item{TOTAL_BLACK}{Black or African American total}
+#' \item{TOTAL_HISP}{Hispanic or Latino total}
+#' \item{TOTAL_NHPI}{Native Hawaiian or Other Pacific Islander total}
+#' \item{TOTAL_WHITE}{White total}
+#' \item{TOTAL_MULT}{Two or more races total}
+#' \item{TOTAL_UNKNOWN}{Race/ethnicity unknown total}
+#' \item{TOTAL_NRA}{Nonresident alien total}
+#' \item{UND18}{Ages, under 18}
+#' \item{AGE18_24}{Ages, 18-24}
+#' \item{AGE25_39}{Ages, 25-39}
+#' \item{AGE40PLUS}{Ages, 40 and above}
+#' \item{AGE_UNKNOWN}{Age unknown}
+#' }
+#'
+#'
+#' @source Download from Integrated Postsecondary Education Data System,
+#'   <https://nces.ed.gov/ipeds/datacenter/data/C2020_C.zip>.
+#'
+#' @docType data
+"complete2020"
+
 #' Directory Info 2020 Data
 #'
 #' This file contains directory information for every institution in the 2020-21 IPEDS universe. Includes name, address, city, state, zip code and various URL links to the institution's home page, admissions, financial aid offices and the net price calculator. Identifies institutions as currently active, institutions that participate in Title IV federal financial aid programs for which IPEDS is mandatory. It also includes variables derived from the 2020-21 Institutional Characteristics survey, such as control and level of institution, highest level and highest degree offered and Carnegie classifications.
