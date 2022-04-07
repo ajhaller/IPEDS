@@ -22,7 +22,7 @@ fin_aid1920 <- fin_aid1920 %>%
 
 fin_aid1920 <- fin_aid1920 %>%
   rename(
-    INSTITUTION_ID = UNIT_ID,
+    INSTITUTION_ID = UNITID,
     UG_NUM = SCFY2,
     PCT_AID = UAGRNTP,
     AVG_AID = UAGRNTA,

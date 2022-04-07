@@ -255,3 +255,29 @@
 #'
 #' @docType data
 "fall_enroll2020"
+
+#' Student Financial Aid Data 2019 - 2020
+#'
+#' #' Fall Enrollment 2020 Data
+#'
+#' This file contains the number of students enrolled in the fall, by race/ethnicity, gender, attendance (full- or part-time) status and level of student.  Institutions with traditional academic year calendar systems (semester, quarter, trimester or  4-1-4) report their enrollment as of October 15 or the official fall reporting date of the institution. Institutions with calendar systems that differ by program or allow continuous enrollment report students that are enrolled at any time between August 1 and October 31. This file has multiple records per institution.  Records are uniquely defined by the variables IPEDS ID (UNITID), and the attendance status and level of student (EFALEVEL).   Each record will contain the total enrollment,  enrollment for men and women, and the total enrollment and enrollment for men and women for all nine race/ethnicity categories.
+#'
+#' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
+#'
+#' @format A data frame of 6129 rows representing institutions and 31 variables
+#'
+#' \describe{
+#' \item{INSTITUTION_ID}{Unique identification number of the institution}
+#' \item{ENROLL}{Grand total}
+
+#'
+#' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
+#'
+#' @format A data frame of 6129 rows representing institutions and 31 variables
+#'
+#' \describe{
+#' \item{INSTITUTION_ID}{Unique identification number of the institution}
+#' \item{ENROLL}{Grand total}
+
+
+
