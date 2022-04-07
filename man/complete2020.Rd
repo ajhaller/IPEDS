@@ -9,7 +9,7 @@ A data frame of 15937 rows representing institutions and 19 variables
 
 \describe{
 \item{INSTITUTION_ID}{Unique identification number of the institution}
-\item{AWARD_LVL}{Award Level code}
+\item{AWARD_LVL}{Award Level code (3	= Associate's degree; 5	= Bachelor's degree; 7 = Master's degree; 9	= Doctor's degree; 10	= Postbaccalaureate or Post-master's certificate; 11 = Certificate of less than 12 weeks; 12 = Certificate of at least 12 weeks but less than 1 year; 2	= Certificate of at least 1 but less than 4 years)}
 \item{TOTAL}{Grand total individuals}
 \item{TOTAL_M}{Grand total men}
 \item{TOTAL_W}{Grand total women}
