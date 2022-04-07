@@ -50,6 +50,20 @@ dir_info2020 <- dir_info2020 %>%
     CONGRESS_DIS_ID = CNGDSTCD
   )
 
+dir_info2020 <- dir_info2020 %>%
+  mutate(BEA_REG =
+           case_when(BEA_REG == 0 ~ "U.S Service Schools",
+                     BEA_REG == 1 ~ "New England",
+                     BEA_REG == 2 ~ "Mid East",
+                     BEA_REG == 3 ~ "Great Lakes",
+                     BEA_REG == 4 ~ "Plains",
+                     BEA_REG == 5 ~ "Southeast",
+                     BEA_REG == 6 ~ "Southwest",
+                     BEA_REG == 7 ~ "Rocky Mountains",
+                     BEA_REG == 8 ~ "Far West",
+                     BEA_REG == 9 ~ "Other U.S. Jurisdictions")
+         )
+
 unlink(temp)
 
 usethis::use_data(dir_info2020, overwrite = TRUE)
