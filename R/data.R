@@ -275,17 +275,17 @@
 #' \item{AVG_FOTHER_FTFT}{Average amount of other federal grant aid awarded to full-time first-time undergraduates}
 #' \item{AVG_STGGRANT_FTFT}{Average amount of state/local grant aid awarded to full-time first-time undergraduates}
 #' \item{AVG_INST_AID_FTFT}{Average amount of institutional grant aid awarded to full-time first-time undergraduates}
-#' \item{AVG_LOAN_AID_FTFT}{Average amount of student loans awarded to full-time first-time undergraduates}
-#' \item{AVG_FLOAN_AID_FTFT}{Average amount of federal student loans awarded to full-time first-time undergraduates}
-#' \item{AVG_OLOAN_AID_FTFT}{Average amount of other student loans awarded to full-time first-time undergraduates}
-#' \item{IS_AVG_GAID_1920}{}
-#' \item{IS_AVG_GAID1819}{}
-#' \item{IS_AVG_AID_1718}{}
-#' \item{AVG_AID_AL_1920}{}
-#' \item{AVG_AID_L1_1920}{}
-#' \item{AVG_AID_L2_1920}{}
-#' \item{AVG_AID_L3_1920}{}
-#' \item{AVG_AID_L4_1920}{}
+#' \item{AVG_LOAN_FTFT}{Average amount of student loans awarded to full-time first-time undergraduates}
+#' \item{AVG_FLOAN_FTFT}{Average amount of federal student loans awarded to full-time first-time undergraduates}
+#' \item{AVG_OLOAN_FTFT}{Average amount of other student loans awarded to full-time first-time undergraduates}
+#' \item{IS_AVG_GAID_1920}{Average amount of grant and scholarship aid awarded, 2019-20}
+#' \item{IS_AVG_GAID1819}{Average amount of grant and scholarship aid awarded, 2018-19}
+#' \item{IS_AVG_AID_1718}{Average amount of grant and scholarship aid awarded, 2017-18}
+#' \item{AVG_AID_AL_1920}{Average amount of grant and scholarship aid awarded, all income levels, 2019-20}
+#' \item{AVG_AID_L1_1920}{Average amount of grant and scholarship aid awarded, income level (0-30,000), 2019-20}
+#' \item{AVG_AID_L2_1920}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2019-20}
+#' \item{AVG_AID_L3_1920}{Average amount of grant and scholarship aid awarded, income level (48,001-75,000), 2019-20}
+#' \item{AVG_AID_L4_1920}{Average amount of grant and scholarship aid awarded, income level (75,001-110,000), 2019-20}
 #' \item{AVG_AID_L5_1920}{}
 #' \item{AVG_AID_AL_1819}{}
 #' \item{AVG_AID_L1_1819}{}
