@@ -66,7 +66,7 @@
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
 #' \item{STAFF_CAT}{Instructional staff category}
 #' \item{FACSTAT}{Faculty and tenure status}
-#' \item{ARANK}{Academic rank}
+#' \item{ARANK: a factor with 7 levels: `All ranks`, `Professors`, `Associate professors`, `Assistant professors`, `Instructors`, `Lecturers` and `No academic rank`}{Academic rank}
 #' \item{TOTAL}{Grand total individuals}
 #' \item{TOTAL_M}{Grand total men}
 #' \item{TOTAL_W}{Grand total women}

@@ -21,11 +21,6 @@ test_that("Number of unique institution IDs is 1989", {
 })
 
 
-test_that("number of rows in Admissions Fall 2020 df is correct", {
-  expect_equal(nrow(adm2020), 1989)
-})
-
-
 test_that("number of full time enrollment combined with part time enrollment equals total enrollment in Admissions Fall 2020 df is correct", {
   adm_2020_enrl <- adm2020 %>%
     na.omit(FT_enroll) %>%

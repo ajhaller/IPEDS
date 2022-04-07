@@ -6,6 +6,8 @@ temp <- tempfile()
 download.file("https://nces.ed.gov/ipeds/datacenter/data/S2020_IS.zip", temp)
 admin2020 <- read.table(unz(temp, "s2020_is.csv"), sep = ",", header = TRUE)
 
+#renaming variables
+
 admin2020 <- admin2020 %>%
   select(-starts_with("X")) %>%
   rename(INSTITUTION_ID = UNITID,
@@ -41,6 +43,18 @@ admin2020 <- admin2020 %>%
          NRA_M = HRNRALM,
          NRA_W = HRNRALW
          )
+
+# contextualizing ARANK
+
+admin2020 <- admin2020 %>%
+  mutate(ARANK =
+           case_when(ARANK == 0 ~ "All ranks",
+                     ARANK == 1 ~ "Professors",
+                     ARANK == 2 ~ "Associate professors",
+                     ARANK == 3 ~ "Assistant professors",
+                     ARANK == 4 ~ "Instructors",
+                     ARANK == 5 ~ "Lecturers",
+                     ARANK == 6 ~ "No academic rank"))
 
 unlink(temp)
 
