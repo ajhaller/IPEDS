@@ -249,7 +249,6 @@
 #' \item{IMMIGRANT_W_ENROLL}{Nonresident alien women}
 #' }
 #'
-#'
 #' @source Download from Integrated Postsecondary Education Data System,
 #'   <https://nces.ed.gov/ipeds/datacenter/data/EF2020A.zip>.
 #'
@@ -355,6 +354,9 @@
 #' \item{OS_AVG_NPRICE_L4_1718}{Average net price (income 75,001-110,000)-students awarded Title IV federal financial aid, 2017-18}
 #' \item{OS_AVG_NPRICE_L5_1718}{Average net price (income over 110,000)-students awarded Title IV federal financial aid, 2017-18}
 #' }
+#'
+#' @source Download from Integrated Postsecondary Education Data System,
+#'   <https://nces.ed.gov/ipeds/datacenter/data/SFA1920.zip>.
 #'
 #' @docType data
 "fin_aid1920"
