@@ -1,3 +1,6 @@
+library(testthat)
+library(dplyr)
+
 #dir_info2020 tests
 
 testthat::test_that("number of columns in Directory Information 2020 df is correct", {

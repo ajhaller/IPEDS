@@ -14,7 +14,7 @@ fall_enroll2020 <- fall_enroll2020 %>%
 
 fall_enroll2020 <- fall_enroll2020 %>%
   rename(
-    INSTITUTION_ID = UNIT_ID,
+    INSTITUTION_ID = UNITID,
     ENROLL = EFTOTLT,
     M_ENROLL = EFTOTLM,
     W_ENROLL = EFTOTLW,
