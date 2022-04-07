@@ -14,18 +14,18 @@ A data frame of 5859 rows representing institutions and 91 variables
 \item{AVG_AID}{Average amount of federal, state, local, institutional or other sources of grant aid awarded to undergraduate students}
 \item{AVG_PELL}{Average amount Pell grant aid awarded to undergraduate students}
 \item{AVG_FLOAN}{Average amount of federal student loans awarded to undergraduate students}
-\item{AVG_AWARD}{Average amount of federal, state, local or institutional grant aid awarded}
+\item{AVG_AWRD}{Average amount of federal, state, local or institutional grant aid awarded}
 \item{AVG_FGRANT_FTFT}{Average amount of federal grant aid awarded to full-time first-time undergraduates}
 \item{AVG_PGRANT_FTFT}{Average amount of Pell grant aid awarded to full-time first-time undergraduates}
 \item{AVG_FOTHER_FTFT}{Average amount of other federal grant aid awarded to full-time first-time undergraduates}
-\item{AVG_STGGRANT_FTFT}{Average amount of state/local grant aid awarded to full-time first-time undergraduates}
+\item{AVG_STGRANT_FTFT}{Average amount of state/local grant aid awarded to full-time first-time undergraduates}
 \item{AVG_INST_AID_FTFT}{Average amount of institutional grant aid awarded to full-time first-time undergraduates}
 \item{AVG_LOAN_FTFT}{Average amount of student loans awarded to full-time first-time undergraduates}
 \item{AVG_FLOAN_FTFT}{Average amount of federal student loans awarded to full-time first-time undergraduates}
 \item{AVG_OLOAN_FTFT}{Average amount of other student loans awarded to full-time first-time undergraduates}
 \item{IS_AVG_GAID_1920}{Average amount of grant and scholarship aid awarded, 2019-20}
-\item{IS_AVG_GAID1819}{Average amount of grant and scholarship aid awarded, 2018-19}
-\item{IS_AVG_AID_1718}{Average amount of grant and scholarship aid awarded, 2017-18}
+\item{IS_AVG_GAID_1819}{Average amount of grant and scholarship aid awarded, 2018-19}
+\item{IS_AVG_GAID_1718}{Average amount of grant and scholarship aid awarded, 2017-18}
 \item{AVG_AID_AL_1920}{Average amount of grant and scholarship aid awarded, all income levels, 2019-20}
 \item{AVG_AID_L1_1920}{Average amount of grant and scholarship aid awarded, income level (0-30,000), 2019-20}
 \item{AVG_AID_L2_1920}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2019-20}
@@ -81,9 +81,9 @@ A data frame of 5859 rows representing institutions and 91 variables
 \item{OS_AVG_GAID_L3_1718}{}
 \item{OS_AVG_GAID_L4_1718}{}
 \item{OS_AVG_GAID_L5_1718}{}
-\item{OS_NPRICE_1920}{}
-\item{OS_NPRICE_1819}{}
-\item{OS_NPRICE_1718}{}
+\item{OS_AVG_NPRICE_1920}{}
+\item{OS_AVG_NPRICE_1819}{}
+\item{OS_AVG_NPRICE_1718}{}
 \item{OS_AVG_NPRICE_L1_1920}{}
 \item{OS_AVG_NPRICE_L2_1920}{}
 \item{OS_AVG_NPRICE_L3_1920}{}
