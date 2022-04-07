@@ -1,5 +1,6 @@
 library(testthat)
 library(dplyr)
+library(purrr)
 
 #fin_aid1920 tests
 

@@ -31,75 +31,79 @@ A data frame of 5859 rows representing institutions and 91 variables
 \item{AVG_AID_L2_1920}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2019-20}
 \item{AVG_AID_L3_1920}{Average amount of grant and scholarship aid awarded, income level (48,001-75,000), 2019-20}
 \item{AVG_AID_L4_1920}{Average amount of grant and scholarship aid awarded, income level (75,001-110,000), 2019-20}
-\item{AVG_AID_L5_1920}{}
-\item{AVG_AID_AL_1819}{}
-\item{AVG_AID_L1_1819}{}
-\item{AVG_AID_L2_1819}{}
-\item{AVG_AID_L3_1819}{}
-\item{AVG_AID_L4_1819}{}
-\item{AVG_AID_L5_1819}{}
-\item{AVG_AID_AL_1718}{}
-\item{AVG_AID_L1_1718}{}
-\item{AVG_AID_L2_1718}{}
-\item{AVG_AID_L3_1718}{}
-\item{AVG_AID_L4_1718}{}
-\item{AVG_AID_L5_1718}{}
-\item{AVG_NPRICE_1920}{}
-\item{AVG_NPRICE_1819}{}
-\item{AVG_NPRICE_1718}{}
-\item{AVG_NPRICE_L1_1920}{}
-\item{AVG_NPRICE_L2_1920}{}
-\item{AVG_NPRICE_L3_1920}{}
-\item{AVG_NPRICE_L4_1920}{}
-\item{AVG_NPRICE_L5_1920}{}
-\item{AVG_NPRICE_L1_1819}{}
-\item{AVG_NPRICE_L2_1819}{}
-\item{AVG_NPRICE_L3_1819}{}
-\item{AVG_NPRICE_L4_1819}{}
-\item{AVG_NPRICE_L5_1819}{}
-\item{AVG_NPRICE_L1_1718}{}
-\item{AVG_NPRICE_L2_1718}{}
-\item{AVG_NPRICE_L3_1718}{}
-\item{AVG_NPRICE_L4_1718}{}
-\item{AVG_NPRICE_L5_1718}{}
-\item{OS_AVG_GAID_1718}{}
-\item{OS_AVG_GAID_AL_1920}{}
-\item{OS_AVG_GAID_L1_1920}{}
-\item{OS_AVG_GAID_L2_1920}{}
-\item{OS_AVG_GAID_L3_1920}{}
-\item{OS_AVG_GAID_L4_1920}{}
-\item{OS_AVG_GAID_L5_1920}{}
-\item{OS_AVG_GAID_AL_1819}{}
-\item{OS_AVG_GAID_L1_1819}{}
-\item{OS_AVG_GAID_L2_1819}{}
-\item{OS_AVG_GAID_L3_1819}{}
-\item{OS_AVG_GAID_L4_1819}{}
-\item{OS_AVG_GAID_L5_1819}{}
-\item{OS_AVG_GAID_AL_1718}{}
-\item{OS_AVG_GAID_L1_1718}{}
-\item{OS_AVG_GAID_L2_1718}{}
-\item{OS_AVG_GAID_L3_1718}{}
-\item{OS_AVG_GAID_L4_1718}{}
-\item{OS_AVG_GAID_L5_1718}{}
-\item{OS_AVG_NPRICE_1920}{}
-\item{OS_AVG_NPRICE_1819}{}
-\item{OS_AVG_NPRICE_1718}{}
-\item{OS_AVG_NPRICE_L1_1920}{}
-\item{OS_AVG_NPRICE_L2_1920}{}
-\item{OS_AVG_NPRICE_L3_1920}{}
-\item{OS_AVG_NPRICE_L4_1920}{}
-\item{OS_AVG_NPRICE_L5_1920}{}
-\item{OS_AVG_NPRICE_L1_1819}{}
-\item{OS_AVG_NPRICE_L2_1819}{}
-\item{OS_AVG_NPRICE_L3_1819}{}
-\item{OS_AVG_NPRICE_L4_1819}{}
-\item{OS_AVG_NPRICE_L5_1819}{}
-\item{OS_AVG_NPRICE_L1_1718}{}
-\item{OS_AVG_NPRICE_L2_1718}{}
-\item{OS_AVG_NPRICE_L3_1718}{}
-\item{OS_AVG_NPRICE_L4_1718}{}
-\item{OS_AVG_NPRICE_L5_1718}{}
+\item{AVG_AID_L5_1920}{Average amount of grant and scholarship aid awarded, income level (110,001 or more), 2019-20}
+\item{AVG_AID_AL_1819}{Average amount of grant and scholarship aid awarded, all income levels, 2018-19}
+\item{AVG_AID_L1_1819}{Average amount of grant and scholarship aid awarded, income level (0-30,000), 2018-19}
+\item{AVG_AID_L2_1819}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2018-19}
+\item{AVG_AID_L3_1819}{Average amount of grant and scholarship aid awarded, income level (48,001-75,000), 2018-19}
+\item{AVG_AID_L4_1819}{Average amount of grant and scholarship aid awarded, income level (75,001-110,000), 2018-19}
+\item{AVG_AID_L5_1819}{Average amount of grant and scholarship aid awarded, income level (110,001 or more), 2018-19}
+\item{AVG_AID_AL_1718}{Average amount of grant and scholarship aid awarded, all income levels, 2017-18}
+\item{AVG_AID_L1_1718}{Average amount of grant and scholarship aid awarded, income level (0-30,000), 2017-18}
+\item{AVG_AID_L2_1718}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2017-18}
+\item{AVG_AID_L3_1718}{Average amount of grant and scholarship aid awarded, income level (48,001-75,000), 2017-18}
+\item{AVG_AID_L4_1718}{Average amount of grant and scholarship aid awarded, income level (75,001-110,000), 2017-18}
+\item{AVG_AID_L5_1718}{Average amount of grant and scholarship aid awarded, income level (110,001 or more), 2017-18}
+\item{AVG_NPRICE_1920}{Average net price-students awarded grant or scholarship aid, 2019-20}
+\item{AVG_NPRICE_1819}{Average net price-students awarded grant or scholarship aid, 2018-19}
+\item{AVG_NPRICE_1718}{Average net price-students awarded grant or scholarship aid, 2017-18}
+\item{AVG_NPRICE_L1_1920}{Average net price (income 0-30,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{AVG_NPRICE_L2_1920}{Average net price (income 30,001-48,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{AVG_NPRICE_L3_1920}{Average net price (income 48,001-75,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{AVG_NPRICE_L4_1920}{Average net price (income 75,001-110,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{AVG_NPRICE_L5_1920}{Average net price (income over 110,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{AVG_NPRICE_L1_1819}{Average net price (income 0-30,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{AVG_NPRICE_L2_1819}{Average net price (income 30,001-48,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{AVG_NPRICE_L3_1819}{Average net price (income 48,001-75,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{AVG_NPRICE_L4_1819}{Average net price (income 75,001-110,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{AVG_NPRICE_L5_1819}{Average net price (income over 110,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{AVG_NPRICE_L1_1718}{Average net price (income 0-30,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{AVG_NPRICE_L2_1718}{Average net price (income 30,001-48,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{AVG_NPRICE_L3_1718}{Average net price (income 48,001-75,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{AVG_NPRICE_L4_1718}{Average net price (income 75,001-110,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{AVG_NPRICE_L5_1718}{Average net price (income over 110,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{OS_AVG_GAID_1718}{Average amount of grant and scholarship aid awarded, 2017-18}
+\item{OS_AVG_GAID_AL_1920}{Average amount of grant and scholarship aid awarded, all income levels, 2019-20}
+\item{OS_AVG_GAID_L1_1920}{Average amount of grant and scholarship aid awarded, income level (0-30,000), 2019-20}
+\item{OS_AVG_GAID_L2_1920}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2019-20}
+\item{OS_AVG_GAID_L3_1920}{Average amount of grant and scholarship aid awarded, income level (48,001-75,000), 2019-20}
+\item{OS_AVG_GAID_L4_1920}{Average amount of grant and scholarship aid awarded, income level (75,001-110,000), 2019-20}
+\item{OS_AVG_GAID_L5_1920}{Average amount of grant and scholarship aid awarded, income level (110,001 or more), 2019-20}
+\item{OS_AVG_GAID_AL_1819}{Average amount of grant and scholarship aid awarded, all income levels, 2018-19}
+\item{OS_AVG_GAID_L1_1819}{Average amount of grant and scholarship aid awarded, income level (0-30,000), 2018-19}
+\item{OS_AVG_GAID_L2_1819}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2018-19}
+\item{OS_AVG_GAID_L3_1819}{Average amount of grant and scholarship aid awarded, income level (48,001-75,000), 2018-19}
+\item{OS_AVG_GAID_L4_1819}{Average amount of grant and scholarship aid awarded, income level (75,001-110,000), 2018-19}
+\item{OS_AVG_GAID_L5_1819}{Average amount of grant and scholarship aid awarded, income level (110,001 or more), 2018-19}
+\item{OS_AVG_GAID_AL_1718}{Average amount of grant and scholarship aid awarded, all income levels, 2017-18}
+\item{OS_AVG_GAID_L1_1718}{Average amount of grant and scholarship aid awarded, income level (0-30,000), 2017-18}
+\item{OS_AVG_GAID_L2_1718}{Average amount of grant and scholarship aid awarded, income level (30,001-48,000), 2017-18}
+\item{OS_AVG_GAID_L3_1718}{Average amount of grant and scholarship aid awarded, income level (48,001-75,000), 2017-18}
+\item{OS_AVG_GAID_L4_1718}{Average amount of grant and scholarship aid awarded, income level (75,001-110,000), 2017-18}
+\item{OS_AVG_GAID_L5_1718}{Average amount of grant and scholarship aid awarded, income level (110,001 or more), 2017-18}
+\item{OS_AVG_NPRICE_1920}{Average net price-students awarded grant or scholarship aid, 2019-20}
+\item{OS_AVG_NPRICE_1819}{Average net price-students awarded grant or scholarship aid, 2018-19}
+\item{OS_AVG_NPRICE_1718}{Average net price-students awarded grant or scholarship aid, 2017-18}
+\item{OS_AVG_NPRICE_L1_1920}{Average net price (income 0-30,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{OS_AVG_NPRICE_L2_1920}{Average net price (income 30,001-48,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{OS_AVG_NPRICE_L3_1920}{Average net price (income 48,001-75,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{OS_AVG_NPRICE_L4_1920}{Average net price (income 75,001-110,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{OS_AVG_NPRICE_L5_1920}{Average net price (income over 110,000)-students awarded Title IV federal financial aid, 2019-20}
+\item{OS_AVG_NPRICE_L1_1819}{Average net price (income 0-30,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{OS_AVG_NPRICE_L2_1819}{Average net price (income 30,001-48,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{OS_AVG_NPRICE_L3_1819}{Average net price (income 48,001-75,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{OS_AVG_NPRICE_L4_1819}{Average net price (income 75,001-110,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{OS_AVG_NPRICE_L5_1819}{Average net price (income over 110,000)-students awarded Title IV federal financial aid, 2018-19}
+\item{OS_AVG_NPRICE_L1_1718}{Average net price (income 0-30,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{OS_AVG_NPRICE_L2_1718}{Average net price (income 30,001-48,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{OS_AVG_NPRICE_L3_1718}{Average net price (income 48,001-75,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{OS_AVG_NPRICE_L4_1718}{Average net price (income 75,001-110,000)-students awarded Title IV federal financial aid, 2017-18}
+\item{OS_AVG_NPRICE_L5_1718}{Average net price (income over 110,000)-students awarded Title IV federal financial aid, 2017-18}
 }
+}
+\source{
+Download from Integrated Postsecondary Education Data System,
+\url{https://nces.ed.gov/ipeds/datacenter/data/SFA1920.zip}.
 }
 \usage{
 fin_aid1920
