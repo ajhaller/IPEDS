@@ -40,7 +40,7 @@ admission_reqs <- function(institution) {
            `Formal Demonstration of Competencies` = competencies,
            `Recommendations` = recs,
            `Other Tests` = other_test) %>%
-    pivot_longer(everything(), names_to = "Requirments", values_to = "Priority") %>%
+    pivot_longer(everything(), names_to = "Requirements", values_to = "Priority") %>%
     arrange(desc(Priority))
 
   # Print requirements
