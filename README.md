@@ -116,6 +116,8 @@ preferences(20, 2, "New England", 50, 25)
 #> 8                2 New England                73              28
 ```
 
+For further examples and capabilities, please see the \[vignette\]
+
 ## Contributors
 
 -   [Aushanae Haller](https://github.com/ajhaller)
