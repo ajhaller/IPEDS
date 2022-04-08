@@ -37,12 +37,14 @@ library(IPEDS)
 
 ## Available Tables
 
-`adm2020`: dataset of Admissions and Test Scores for Fall 2020
-`admin2020`: dataset of Administration for 2020 `complete2020`: dataset
-of Completions in 2020 `dir_info2020`: dataset of Directory Information
-for 2020 `fall_enroll2020`: dataset of Fall Enrollment for 2020
-`fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
-`staff_cat`: dataset of Staff Categories based on `admin2020$staff_cat`
+-   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
+-   `admin2020`: dataset of Administration for 2020
+-   `complete2020`: dataset of Completions in 2020
+-   `dir_info2020`: dataset of Directory Information for 2020
+-   `fall_enroll2020`: dataset of Fall Enrollment for 2020
+-   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
+-   `staff_cat`: dataset of Staff Categories based on
+    `admin2020$staff_cat`
 
 ## Example: Admissions and Test Scores for Fall 2020
 
