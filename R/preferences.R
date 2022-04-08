@@ -15,15 +15,29 @@ globalVariables(c("dir_info2020", "fin_aid1920", "fall_enroll2020", "admin2020",
 #' @return A dataframe of the institution that fit inputted preferences. For arguments that return percentages, the user can expect institutions that meet that percentage or higher.
 #' @examples
 #' preferences(70, 2, "New England", 20, 40)
-#' preferences(50, 4, "Southwest", 10, 20)
+#' preferences((50, 4, "Southwest", 10, 20)
 #' @import dplyr
 #' @import tidyr
 #' @export
 
-preferences <- function (financial_aid, size, region, diversity_students, diversity_staff) {
+preferences <- function(financial_aid, size, region, diversity_students, diversity_staff) {
 
   # Error Handling
 
+  places <- unique(dir_info2020$BEA_REG)
+
+  if (financial_aid < 0 | financial_aid > 100 | diversity_students < 0 | diversity_students > 100 |
+      diversity_staff < 0 | diversity_staff > 100) {
+    stop("For `financial_aid`, `diversity_students, and `diversity staff`, please input an percent between 0 and 100")
+  }
+
+  else if (size < 0 | size > 5) {
+    stop("For `size` please input a number between 1 and 5")
+  }
+
+  else if (!(region %in% places) == TRUE) {
+    stop("Please input a region included in the `dir_info2020` datafram in the `BEA_REG` column")
+  }
 
 
   # Join dataframes together
@@ -47,8 +61,8 @@ preferences <- function (financial_aid, size, region, diversity_students, divers
     rename(Institution = INSTITUTION,
            `% of Students Recieved Aid` = PCT_AID,
            `Institution Size` = INT_SIZE,
-           `Region` = BEA_REG,
-           ) %>%
+           `Region` = BEA_REG
+    ) %>%
     select(Institution, `% of Students Recieved Aid`, `Institution Size`, `Region`, `Student Diversity`, `Staff Diversity`)
 
   return(df)
