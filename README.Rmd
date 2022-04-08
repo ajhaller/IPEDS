@@ -56,17 +56,17 @@ head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
 ## Example: Directory Information for 2020
 
 ```{r}
-head(dir_info2020[,c(1:2,4:6)],5)
+head(dir_info2020[,c(1:2,4:5)],5)
 ```
 
 ## Functionality
 
-```{r}
+```{r, results='hide'}
 admission_reqs # extracts admission requirements for any institution
 preferences # provides a dataset of institution according to your preferences
 ```
 
-```{r}
+```{r, }
 admission_reqs("Smith College")
 ```
 

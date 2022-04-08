@@ -59,19 +59,13 @@ head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
 ## Example: Directory Information for 2020
 
 ``` r
-head(dir_info2020[,c(1:2,4:6)],5)
+head(dir_info2020[,c(1:2,4:5)],5)
 #>   INSTITUTION_ID                         INSTITUTION       CITY STATE
 #> 1         100654            Alabama A & M University     Normal    AL
 #> 2         100663 University of Alabama at Birmingham Birmingham    AL
 #> 3         100690                  Amridge University Montgomery    AL
 #> 4         100706 University of Alabama in Huntsville Huntsville    AL
 #> 5         100724            Alabama State University Montgomery    AL
-#>          ZIP
-#> 1      35762
-#> 2 35294-0110
-#> 3 36117-3553
-#> 4      35899
-#> 5 36104-0271
 ```
 
 ## Functionality
