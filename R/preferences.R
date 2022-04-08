@@ -15,7 +15,7 @@ globalVariables(c("dir_info2020", "fin_aid1920", "fall_enroll2020", "admin2020",
 #' @return A dataframe of the institution that fit inputted preferences. For arguments that return percentages, the user can expect institutions that meet that percentage or higher.
 #' @examples
 #' preferences(70, 2, "New England", 20, 40)
-#' preferences((50, 4, "Southwest", 10, 20)
+#' preferences(50, 4, "Southwest", 10, 20)
 #' @import dplyr
 #' @import tidyr
 #' @export
