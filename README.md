@@ -26,7 +26,7 @@ You can install the development version of IPEDS from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ajhaller/-IPEDS")
+devtools::install_github("ajhaller/IPEDS")
 ```
 
 ## Load
@@ -37,13 +37,13 @@ library(IPEDS)
 
 ## Available Tables
 
-`adm2020`: dataset of Admissions and Test Scores for Fall 2020
+`adm2020`: dataset of Admissions and Test Scores for Fall 2020.
 
 ## Example: Admissions and Test Scores for Fall 2020
 
 ``` r
 head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
-#>   institution_id   hs_gpa APPLCN ENRLT RW_SAT_25 RW_SAT_75 ACT_25 ACT_75
+#>   INSTITUTION_ID   hs_gpa APPLCN ENRLT RW_SAT_25 RW_SAT_75 ACT_25 ACT_75
 #> 1         100654 Required   9855  1664       430       520     15     20
 #> 2         100663 Required  10391  2154       560       668     22     30
 #> 3         100706 Required   5793  1345       590       700     24     31
