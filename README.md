@@ -26,7 +26,7 @@ You can install the development version of IPEDS from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ajhaller/-IPEDS")
+devtools::install_github("ajhaller/IPEDS")
 ```
 
 ## Load
