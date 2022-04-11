@@ -142,6 +142,22 @@
 #' @docType data
 "complete2020"
 
+#' Conferences Data
+#'
+#' This file contains the details for conferences in the Offerings 2020 (`offerings2020`) dataset.
+#'
+#' @format A data frame of 500 rows representing institutions and 3 variables
+#'
+#' \describe{
+#' \item{Numeric_Code}{Numeric code representing a conference}
+#' \item{Conference}{Explaination of numeric code}
+#' \item{Sport}{Type of sport for each conference}
+#' }
+#'
+#'
+#' @docType data
+"conference"
+
 #' Directory Info 2020 Data
 #'
 #' This file contains directory information for every institution in the 2020-21 IPEDS universe. Includes name, address, city, state, zip code and various URL links to the institution's home page, admissions, financial aid offices and the net price calculator. Identifies institutions as currently active, institutions that participate in Title IV federal financial aid programs for which IPEDS is mandatory. It also includes variables derived from the 2020-21 Institutional Characteristics survey, such as control and level of institution, highest level and highest degree offered and Carnegie classifications.
