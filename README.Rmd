@@ -39,7 +39,7 @@ library(IPEDS)
 
 ## Available Tables
 
-`adm2020`: dataset of Admissions and Test Scores for Fall 2020
+`adm2020`: dataset of Admissions and Test Scores for Fall 2020.
 
 ## Example: Admissions and Test Scores for Fall 2020
 
