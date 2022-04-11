@@ -477,19 +477,33 @@
 #' \item{NCCAA}{Member of National Christian College Athletic Association (NCCAA)}
 #' \item{AA_NA}{Member of Other, not one of the above associations}
 #' \item{MEM_FOOTBALL}{NCAA or NAIA member for football }
-#' \item{CON_FOOTBALL}{NCAA or NAIA member for football, conference specified}
+#' \item{CON_FOOTBALL}{NCAA or NAIA member for football, conference specified (See `conference` dataset for more details.)}
 #' \item{MEM_BASKETBALL}{NCAA or NAIA member for basketball }
-#' \item{CON_BASKETBALL}{NCAA or NAIA member for basketball, conference specified}
+#' \item{CON_BASKETBALL}{NCAA or NAIA member for basketball, conference specified (See `conference` dataset for more details.)}
 #' \item{MEM_BASEBALL}{NCAA or NAIA member for baseball }
-#' \item{CON_BASEBALL}{NCAA or NAIA member for baseball, conference specified}
+#' \item{CON_BASEBALL}{NCAA or NAIA member for baseball, conference specified (See `conference` dataset for more details.)}
 #' \item{MEM_TRACK}{NCAA or NAIA member for cross country/track}
-#' \item{CON_TRACK}{NCAA or NAIA member for cross country/track, conference specified}
+#' \item{CON_TRACK}{NCAA or NAIA member for cross country/track, conference specified (See `conference` dataset for more details.)}
 #' }
 #'
 #'
 #' @docType data
 "offerings2020"
 
+#' Religious Affiliations Data
+#'
+#' This file contains the details for religious affiliations in the Offerings 2020 (`offerings2020`) dataset.
+#'
+#' @format A data frame of 64 rows representing institutions and 2 variables
+#'
+#' \describe{
+#' \item{Numeric_Code}{Numeric code representing a religious affiliation}
+#' \item{Religious_Affiliation}{Explaination of numeric code}
+#' }
+#'
+#'
+#' @docType data
+"relig_aff"
 
 #' Staff Categories Data
 #'
