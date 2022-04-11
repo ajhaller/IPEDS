@@ -146,7 +146,7 @@
 #'
 #' This file contains the details for conferences in the Offerings 2020 (`offerings2020`) dataset.
 #'
-#' @format A data frame of 500 rows representing institutions and 3 variables
+#' @format A data frame of 500 rows representing conferences and 3 variables
 #'
 #' \describe{
 #' \item{Numeric_Code}{Numeric code representing a conference}
@@ -510,7 +510,7 @@
 #'
 #' This file contains the details for religious affiliations in the Offerings 2020 (`offerings2020`) dataset.
 #'
-#' @format A data frame of 64 rows representing institutions and 2 variables
+#' @format A data frame of 64 rows representing religious affiliations and 2 variables
 #'
 #' \describe{
 #' \item{Numeric_Code}{Numeric code representing a religious affiliation}
@@ -525,7 +525,7 @@
 #'
 #' This file contains the details for staff categories in the Administration 2020 (`admin2020`) dataset.
 #'
-#' @format A data frame of 65 rows representing institutions and 2 variables
+#' @format A data frame of 65 rows representing staff categories and 2 variables
 #'
 #' \describe{
 #' \item{Numeric_Code}{Numeric code representing a staff category}
