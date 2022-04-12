@@ -61,7 +61,7 @@ head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
 ## Example: Directory Information for 2020
 
 ``` r
-head(dir_info2020[,c(1:2,4:5)],5)
+head(dir_info2020[,c(1:2,4:5)],5) 
 #>   INSTITUTION_ID                         INSTITUTION       CITY STATE
 #> 1         100654            Alabama A & M University     Normal    AL
 #> 2         100663 University of Alabama at Birmingham Birmingham    AL
@@ -74,7 +74,7 @@ head(dir_info2020[,c(1:2,4:5)],5)
 
 ``` r
 admission_reqs # extracts admission requirements for any institution
-preferences # provides a dataset of institution according to your preferences
+school_preferences # provides a dataset of institution according to your preferences
 ```
 
 ``` r
@@ -95,25 +95,17 @@ admission_reqs("Smith College")
 ```
 
 ``` r
-preferences(20, 2, "New England", 50, 25)
-#>                          Institution % of Students Recieved Aid
-#> 1 Hult International Business School                         68
-#> 2                    Amherst College                         60
-#> 3              Mount Holyoke College                         76
-#> 4          Roxbury Community College                         66
-#> 5                      Smith College                         71
-#> 6                  Wellesley College                         60
-#> 7                   Williams College                         57
-#> 8      Rhode Island School of Design                         35
-#>   Institution Size      Region Student Diversity Staff Diversity
-#> 1                2 New England                98              45
-#> 2                2 New England                59              32
-#> 3                2 New England                55              37
-#> 4                2 New England                93              51
-#> 5                2 New England                51              27
-#> 6                2 New England                64              29
-#> 7                2 New England                52              33
-#> 8                2 New England                73              28
+school_preferences(financial_aid = 70, size = 2, region = "New England", diversity_staff = 27) %>% select(c(1:3),6)
+#>                            Institution Institution ID
+#> 1 Eastern Connecticut State University         129215
+#> 2                     Clark University         165334
+#> 3                Mount Holyoke College         166939
+#> 4                        Smith College         167835
+#>   % of Students Recieved Aid Staff Diversity
+#> 1                         79              34
+#> 2                         91              31
+#> 3                         76              37
+#> 4                         71              27
 ```
 
 For further examples and capabilities, please see the \[vignette\]
