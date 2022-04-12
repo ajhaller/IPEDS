@@ -5,7 +5,7 @@
 \alias{conference}
 \title{Conferences Data}
 \format{
-A data frame of 500 rows representing institutions and 3 variables
+A data frame of 500 rows representing conferences and 3 variables
 
 \describe{
 \item{Numeric_Code}{Numeric code representing a conference}

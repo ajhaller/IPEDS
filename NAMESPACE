@@ -2,5 +2,7 @@
 
 export(admission_reqs)
 export(preferences)
+export(school_preferences)
 import(dplyr)
 import(tidyr)
+importFrom(rlang,is_null)

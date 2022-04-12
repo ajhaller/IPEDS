@@ -24,6 +24,6 @@ A dataframe of the institution that fit inputted preferences. For arguments that
 Lists the names of institutions that fit inputted preferences
 }
 \examples{
-preferences(70, 2, "New England", 20, 40)
+preferences(70, 2, "New England", 20, 25)
 preferences(50, 4, "Southwest", 10, 20)
 }

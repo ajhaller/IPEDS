@@ -5,7 +5,7 @@
 \alias{staff_cat}
 \title{Staff Categories Data}
 \format{
-A data frame of 65 rows representing institutions and 2 variables
+A data frame of 65 rows representing staff categories and 2 variables
 
 \describe{
 \item{Numeric_Code}{Numeric code representing a staff category}

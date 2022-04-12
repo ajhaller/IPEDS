@@ -30,7 +30,7 @@ A data frame of 6264 rows representing institutions and 114 variables
 \item{MASTERS}{What award levels are offered by your institution? Master's degree }
 \item{POST_MASTERS}{What award levels are offered by your institution? Post-master's certificate}
 \item{OTHER}{What award levels are offered by your institution? Other; please specify }
-\item{DOC_RS}{Doctor’s degree - research/scholarship}
+\item{DOC_RS}{What award levels are offered by your institution? Doctor’s degree - research/scholarship}
 \item{DOC_P}{What award levels are offered by your institution? Doctor’s degree - professional practice}
 \item{DOC_O}{What award levels are offered by your institution? Doctor’s degree - other}
 \item{CALSYS}{Standard academic term (1	= Semester, 2	= Quarter, 3 = Trimester, 4	= Four-one-four plan, 5	= Other academic year, 6 = Differs by program, 7 = Continuous, -2	= Not applicable)}
@@ -95,16 +95,16 @@ A data frame of 6264 rows representing institutions and 114 variables
 \item{DIST_EDUC_GCP}{Offers Graduate distance education opportunities}
 \item{DIST_EDUC_NA}{Does not offer distance education opportunites}
 \item{DIST_EDUC_ALL}{Offers A program for which all the required coursework for program completion is able to be completed via distance education courses.}
-\item{DISAB}{Percentage of all undergraduates enrolled in Fall 2019 who are formally registered as students with disabilities with the institution's office of disability services (or the equivalent office)}
+\item{DISAB}{Percentage of all undergraduates enrolled in Fall 2019 who are formally registered as students with disabilities with the institution's office of disability services (or the equivalent office)(1 = 3 percent or less, 2 = More than 3 percent)}
 \item{LIVE_ONCAMP}{First-time degree/certificate-seeking students required to live on campus or in institutionally-controlled housing}
 \item{TUITVARY}{Charges different tuition for in-district, in-state, or out-of-state students}
 \item{ROOM}{Provides on-campus housing}
 \item{ROOMCAP}{DORMITORY CAPACITY - The maximum number of students that the institution can provide residential facilities for, whether on or off campus. (off-campus dormitory space that is reserved by the institution).}
-\item{BOARD}{Provides board or meal plans to students}
+\item{BOARD}{Provides board or meal plans to students (1	= Yes, number of meals in the maximum meal plan offered, 2 = Yes, number of meals per week can vary)}
 \item{MEALSWK}{Number of meals per week in the maximum meal plan offered}
 \item{ROOM_PRICE}{Typical room charges for a student for the full academic year 2018-19 }
 \item{BOARD_PRICE}{Typical board charges for a student for the full academic year 2018-19 }
-\item{R_B_PRICE}{Typical room and board charges for a student for the full academic year 2018-19 }
+\item{R_B_PRICE}{Typical room and board charges for a student for the full academic year 2018-19. (applicable only if institution CANNOT separate room and board charges.)}
 \item{APPLFEEU}{Undergraduate application fee amount}
 \item{APPLFEEG}{Graduate application fee amount}
 \item{NAA}{Member of National Athletic Association}
@@ -132,5 +132,7 @@ This file contains data on program and award level offerings, control and affili
 }
 \details{
 Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
+
+Note: Unless otherwise defined, 1 = Yes; 0 = Implied No; -1 = Not Reported; and -2 = Not Applicable
 }
 \keyword{datasets}

@@ -5,7 +5,7 @@
 \alias{relig_aff}
 \title{Religious Affiliations Data}
 \format{
-A data frame of 64 rows representing institutions and 2 variables
+A data frame of 64 rows representing religious affiliations and 2 variables
 
 \describe{
 \item{Numeric_Code}{Numeric code representing a religious affiliation}
