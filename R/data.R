@@ -410,7 +410,7 @@
 #' \item{MASTERS}{What award levels are offered by your institution? Master's degree }
 #' \item{POST_MASTERS}{What award levels are offered by your institution? Post-master's certificate}
 #' \item{OTHER}{What award levels are offered by your institution? Other; please specify }
-#' \item{DOC_RS}{Doctor’s degree - research/scholarship}
+#' \item{DOC_RS}{What award levels are offered by your institution? Doctor’s degree - research/scholarship}
 #' \item{DOC_P}{What award levels are offered by your institution? Doctor’s degree - professional practice}
 #' \item{DOC_O}{What award levels are offered by your institution? Doctor’s degree - other}
 #' \item{CALSYS}{Standard academic term (1	= Semester, 2	= Quarter, 3 = Trimester, 4	= Four-one-four plan, 5	= Other academic year, 6 = Differs by program, 7 = Continuous, -2	= Not applicable)}
@@ -484,7 +484,7 @@
 #' \item{MEALSWK}{Number of meals per week in the maximum meal plan offered}
 #' \item{ROOM_PRICE}{Typical room charges for a student for the full academic year 2018-19 }
 #' \item{BOARD_PRICE}{Typical board charges for a student for the full academic year 2018-19 }
-#' \item{R_B_PRICE}{Typical room and board charges for a student for the full academic year 2018-19 }
+#' \item{R_B_PRICE}{Typical room and board charges for a student for the full academic year 2018-19. (applicable only if institution CANNOT separate room and board charges.)}
 #' \item{APPLFEEU}{Undergraduate application fee amount}
 #' \item{APPLFEEG}{Graduate application fee amount}
 #' \item{NAA}{Member of National Athletic Association}
