@@ -63,7 +63,7 @@ head(dir_info2020[,c(1:2,4:5)],5)
 
 ```{r, results='hide'}
 admission_reqs # extracts admission requirements for any institution
-preferences # provides a dataset of institution according to your preferences
+school_preferences # provides a dataset of institution according to your preferences
 ```
 
 ```{r, }
@@ -72,7 +72,7 @@ admission_reqs("Smith College")
 
 
 ```{r}
-preferences(20, 2, "New England", 50, 25)
+school_preferences(financial_aid = 70, size = 2, region = "New England", alt_credits = "Yes", diversity_students = 30, diversity_staff = 25)
 ```
 For further examples and capabilities, please see the [vignette]
 
