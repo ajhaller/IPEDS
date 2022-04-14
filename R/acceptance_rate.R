@@ -1,5 +1,5 @@
 globalVariables(c("acceptance_rate", "institution_id", "row", "adm2020", "INSTITUTION_ID", "institution",
-                  "acceptance", "sen1", "sen2"))
+                  "acceptance", "sen1", "sen2", "list"))
 
 
 #' Function for getting the acceptance rate by institution
