@@ -37,7 +37,14 @@ library(IPEDS)
 
 ## Available Tables
 
-`adm2020`: dataset of Admissions and Test Scores for Fall 2020.
+-   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
+-   `admin2020`: dataset of Administration for 2020
+-   `complete2020`: dataset of Completions in 2020
+-   `dir_info2020`: dataset of Directory Information for 2020
+-   `fall_enroll2020`: dataset of Fall Enrollment for 2020
+-   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
+-   `staff_cat`: dataset of Staff Categories based on
+    `admin2020$staff_cat`
 
 ## Example: Admissions and Test Scores for Fall 2020
 
@@ -50,6 +57,58 @@ head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
 #> 4         100724 Required   7027   975       438       531     14     20
 #> 5         100751 Required  39560  6507       540       660     23     31
 ```
+
+## Example: Directory Information for 2020
+
+``` r
+head(dir_info2020[,c(1:2,4:5)],5) 
+#>   INSTITUTION_ID                         INSTITUTION       CITY STATE
+#> 1         100654            Alabama A & M University     Normal    AL
+#> 2         100663 University of Alabama at Birmingham Birmingham    AL
+#> 3         100690                  Amridge University Montgomery    AL
+#> 4         100706 University of Alabama in Huntsville Huntsville    AL
+#> 5         100724            Alabama State University Montgomery    AL
+```
+
+## Functionality
+
+``` r
+admission_reqs # extracts admission requirements for any institution
+school_preferences # provides a dataset of institution according to your preferences
+```
+
+``` r
+admission_reqs("Smith College")
+#> The Requirements for Smith College are: 
+#> # A tibble: 9 × 2
+#>   Requirements                            Priority                        
+#>   <chr>                                   <chr>                           
+#> 1 High School Record                      Required                        
+#> 2 Completion of College-Prepatory Program Required                        
+#> 3 Recommendations                         Required                        
+#> 4 High School GPA                         Recommended                     
+#> 5 High School Rank                        Recommended                     
+#> 6 Test of English as a Foreign Language   Recommended                     
+#> 7 Formal Demonstration of Competencies    Neither_required_nor_recommended
+#> 8 Admission Test Scores                   Neither_required_nor_recommended
+#> 9 Other Tests                             Neither_required_nor_recommended
+```
+
+``` r
+school_preferences(financial_aid = 70, size = 2, region = "New England", diversity_staff = 27) %>% select(c(1:3),6)
+#>                            Institution Institution ID
+#> 1 Eastern Connecticut State University         129215
+#> 2                     Clark University         165334
+#> 3                Mount Holyoke College         166939
+#> 4                        Smith College         167835
+#>   % of Students Recieved Aid Staff Diversity
+#> 1                         79              34
+#> 2                         91              31
+#> 3                         76              37
+#> 4                         71              27
+```
+
+For further examples and capabilities, please see the \[vignette\]
 
 ## Contributors
 

@@ -28,7 +28,7 @@ adm2020 <- adm2020 %>%
 
 adm2020 <- adm2020 %>%
   rename(
-    institution_id = UNITID,
+    INSTITUTION_ID = UNITID,
     hs_gpa = ADMCON1,
     hs_rank = ADMCON2,
     hs_record = ADMCON3,
