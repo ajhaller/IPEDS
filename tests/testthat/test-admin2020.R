@@ -44,7 +44,7 @@ test_that("Number of total men plus total women equals total in Admissions Fall 
     na.omit(TOTAL) %>%
     na.omit(TOTAL_M) %>%
     na.omit(TOTAL_W)
-  expect_equal(sum(admin2020$TOTAL_M + admin2020$TOTAL_W), sum(admin2020$TOTAL))
+  expect_equal(sum(admin2020_2$TOTAL_M + admin2020_2$TOTAL_W), sum(admin2020_2$TOTAL))
 })
 
 test_that("Number of total native men plus total native women equals total native in Admissions Fall 2020 df is correct", {
@@ -52,7 +52,7 @@ test_that("Number of total native men plus total native women equals total nativ
     na.omit(NATIVE_TOTAL) %>%
     na.omit(NATIVE_M) %>%
     na.omit(NATIVE_W)
-  expect_equal(sum(admin2020$NATIVE_M + admin2020$NATIVE_W), sum(admin2020$NATIVE_TOTAL))
+  expect_equal(sum(admin2020_2$NATIVE_M + admin2020_2$NATIVE_W), sum(admin2020_2$NATIVE_TOTAL))
 })
 
 test_that("Number of total asian men plus total asian women equals total asians in Admissions Fall 2020 df is correct", {
@@ -60,7 +60,7 @@ test_that("Number of total asian men plus total asian women equals total asians 
     na.omit(ASIAN_TOTAL) %>%
     na.omit(ASIAN_M) %>%
     na.omit(ASIAN_W)
-  expect_equal(sum(admin2020$ASIAN_M + admin2020$ASIAN_W), sum(admin2020$ASIAN_TOTAL))
+  expect_equal(sum(admin2020_2$ASIAN_M + admin2020_2$ASIAN_W), sum(admin2020_2$ASIAN_TOTAL))
 })
 
 test_that("Number of total black men plus total black women equals total black people in Admissions Fall 2020 df is correct", {
@@ -68,7 +68,7 @@ test_that("Number of total black men plus total black women equals total black p
     na.omit(BLACK_TOTAL) %>%
     na.omit(BLACK_M) %>%
     na.omit(BLACK_W)
-  expect_equal(sum(admin2020$BLACK_M + admin2020$BLACK_W), sum(admin2020$BLACK_TOTAL))
+  expect_equal(sum(admin2020_2$BLACK_M + admin2020_2$BLACK_W), sum(admin2020_2$BLACK_TOTAL))
 })
 
 test_that("Number of total hispanic men plus total hispanic women equals total hispanics in Admissions Fall 2020 df is correct", {
@@ -76,7 +76,7 @@ test_that("Number of total hispanic men plus total hispanic women equals total h
     na.omit(HISP_TOTAL) %>%
     na.omit(HISP_M) %>%
     na.omit(HISP_W)
-  expect_equal(sum(admin2020$HISP_M + admin2020$HISP_W), sum(admin2020$HISP_TOTAL))
+  expect_equal(sum(admin2020_2$HISP_M + admin2020_2$HISP_W), sum(admin2020_2$HISP_TOTAL))
 })
 
 test_that("Number of total native hawaiian or pacific islander men plus total native hawaiian or pacific islander women equals total native hawaiian or pacific islanders in Admissions Fall 2020 df is correct", {
@@ -84,7 +84,7 @@ test_that("Number of total native hawaiian or pacific islander men plus total na
     na.omit(NHPI_TOTAL) %>%
     na.omit(NHPI_M) %>%
     na.omit(NHPI_W)
-  expect_equal(sum(admin2020$NHPI_M + admin2020$NHPI_W), sum(admin2020$NHPI_TOTAL))
+  expect_equal(sum(admin2020_2$NHPI_M + admin2020_2$NHPI_W), sum(admin2020_2$NHPI_TOTAL))
 })
 
 test_that("Number of total white men plus total white women equals total whites in Admissions Fall 2020 df is correct", {
@@ -92,7 +92,7 @@ test_that("Number of total white men plus total white women equals total whites 
     na.omit(WHITE_TOTAL) %>%
     na.omit(WHITE_M) %>%
     na.omit(WHITE_W)
-  expect_equal(sum(admin2020$WHITE_M + admin2020$WHITE_W), sum(admin2020$WHITE_TOTAL))
+  expect_equal(sum(admin2020_2$WHITE_M + admin2020_2$WHITE_W), sum(admin2020_2$WHITE_TOTAL))
 })
 
 test_that("Number of total bi or multiracial men plus total bi or multiracial women equals total bi or multiracial in Admissions Fall 2020 df is correct", {
@@ -100,7 +100,7 @@ test_that("Number of total bi or multiracial men plus total bi or multiracial wo
     na.omit(MULT_TOTAL) %>%
     na.omit(MULT_M) %>%
     na.omit(MULT_W)
-  expect_equal(sum(admin2020$MULT_M + admin2020$MULT_W), sum(admin2020$MULT_TOTAL))
+  expect_equal(sum(admin2020_2$MULT_M + admin2020_2$MULT_W), sum(admin2020_2$MULT_TOTAL))
 })
 
 test_that("Number of total 'race unknown' men plus total 'race unknown' women equals total 'race unknown' in Admissions Fall 2020 df is correct", {
@@ -108,7 +108,7 @@ test_that("Number of total 'race unknown' men plus total 'race unknown' women eq
     na.omit(UNKNOWN_TOTAL) %>%
     na.omit(UNKNOWN_M) %>%
     na.omit(UNKNOWN_W)
-  expect_equal(sum(admin2020$UNKNOWN_M + admin2020$UNKNOWN_W), sum(admin2020$UNKNOWN_TOTAL))
+  expect_equal(sum(admin2020_2$UNKNOWN_M + admin2020_2$UNKNOWN_W), sum(admin2020_2$UNKNOWN_TOTAL))
 })
 
 test_that("Number of total 'nonresident alien' men plus total 'nonresident alien' women equals total 'nonresident alien' in Admissions Fall 2020 df is correct", {
@@ -116,7 +116,7 @@ test_that("Number of total 'nonresident alien' men plus total 'nonresident alien
     na.omit(NRA_TOTAL) %>%
     na.omit(NRA_M) %>%
     na.omit(NRA_W)
-  expect_equal(sum(admin2020$NRA_M + admin2020$NRA_W), sum(admin2020$NRA_TOTAL))
+  expect_equal(sum(admin2020_2$NRA_M + admin2020_2$NRA_W), sum(admin2020_2$NRA_TOTAL))
 })
 
 test_that("Number of total of each race equals total in Admissions Fall 2020 df is correct", {
@@ -130,5 +130,7 @@ test_that("Number of total of each race equals total in Admissions Fall 2020 df 
     na.omit(MULT_TOTAL) %>%
     na.omit(UNKNOWN_TOTAL) %>%
     na.omit(NRA_TOTAL)
-  expect_equal(sum(admin2020$NATIVE_TOTAL + admin2020$ASIAN_TOTAL + admin2020$BLACK_TOTAL + admin2020$HISP_TOTAL + admin2020$NHPI_TOTAL + admin2020$WHITE_TOTAL + admin2020$MULT_TOTAL + admin2020$UNKNOWN_TOTAL + admin2020$NRA_TOTAL), sum(admin2020$TOTAL))
+  expect_equal(sum(admin2020_2$NATIVE_TOTAL + admin2020_2$ASIAN_TOTAL + admin2020_2$BLACK_TOTAL + admin2020_2$HISP_TOTAL + admin2020_2$NHPI_TOTAL + admin2020_2$WHITE_TOTAL + admin2020_2$MULT_TOTAL + admin2020_2$UNKNOWN_TOTAL + admin2020_2$NRA_TOTAL), sum(admin2020_2$TOTAL))
 })
+
+
