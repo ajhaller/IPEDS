@@ -22,7 +22,15 @@ acceptance_rate <- function (institution_id) {
   df <- left_join(adm2020, dir_info2020, by = "INSTITUTION_ID")
   institution <- df$INSTITUTION[row]
 
-  acceptance <- round(adm2020$ADMSSN[row]/adm2020$APPLCN[row] * 100, 2)
+  # Error Handling
+
+  list <- df$INSTITUTION_ID
+
+  if (!(institution_id %in% list) | !(class(institution_id) == "numeric")) {
+    stop("Please input an institution id (numeric) listed in the `dir_info2020` dataset.")
+  }
+
+  acceptance <- round(adm2020$ADMSSN[row]/adm2020$APPLCN[row] * 100, 0)
 
   sen1 <- "The Acceptance Rate for"
   sen2 <- "is"

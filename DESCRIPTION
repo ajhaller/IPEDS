@@ -22,4 +22,5 @@ Imports:
     tidyverse,
     tidyr,
     purrr,
-    rlang
+    rlang,
+    emoji
