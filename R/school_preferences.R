@@ -38,7 +38,7 @@ globalVariables(c("dir_info2020", "fin_aid1920", "fall_enroll2020", "admin2020",
 #' @param room_price  (numeric) Price for room (0-9990)
 #' @param board_price  (numeric) Price for board (0-9760)
 #' @param app_fee  (numeric) Price for application fee (0-99)
-#' @return A data frame of the institution that fit inputted preferences. For arguments that return percentages, the user can expect institutions that meet that percentage or higher.
+#' @return A data frame of the institution that fit inputted preferences. For arguments that represent percentages, the user can expect institutions that meet that percentage or higher; for arguments that represent amounts, the user can expect institutions that meet that amount or lower.
 #' @examples
 #' school_preferences(size = 2, alt_credits = "Yes", diversity_students = 30, diversity_staff = 20)
 #' school_preferences(size = 3, daycare_service = "Yes", app_fee = 50, region = "Southeast")
