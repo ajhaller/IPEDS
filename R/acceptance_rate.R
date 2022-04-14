@@ -1,5 +1,5 @@
 globalVariables(c("acceptance_rate", "institution_id", "row", "adm2020", "INSTITUTION_ID", "institution",
-                  "acceptance", "sen1", "sen2", "list"))
+                  "acceptance", "df"))
 
 
 #' Function for getting the acceptance rate by institution
@@ -12,7 +12,6 @@ globalVariables(c("acceptance_rate", "institution_id", "row", "adm2020", "INSTIT
 #' acceptance_rate(167835)
 #' acceptance_rate(100830)
 #' @import dplyr
-#' @importFrom emoji emoji
 #' @export
 
 acceptance_rate <- function (institution_id) {
@@ -27,13 +26,14 @@ acceptance_rate <- function (institution_id) {
   list <- df$INSTITUTION_ID
 
   if (!(institution_id %in% list) | !(class(institution_id) == "numeric")) {
-    stop("Please input an institution id (numeric) listed in the `dir_info2020` dataset.")
+    stop("Please input an institution id (numeric) listed in the `adm2020` dataset.")
   }
 
   acceptance <- round(adm2020$ADMSSN[row]/adm2020$APPLCN[row] * 100, 0)
 
-  sen1 <- "The Acceptance Rate for"
-  sen2 <- "is"
-  cat(emoji("star"), sen1, institution, sen2, acceptance, '%', emoji("star"))
 
+  df <- tibble(Institution = c(institution),
+                   Acceptance_Rate = c(acceptance))
+
+  return(df)
 }
