@@ -1,5 +1,6 @@
 
 #'@import dplyr
+#'@import tidyverse
 
 globalVariables(c("fin_aid1920", "adm_2020", "offerings2020", "dir_info2020", "INSTITUTION", "INT_SIZE", "FT_enroll", "PT_enroll", "AVG_AID", "AVG_AWRD", "CITY", "STATE",
                   "BEA_REG", "LOCALE", "CALSYS", "adm_tscores", "R_B_PRICE", "APPLFEEU", "ACADEMIC", "AP",
