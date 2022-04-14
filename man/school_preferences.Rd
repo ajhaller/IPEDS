@@ -75,7 +75,7 @@ school_preferences(
 \item{app_fee}{(numeric) Price for application fee (0-99)}
 }
 \value{
-A data frame of the institution that fit inputted preferences. For arguments that return percentages, the user can expect institutions that meet that percentage or higher.
+A data frame of the institution that fit inputted preferences. For arguments that represent percentages, the user can expect institutions that meet that percentage or higher; for arguments that represent amounts, the user can expect institutions that meet that amount or lower.
 }
 \description{
 Lists the names of institutions that fit inputted preferences
