@@ -55,13 +55,13 @@ library(IPEDS)
 ## Example: Admissions and Test Scores for Fall 2020
 
 ```{r}
-head(adm2020[,c(1:2, 11, 17, 30, 31, 34, 35)], 5)
+head(adm2020)
 ```
 
 ## Example: Directory Information for 2020
 
 ```{r}
-head(dir_info2020[,c(1:2,4:5)],5) 
+head(dir_info2020) 
 ```
 
 ## Functionality
