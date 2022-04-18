@@ -69,9 +69,9 @@ head(adm2020)
 ``` r
 ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
   geom_bar() +
-  labs(title = "Count of Schools vs. Test Score Requirement",
+  labs(title = "Amount of Schools vs. Test Score Requirement",
        x = "Test Score Requirement",
-       y = "Count of Schools") +
+       y = "Amount of Schools") +
   scale_fill_discrete(name = "Test Score Requirement",
                       labels = c("Considered_but_not_required" = "Considered but not Required",
                                  "Neither_required_nor_recommended" = "Neither Required nor Recommended")) +
