@@ -64,6 +64,23 @@ head(adm2020)
 #> 6         100830 Required                      Recommended    Required Neither_required_nor_recommended Neither_required_nor_recommended Neither_required_nor_recommended    Required                         Required Neither_required_nor_recommended   4606    1553    3053   4401    1473    2928   674   223   451       641         203         438        33          20          13      35       5     561      83       480       575        430        515     18     23         17         24         16         22
 ```
 
+### Data Visualization
+
+``` r
+ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
+  geom_bar() +
+  labs(title = "Count of Schools vs. Test Score Requirement",
+       x = "Test Score Requirement",
+       y = "Count of Schools") +
+  scale_fill_discrete(name = "Test Score Requirement",
+                      labels = c("Considered_but_not_required" = "Considered but not Required",
+                                 "Neither_required_nor_recommended" = "Neither Required nor Recommended")) +
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+
 ## Example: Directory Information for 2020
 
 ``` r
