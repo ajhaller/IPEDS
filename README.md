@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# IPEDS
+# IPEDS <img src="data-raw/Sticker/hex_IPEDS.png" align="right" height=140/>
 
 <!-- badges: start -->
 
@@ -45,7 +45,7 @@ library(IPEDS)
 -   `dir_info2020`: dataset of Directory Information for 2020
 -   `fall_enroll2020`: dataset of Fall Enrollment for 2020
 -   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
--   `offerings2020`: dataset of Instituional offerings for 2020
+-   `offerings2020`: dataset of Institutional Offerings for 2020
 -   `relig_aff`: dataset of Religious Affiliations (from
     `offerings2020`)
 -   `staff_cat`: dataset of Staff Categories based on
@@ -101,17 +101,12 @@ admission_reqs("Smith College")
 ```
 
 ``` r
-school_preferences(financial_aid = 70, size = 2, region = "New England", diversity_staff = 27) %>% select(c(1:3),6)
-#>                            Institution Institution ID
-#> 1 Eastern Connecticut State University         129215
-#> 2                     Clark University         165334
-#> 3                Mount Holyoke College         166939
-#> 4                        Smith College         167835
-#>   % of Students Recieved Aid Staff Diversity
-#> 1                         79              34
-#> 2                         91              31
-#> 3                         76              37
-#> 4                         71              27
+school_preferences(financial_aid = 70, size = 2, region = "New England", diversity_staff = 27)
+#>                            Institution Institution ID % of Students Recieved Aid Institution Size Student Diversity Staff Diversity % of Students Disabled      Region Type of Institution Religious Affiliation Calendar System Open Admissions Policy Years Required For Entering       Vet Programs     Alternative Credit   Alternative Tuition Payment                         Distance Education        Counseling Services        Employment Services           Daycare Services Live On-Campus Room Price Board Price Undergraduate Application Fee Graduate Application Fee
+#> 1 Eastern Connecticut State University         129215                         79                2                31              34                      2 New England                   1                    -2               1                      2                          -2 Programs Available Takes alternate credit Takes alternate tuition plans    Offers distance education opportunities Offers counseling services Offers employment services Offers no daycare services              2       8270        6164                            50                       50
+#> 2                     Clark University         165334                         91                2                42              31                      2 New England                   3                    -2               1                      2                          -2 Programs Available Takes alternate credit Takes alternate tuition plans    Offers distance education opportunities Offers counseling services Offers employment services Offers no daycare services              2       5800        4000                             0                       75
+#> 3                Mount Holyoke College         166939                         76                2                55              37                      2 New England                   3                    -2               1                      2                          -2 Programs Available Takes alternate credit Takes alternate tuition plans    Offers distance education opportunities Offers counseling services Offers employment services Offers no daycare services              2       7860        8160                            60                       50
+#> 4                        Smith College         167835                         71                2                51              27                      1 New England                   3                    -2               1                      2                          -2 Programs Available Takes alternate credit Takes alternate tuition plans Offers no distance education opportunities Offers counseling services Offers employment services Offers no daycare services              2       9400        9360                             0                       60
 ```
 
 ``` r

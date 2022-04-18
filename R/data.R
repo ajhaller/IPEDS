@@ -543,6 +543,7 @@
 #' The IPEDS package contains data on Postsecondary Institution Statistics in 2020. The package allows easy access to a wide variety of information regarding Postsecondary Institutions, its students, faculty, and their demographics, financial aid, educational and recreational offerings, and completions. This package can be used by students, college counselors, or involved parents interested in pursuing higher education, considering their options, and securing admission into their school of choice.
 #'
 #' @section Datasets:
+#' \if{html}{\figure{hex_IPEDS.png}{options: align = "right" width="45\%" alt="Figure: hex_IPEDS.png"}}
 #' \itemize{
 #'   \item Admissions and Test Scores for Fall 2020: [adm2020]
 #'   \item Administration for 2020: [admin2020]

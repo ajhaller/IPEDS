@@ -5,31 +5,31 @@ globalVariables(c("adm2020", "dir_info2020", "hs_gpa", "hs_record", "adm_tscores
 #'
 #' Lists and orders requirements for admission by priority
 #'
-#' @param institution Institution name. Find these on the `dir_info2020` dataset.
+#' @param institution_id Institution ID. Find these on the `dir_info2020` dataset.
 #' @return A tibble of the requirements for the inputted institution.
 #' @examples
-#' admission_reqs("Smith College")
-#' admission_reqs("Yale University")
+#' admission_reqs(167835)
+#' admission_reqs(130794)
 #' @import dplyr
 #' @import tidyr
 #' @export
-admission_reqs <- function(institution) {
+admission_reqs <- function(institution_id) {
 
   df <- full_join(adm2020, dir_info2020, by = "INSTITUTION_ID")
 
   # Error Handling
 
-  if (typeof(institution) != "character") {
-    stop("Please make sure the institution you're inputting is a character string.")
+  if (typeof(institution_id) != "double") {
+    stop("Please make sure the institution you're inputting is numeric.")
   }
 
-  if (!(institution %in% df$INSTITUTION)) {
-    stop("This instituion could not be found. Please check the `dir_info2020` dataframe for accurate spelling of your desired institution.")
+  if (!(institution_id %in% df$INSTITUTION_ID)) {
+    stop("This instituion could not be found. Please check the `dir_info2020` dataframe for your desired instituion id.")
   }
 
   # Identify wanted institution
 
-  row <- which(df$INSTITUTION == institution)
+  row <- which(df$INSTITUTION_ID == institution_id)
 
   # Extract and order requirements for admission
 
@@ -49,7 +49,7 @@ admission_reqs <- function(institution) {
   # Print requirements
 
   sen1 <- "The Requirements for"
-  name <- institution
+  name <- df$INSTITUTION[row]
   sen2 <- "are:"
 
   cat(sen1, name, sen2, "\n")
