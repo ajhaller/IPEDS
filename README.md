@@ -84,7 +84,7 @@ school_preferences # provides a dataset of institution according to your prefere
 ```
 
 ``` r
-admission_reqs("Smith College")
+admission_reqs(167835)
 #> The Requirements for Smith College are: 
 #> # A tibble: 9 × 2
 #>   Requirements                            Priority                        

@@ -22,6 +22,7 @@ LazyData: true
 Imports: 
     dplyr,
     tidyverse,
+    ggplot2,
     tidyr,
     purrr,
     rlang,

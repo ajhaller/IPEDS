@@ -105,7 +105,7 @@ school_preferences(size = 2, region = "New England", alt_credits = "Yes", divers
 If Sophia is interested in what it takes to apply to one of her preferred schools, Sophia can use the `admission_reqs` function that provides her with a list of the application requirements.
 
 ```{r}
-admission_reqs("Smith College")
+admission_reqs(167835)
 ```
 
 Now Sophia knows which application materials are required and recommended, and which ones are not necessary at all.
