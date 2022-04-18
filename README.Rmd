@@ -46,7 +46,7 @@ library(IPEDS)
 -   `dir_info2020`: dataset of Directory Information for 2020
 -   `fall_enroll2020`: dataset of Fall Enrollment for 2020
 -   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
--   `offerings2020`: dataset of Instituional offerings for 2020
+-   `offerings2020`: dataset of Institutional Offerings for 2020
 -   `relig_aff`: dataset of Religious Affiliations (from `offerings2020`)
 -   `staff_cat`: dataset of Staff Categories based on `admin2020$staff_cat`
 

@@ -538,4 +538,29 @@
 #' @docType data
 "staff_cat"
 
-
+#' IPEDS: A Data Package from The Integrated Postsecondary Education Data System
+#'
+#' The IPEDS package contains data on Postsecondary Institution Statistics in 2020. The package allows easy access to a wide variety of information regarding Postsecondary Institutions, its students, faculty, and their demographics, financial aid, educational and recreational offerings, and completions. This package can be used by students, college counselors, or involved parents interested in pursuing higher education, considering their options, and securing admission into their school of choice.
+#'
+#' @section Datasets:
+#' \itemize{
+#'   \item Admissions and Test Scores for Fall 2020: [adm2020]
+#'   \item Administration for 2020: [admin2020]
+#'   \item Completions in 2020: [complete2020]
+#'   \item Conferences for Sports: [conference]
+#'   \item Directory Information for 2020: [dir_info2020]
+#'   \item Fall Enrollment for 2020: [fall_enroll2020]
+#'   \item Financial Aid Statistics for 2019-2020: [fin_aid1920]
+#'   \item Institutional Offerings for 2020: [offerings2020]
+#'   \item Religious Affiliations of Institutions: [relig_aff]
+#'   \item Staff Categories of Faculty within Institutions: [staff_cat]
+#' }
+#'
+#' @section Authors:
+#' \itemize{
+#'   \item Aushanae Haller: \url{https://github.com/ajhaller}
+#'   \item Alejandra Munoz Garcia: \url{https://github.com/alejanmg}
+#' }
+#'
+#' @docType package
+#' @name IPEDS
