@@ -40,9 +40,14 @@ library(IPEDS)
 -   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
 -   `admin2020`: dataset of Administration for 2020
 -   `complete2020`: dataset of Completions in 2020
+-   `conference`: dataset of Conferences for sports (from
+    `offerings2020`)
 -   `dir_info2020`: dataset of Directory Information for 2020
 -   `fall_enroll2020`: dataset of Fall Enrollment for 2020
 -   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
+-   `offerings2020`: dataset of Instituional offerings for 2020
+-   `relig_aff`: dataset of Religious Affiliations (from
+    `offerings2020`)
 -   `staff_cat`: dataset of Staff Categories based on
     `admin2020$staff_cat`
 
@@ -74,6 +79,7 @@ head(dir_info2020[,c(1:2,4:5)],5)
 
 ``` r
 admission_reqs # extracts admission requirements for any institution
+acceptance_rate # calcuates acceptance rate for any institution
 school_preferences # provides a dataset of institution according to your preferences
 ```
 
@@ -108,7 +114,16 @@ school_preferences(financial_aid = 70, size = 2, region = "New England", diversi
 #> 4                         71              27
 ```
 
-For further examples and capabilities, please see the \[vignette\]
+``` r
+acceptance_rate(167835)
+#> # A tibble: 1 × 2
+#>   Institution   Acceptance_Rate
+#>   <chr>                   <dbl>
+#> 1 Smith College              37
+```
+
+For further examples and capabilities, please see the
+[vignette](https://github.com/ajhaller/IPEDS/blob/main/vignettes/IPEDS-vignette.Rmd)
 
 ## Contributors
 

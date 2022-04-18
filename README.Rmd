@@ -87,7 +87,7 @@ acceptance_rate(167835)
 ```
 
 
-For further examples and capabilities, please see the [vignette]
+For further examples and capabilities, please see the [vignette](https://github.com/ajhaller/IPEDS/blob/main/vignettes/IPEDS-vignette.Rmd)
 
 ## Contributors
 
