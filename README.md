@@ -9,6 +9,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/IPEDS)](https://CRAN.R-project.org/package=IPEDS)
+[![Travis-CI Build
+Status](https://travis-ci.org/ajhaller/IPEDS.svg?branch=master)](https://travis-ci.org/ajhaller/IPEDS)
 <!-- badges: end -->
 
 `IPEDS` is a package that contains datasets from The Integrated
@@ -75,7 +77,6 @@ ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
   scale_fill_discrete(name = "Test Score Requirement",
                       labels = c("Considered_but_not_required" = "Considered but not Required",
                                  "Neither_required_nor_recommended" = "Neither Required nor Recommended")) +
-  theme_dark() +
   theme(axis.text.x=element_blank(),
         axis.ticks.x=element_blank())
 ```
