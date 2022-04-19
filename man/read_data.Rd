@@ -16,6 +16,6 @@ A dataframe with desired information
 Outputs data frame with desired information directly from IPEDS
 }
 \examples{
-read_data(IC2020)
-read_data(HD2020)
+read_data("IC2020")
+read_data("HD2020")
 }
