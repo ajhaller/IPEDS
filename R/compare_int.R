@@ -24,9 +24,7 @@ globalVariables(c("dir_info", "fin_aid1920", "adm2020", "offerings2020","INSTITU
 #' @import dplyr
 #' @import tidyr
 #' @export
-
-
-compare_int <- function(Institution1_ID = 0, Institution2_ID = 0) {
+compare_int <- function(Institution1_ID, Institution2_ID) {
 
 
   # Errors
