@@ -13,7 +13,10 @@ css: report_styles.css
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.width = 6, fig.height = 4.5
+  fig.width = 6, 
+  fig.height = 4.5,
+  warnings = FALSE,
+  errors = FALSE
 )
 ```
 
