@@ -25,5 +25,6 @@ Imports:
     dplyr,
     tidyr,
     rlang,
-    readr
+    readr,
+    utils
 VignetteBuilder: knitr
