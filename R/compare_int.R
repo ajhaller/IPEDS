@@ -20,7 +20,7 @@ globalVariables(c("dir_info", "fin_aid1920", "adm2020", "offerings2020","INSTITU
 #' @return A 2 column table with the qualities of the 2 institutions being compared in the rows.
 #' @examples
 #' compare_int(Institution1_ID = 100654, Institution2_ID = 100663)
-#' compare_int(Institution1_ID = "University of California Los Angeles", Institution2_ID = "University of California Berkeley")
+#' compare_int(167835, 168218)
 #' @import dplyr
 #' @import tidyr
 #' @import tidyverse
