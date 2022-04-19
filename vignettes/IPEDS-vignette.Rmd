@@ -103,7 +103,7 @@ school_preferences(size = 2, region = "New England", alt_credits = "Yes", divers
 
 ### Example 2
 
-**What are the admission requirements for my preffered institution?**
+**What are the admission requirements for my preferred institution?** 
 
 If Sophia is interested in what it takes to apply to one of her preferred schools, Sophia can use the `admission_reqs` function that provides her with a list of the application requirements.
 
@@ -162,3 +162,20 @@ ggplot(data, aes(x = `Staff Diversity`, y = `Student Diversity`, color = `Instit
 
 And they can conclude here doesn't seem to be much of a difference depending on Institution Size in 
 New England Institutions.
+
+### Example 4:
+
+**What are the main similarities and differences between my two top college choices?**  
+
+Amanda, a high school senior, has to decide where she will attend college soon, but is still debating between her top two choices. 
+
+Using the `compare_int` function, Amanda can take the two schools she is interested in and compare them side by side in a table that lists some of the major qualities of each institution. 
+
+```{r}
+
+compare_int(100654, 100663)
+
+```
+
+
+
