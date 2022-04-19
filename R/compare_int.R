@@ -32,17 +32,13 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
   schools <- unique(dir_info2020$INSTITUTION_ID)
 
 
-  if (Institution1_ID < 100000 | Institution1_ID > 500000) {
-    if (!(Institution1_ID %in% schools) == TRUE) {
-      stop("For `Institution1_ID` please input a valid Institution ID, ranging from 100000 - 500000")
-    }
-  }
+  if (Institution1_ID < 100000  | Institution1_ID > 500000 | !(Institution1_ID %in% schools) == TRUE) {
+      stop("For `Institution1_ID` please input a valid Institution ID from `dir_info2020`")
+      }
 
-  else if (Institution2_ID < 100000 | Institution2_ID > 500000) {
-    if (!(Institution2_ID %in% schools) == TRUE) {
-      stop("For `Institution2_ID` please input a valid Institution ID, ranging from 100000 - 500000")
+  else if (Institution2_ID < 100000 | Institution2_ID > 500000 | !(Institution2_ID %in% schools) == TRUE) {
+          stop("For `Institution2_ID` please input a valid Institution ID from `dir_info2020`")
     }
-  }
 
   # combine dataframes into one
 
