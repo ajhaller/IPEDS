@@ -2,6 +2,7 @@
 
 export(acceptance_rate)
 export(admission_reqs)
+export(compare_int)
 export(school_preferences)
 import(dplyr)
 import(tidyr)

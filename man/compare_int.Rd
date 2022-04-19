@@ -19,5 +19,5 @@ Outputs Table Comparing Various Qualities Each Institution Has
 }
 \examples{
 compare_int(Institution1_ID = 100654, Institution2_ID = 100663)
-compare_int(Institution1_ID = "University of California Los Angeles", Institution2_ID = "University of California Berkeley")
+compare_int(167835, 168218)
 }
