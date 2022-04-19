@@ -64,7 +64,7 @@
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
-#' \item{STAFF_CAT}{Instructional staff category (1	= All full-time instructional staff; 100 = Instructional staff with faculty status; 101 = Instructional staff, professors; 102 = Instructional staff, associate professors; 103	= Instructional staff, assistant professors; 104 = Instructional staff, instructors; 105 = Instructional staff, lecturers; 106 = Instructional staff, no academic rank; 200 = Tenured total; 201 = Tenured, professors; 202	= Tenured, associate professors; 203 = Tenured, assistant professors; 204 = Tenured, instructors; 205 = Tenured, lecturers; 206	= Tenured, no academic rank; 300 = On-Tenure track total; 301	= On-tenure track, professors; 302 = On-tenure track, associate professors; 303	= On-tenure track, assistant professors; 304 = On-tenure track, instructors; 305 = On-tenure track, lecturers; 306 = On-tenure track, no academic rank; 400	= Not on tenure track/No tenure system system total; 401 = Not on tenure/no tenure system, professors; 402 = Not on tenure/no tenure system, associate professors; 403 = Not on tenure/no tenure system, assistant professors; 404 = Not on tenure/no tenure system, instructors; 405	= Not on tenure/no tenure system, lecturers; 406 = Not on tenure/no tenure system, no academic rank; 410 = Not on tenure track/no tenure system, multi-year and indefinite contracts, total; 411 = Not on tenure track/no tenure system, multi-year and indefinite contracts, professors; 412	= Not on tenure track/no tenure system, multi-year and indefinite contracts, asssociate professors; 413	= Not on tenure track/no tenure system, multi-year and indefinite contracts, assistant professors; 414 = Not on tenure track/no tenure system, multi-year and indefinite contracts, instructors; 415 = Not on tenure track/no tenure system, multi-year and indefinite contracts contract,lecturers; 416 = Not on tenure track/no tenure system, multi-year and indefinite contracts, no academic rank; 420	= Not on tenure track/no tenure system, annual contract, total; 421	= Not on tenure track/no tenure system, annual contract, professors; 422 = Not on tenure track/no tenure system, annual contract, asssociate professors; 423 = Not on tenure track/no tenure system, annual contract, assistant professors; 424	= Not on tenure track/no tenure system, annual contract, instructors; 425	= Not on tenure track/no tenure system, annual contract,lecturers; 426 = Not on tenure track/no tenure system, annual contract, no academic rank; 430	= Not on tenure track/no tenure system, less-than-annual contract, total; 431	= Not on tenure track/no tenure system, less-than-annual contract, professors; 432 = Not on tenure track/no tenure system, less-than-annual contract, asssociate professors; 433 = Not on tenure track/no tenure system, less-than-annual contract, assistant professors; 434	= Not on tenure track/no tenure system, less-than-annual contract, instructors; 435	= Not on tenure track/no tenure system, less-than-annual contract,lecturers; 436 = Not on tenure track/no tenure system, less-than-annual contract, no academic rank; 440	= Not on tenure track/no tenure system, multi-year contract, total; 441	= Not on tenure track/no tenure system, multi-year contract, professors; 442 = Not on tenure track/no tenure system, multi-year contract, associate professors; 443	= Not on tenure track/no tenure system, multi-year contract, assistant professors; 444 = Not on tenure track/no tenure system, multi-year contract, instructors; 445 = Not on tenure track/no tenure system, multi-year contract, lecturers; 446 = Not on tenure track/no tenure system, multi-year contract, no academic rank; 450	= Not on tenure track/no tenure system, multi-year contract, total; 451	= Not on tenure track/no tenure system, indefinite contract, professors; 452 = Not on tenure track/no tenure system, indefinite contract, associate professors; 453	= Not on tenure track/no tenure system, indefinite contract, assistant professors; 454 = Not on tenure track/no tenure system, indefinite contract, instructors; 455 = Not on tenure track/no tenure system, indefinite contract, lecturers; 456 = Not on tenure track/no tenure system, indefinite contract, no academic rank; 500	= Without faculty status)}
+#' \item{STAFF_CAT}{Staff Category (Refer to `staff_cat` dataset for more details.)}
 #' \item{FACSTAT}{Faculty and tenure status (0 = All full-time instructional staff; 10 = With faculty status, total; 20	= With faculty status, tenured; 30 = With faculty status, on tenure track; 40	= With faculty status not on tenure track/No tenure system, total; 41	= With faculty status not on tenure track/No tenure system, multi-year and indefinite contract; 44 = With faculty status not on tenure track/No tenure system, multi-year contract; 45 = With faculty status not on tenure track/No tenure system, indefinite contract; 42 = With faculty status not on tenure track/No tenure system, annual contract; 43 = With faculty status not on tenure track/No tenure system, less-than-annual contract; 50 = Without faculty status)}
 #' \item{ARANK}{Academic rank: a factor with 7 levels: `All ranks`, `Professors`, `Associate professors`, `Assistant professors`, `Instructors`, `Lecturers` and `No academic rank`}{Academic rank}
 #' \item{TOTAL}{Grand total individuals}
@@ -538,4 +538,30 @@
 #' @docType data
 "staff_cat"
 
-
+#' IPEDS: A Data Package from The Integrated Postsecondary Education Data System
+#'
+#' The IPEDS package contains data on Postsecondary Institution Statistics in 2020. The package allows easy access to a wide variety of information regarding Postsecondary Institutions, its students, faculty, and their demographics, financial aid, educational and recreational offerings, and completions. This package can be used by students, college counselors, or involved parents interested in pursuing higher education, considering their options, and securing admission into their school of choice.
+#'
+#' @section Datasets:
+#' \if{html}{\figure{hex_IPEDS.png}{options: align = "right" width="45\%" alt="Figure: hex_IPEDS.png"}}
+#' \itemize{
+#'   \item Admissions and Test Scores for Fall 2020: [adm2020]
+#'   \item Administration for 2020: [admin2020]
+#'   \item Completions in 2020: [complete2020]
+#'   \item Conferences for Sports: [conference]
+#'   \item Directory Information for 2020: [dir_info2020]
+#'   \item Fall Enrollment for 2020: [fall_enroll2020]
+#'   \item Financial Aid Statistics for 2019-2020: [fin_aid1920]
+#'   \item Institutional Offerings for 2020: [offerings2020]
+#'   \item Religious Affiliations of Institutions: [relig_aff]
+#'   \item Staff Categories of Faculty within Institutions: [staff_cat]
+#' }
+#'
+#' @section Authors:
+#' \itemize{
+#'   \item Aushanae Haller: \url{https://github.com/ajhaller}
+#'   \item Alejandra Munoz Garcia: \url{https://github.com/alejanmg}
+#' }
+#'
+#' @docType package
+#' @name IPEDS

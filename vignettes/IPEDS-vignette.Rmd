@@ -1,0 +1,161 @@
+---
+title: "IPEDS"
+author: "Aushanae Haller, and Alejandra Munoz-Garcia"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{IPEDS}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+css: report_styles.css
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 6, fig.height = 4.5
+)
+```
+
+```{r setup, include=FALSE}
+library(IPEDS)
+library(dplyr)
+library(ggplot2)
+options(width=10000)
+```
+
+The `IPEDS` package contains data on Post Secondary Institution Statistics in 2020. Some datasets have been filtered to exclude imputation variables, while other datasets are included in full. Details are given below.
+
+## Inspiration
+
+We wanted to create a package that can be used with just a basic R understanding, for prospective students wanting to attend undergraduate or graduate colleges and universities. The package `IPEDS` allows easy access to a wide variety of information regarding Postsecondary Institutions, its current students, faculty, and their demographics, financial aid, educational and recreational offerings, and completions. College search websites are sometimes a little vague in it's statistics for an institution; this package aims to provide a closer idea of what their institution of interest is really like.
+
+## Other notes
+
+-  We dropped variables that indicated whether the data was imputed or not, in order to compress its size
+
+## Datasets Included
+
+All the datasets are taken from [IPEDS] (https://nces.ed.gov/ipeds/use-the-data)
+
+-   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
+-   `admin2020`: dataset of Administration for 2020
+-   `complete2020`: dataset of Completions in 2020
+-   `conference`: dataset of Conferences for sports (from `offerings2020`)
+-   `dir_info2020`: dataset of Directory Information for 2020
+-   `fall_enroll2020`: dataset of Fall Enrollment for 2020
+-   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
+-   `offerings2020`: dataset of Instituional offerings for 2020
+-   `relig_aff`: dataset of Religious Affiliations (from `offerings2020`)
+-   `staff_cat`: dataset of Staff Categories based on `admin2020$staff_cat`
+
+## Who should use this package?
+
+This package can be used by students, college counselors, or involved parents interested in pursuing higher education, considering their options, and securing admission into their school of choice. Additionally, anyone interested in educational statistics can use this data for their research.
+
+## What does the data look like?
+
+Here's the first 5 rows of the `complete2020` dataset
+
+```{r}
+head(complete2020)
+```
+## What can we do with this data?
+
+We can use this package to address many questions such as:
+
+  1. Which institutions have the qualities I'd like in an institution?
+  2. What are the admission requirements for my preferred institution?
+  3. What's the relationship between the diversity of students and the diversity of staff?
+  
+To answer our questions we can make use of the existing functionality the package provides, as well as data wrangling and data visualization techniques. Some examples that address the question are below:
+
+### Example 1:
+
+**Which institutions have the qualities I'd like in an institution?**
+
+Let's say Sophia, a senior at high school, is interested in going to a private college of relatively small size in the New England area that will accept the AP credits she's earned, but is also slightly diverse and helps it's students afford college.
+
+Using the `school_preferences` function, Sophia can find a school that perfectly fits her preferences.
+
+-   size: 2, selects a school size of 1,000 - 4,999 students
+-   region: "New England", selects schools from a particular region
+-   alt_credits: "Yes", selects schools that take either AP, Dual or Life Experience credits
+-   diversity_students: 36, selects schools where 30% of the students are non-white, or higher
+-   financial_aid: 70, selects school where 70% of the students receive financial aid
+-   affiliation: 3, selects private (not for profit) institutions
+
+```{r}
+school_preferences(size = 2, region = "New England", alt_credits = "Yes", diversity_students = 36, financial_aid = 70, affiliation = 3)
+```
+
+The output is a data frame that includes The Institution name, ID, the % of students that receive aid, the size of the institution, the percent of non-white students and staff, the % of disabled students, the region of the institution, type, and other relevant information about the institution.
+
+We can select the columns Sophia is most interested in:
+
+```{r, warning=FALSE}
+school_preferences(size = 2, region = "New England", alt_credits = "Yes", diversity_students = 36, financial_aid = 70, affiliation = 3) %>% 
+  select(`Institution`, `Institution Size`, `Region`, `Alternative Credit`, `Student Diversity`, `% of Students Recieved Aid`, `Type of Institution`)
+```
+
+### Example 2
+
+**What are the admission requirements for my preffered institution?**
+
+If Sophia is interested in what it takes to apply to one of her preferred schools, Sophia can use the `admission_reqs` function that provides her with a list of the application requirements.
+
+```{r}
+admission_reqs(167835)
+```
+
+Now Sophia knows which application materials are required and recommended, and which ones are not necessary at all.
+
+### Example 3
+
+**What's the relationship between the diversity of students and the diversity of staff?**
+
+In another scenario, a educational statistician is interested in the potential relationship between how diverse a student body is and the diversity of their staff. We'll data visualize the % of diversity from the resulting dataframe output by the `school_preferences` function.
+
+```{r, warning=FALSE}
+data <- school_preferences()
+
+ggplot(data, aes(x = `Staff Diversity`, y = `Student Diversity`)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title = "Student Diversity vs. Staff Diversity",
+       y = "Student Diversity (%)",
+       x = "Staff Diversity (%)")
+```
+
+Due to it's functionality, the statistician could also limit their research to explore this relationship to schools only located in the New England area:
+
+```{r, warning=FALSE}
+data <- school_preferences(region = "New England")
+
+ggplot(data, aes(x = `Staff Diversity`, y = `Student Diversity`)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title = "Student Diversity vs. Staff Diversity in New England Institutions",
+       y = "Student Diversity (%)",
+       x = "Staff Diversity (%)")
+```
+
+In both cases, we can see a moderate to strong positive relationship between student and staff diversity; after noting this relationship the statistician could go further by observing the how the size of an institution, can possibly influence this relationship.
+
+```{r, warning=FALSE}
+data <- school_preferences(region = "New England") %>% 
+  filter(`Institution Size` != -1 &`Institution Size` != -2 )
+
+data$`Institution Size` <- as.factor(data$`Institution Size`)
+
+ggplot(data, aes(x = `Staff Diversity`, y = `Student Diversity`, color = `Institution Size`)) +
+  geom_point() +
+  scale_fill_viridis_c(option = "magma") +
+  geom_smooth(method = "lm", aes(color=`Institution Size`), se = FALSE) +
+  labs(title = "Student Diversity vs. Staff Diversity in New England Institutions by Size",
+       y = "Student Diversity (%)",
+       x = "Staff Diversity (%)")
+```
+
+And they can conclude here doesn't seem to be much of a difference depending on Institution Size in 
+New England Institutions.

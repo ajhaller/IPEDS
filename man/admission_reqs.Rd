@@ -4,10 +4,10 @@
 \alias{admission_reqs}
 \title{Function for Admission Requirements for an Institution}
 \usage{
-admission_reqs(institution)
+admission_reqs(institution_id)
 }
 \arguments{
-\item{institution}{Institution name. Find these on the \code{dir_info2020} dataset.}
+\item{institution_id}{Institution ID. Find these on the \code{dir_info2020} dataset.}
 }
 \value{
 A tibble of the requirements for the inputted institution.
@@ -16,6 +16,6 @@ A tibble of the requirements for the inputted institution.
 Lists and orders requirements for admission by priority
 }
 \examples{
-admission_reqs("Smith College")
-admission_reqs("Yale University")
+admission_reqs(167835)
+admission_reqs(130794)
 }
