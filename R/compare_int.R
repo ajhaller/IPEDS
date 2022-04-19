@@ -24,7 +24,6 @@ globalVariables(c("dir_info", "fin_aid1920", "adm2020", "offerings2020","INSTITU
 #' @import dplyr
 #' @import tidyr
 #' @import tidyverse
-#' @import expss
 #' @importFrom rlang is_null
 #' @export
 
@@ -120,11 +119,18 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
 
 
   c_df2 <- c_df %>%
-    filter(`Institution ID` %in% c(Institution1_ID, Institution2_ID)) %>%
-    pivot_longer("Institution ID")
+    filter(`Institution ID` == Institution1_ID | `Institution ID` == Institution2_ID)
+    #filter(`Institution ID` %in% c(Institution1_ID, Institution2_ID)) %>%
+    #pivot_longer("Institution ID")
+
+  df2 <- data.frame(t(c_df2[-1]))
+  colnames(df2) <- c_df2[, 1]
+
+  colnames(df2) <- df2[1,]
+  df2 <- df2[-1,]
 
 
-  return(c_df2)
+  return(df2)
 
 }
 
