@@ -1,4 +1,4 @@
-globalVariables(c("dir_info", "fin_aid1920", "adm2020", "offerings2020","INSTITUTION_ID",
+globalVariables(c("dir_info2020", "fin_aid1920", "adm2020", "offerings2020","INSTITUTION_ID",
                   "INSTITUTION", "INT_SIZE", "FT_enroll", "PT_enroll", "AVG_AID", "AVG_AWRD",
                   "CITY", "STATE", "BEA_REG", "LOCALE", "CALSYS", "adm_tscores", "R_B_PRICE",
                   "APPLFEEU", "ACADEMIC", "AP", "DUAL", "STUDY_ABROAD", "LIVE_ONCAMP","MEALSWK",
