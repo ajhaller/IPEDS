@@ -23,11 +23,10 @@ globalVariables(c("dir_info", "fin_aid1920", "adm2020", "offerings2020","INSTITU
 #' compare_int(167835, 168218)
 #' @import dplyr
 #' @import tidyr
-#' @importFrom rlang is_null
 #' @export
 
 
-compare_int <- function(Institution1_ID, Institution2_ID) {
+compare_int <- function(Institution1_ID = 0, Institution2_ID = 0) {
 
 
   # Errors
