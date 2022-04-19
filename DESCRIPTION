@@ -24,5 +24,6 @@ LazyData: true
 Imports: 
     dplyr,
     tidyr,
-    rlang
+    rlang,
+    readr
 VignetteBuilder: knitr
