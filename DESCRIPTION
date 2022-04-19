@@ -11,6 +11,7 @@ License: MIT + file LICENSE
 Suggests: 
     knitr,
     rmarkdown,
+    purrr,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
@@ -21,10 +22,6 @@ Depends:
 LazyData: true
 Imports: 
     dplyr,
-    tidyverse,
-    ggplot2,
     tidyr,
-    purrr,
-    rlang,
-    emoji
+    rlang
 VignetteBuilder: knitr

@@ -23,7 +23,6 @@ globalVariables(c("dir_info", "fin_aid1920", "adm2020", "offerings2020","INSTITU
 #' compare_int(167835, 168218)
 #' @import dplyr
 #' @import tidyr
-#' @import tidyverse
 #' @importFrom rlang is_null
 #' @export
 
