@@ -9,8 +9,6 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/IPEDS)](https://CRAN.R-project.org/package=IPEDS)
-[![Travis-CI Build
-Status](https://travis-ci.org/ajhaller/IPEDS.svg?branch=master)](https://travis-ci.org/ajhaller/IPEDS)
 <!-- badges: end -->
 
 `IPEDS` is a package that contains datasets from The Integrated
@@ -50,8 +48,8 @@ library(IPEDS)
 -   `offerings2020`: dataset of Institutional Offerings for 2020
 -   `relig_aff`: dataset of Religious Affiliations (from
     `offerings2020`)
--   `staff_cat`: dataset of Staff Categories based on
-    `admin2020$staff_cat`
+-   `staff_cat`: dataset of Staff Categories based on (from `admin2020`
+    dataset, `staff_cat` column).
 
 ## Example: Admissions and Test Scores for Fall 2020
 
@@ -100,8 +98,10 @@ head(dir_info2020)
 
 ``` r
 admission_reqs # extracts admission requirements for any institution
-acceptance_rate # calcuates acceptance rate for any institution
+acceptance_rate # calculates acceptance rate for any institution
 school_preferences # provides a dataset of institution according to your preferences
+compare_int # allows for comparison of two institutions and its qualities 
+read_data # function for importing raw data from IPEDS
 ```
 
 ``` r
