@@ -130,7 +130,6 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
   colnames(df2) <- df2[1,]
   df2 <- df2[-1,]
 
-
   return(df2)
 
 }
