@@ -13,8 +13,8 @@ globalVariables(c("dir_info2020", "fin_aid1920", "adm2020", "offerings2020","INS
 #'
 #' Outputs Table Comparing Various Qualities Each Institution Has
 #'
-#' @param Institution1_ID (numeric) 1st Institution chosen by user to be compared against Institution2 (100000-500000)
-#' @param Institution2_ID (numeric) 2nd Institution chosen by user to be compared against Institution1 (100000-500000)
+#' @param Institution1_ID (numeric) 1st Institution chosen by user to be compared against Institution2
+#' @param Institution2_ID (numeric) 2nd Institution chosen by user to be compared against Institution1
 
 
 #' @return A 2 column table with the qualities of the 2 institutions being compared in the rows.
