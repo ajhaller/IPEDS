@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# IPEDS <img src="data-raw/Sticker/hex_IPEDS.png" align="right" height=140/>
+# IPEDS <img src="data-raw/Sticker/hex_IPEDSII.png" align="right" height=140/>
 
 <!-- badges: start -->
 
@@ -99,8 +99,8 @@ head(dir_info2020)
 ``` r
 admission_reqs # extracts admission requirements for any institution
 acceptance_rate # calculates acceptance rate for any institution
-school_preferences # provides a dataset of institution according to your preferences
-compare_int # allows for comparison of two institutions and its qualities 
+school_preferences # provides a dataset of institutions according to your preferences
+compare_int # function allows comparison of two institutions and its important qualities 
 read_data # function for importing raw data from IPEDS
 ```
 
