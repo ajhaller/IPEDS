@@ -6,7 +6,8 @@ globalVariables(c("dir_info2020", "fin_aid1920", "adm2020", "offerings2020","INS
                   "Average Aid Awarded", "Average Award Size", "City", "State",
                   "Region", "Urbanization", "Calendar System", "Admission Test Scores",
                   "Room & Board Cost", "Application Fee", "Degrees Offered", "AP Credit Accepted",
-                  "Dual Enrollment Credit Accepted", "Study Abroad Programs", "Meals per Week"
+                  "Dual Enrollment Credit Accepted", "Study Abroad Programs", "Meals per Week",
+                  "Freshman Required to Live on Campus"
 ))
 
 #' Function for Comparing (2) Institutions Side by Side, Chosen by User Input
@@ -82,7 +83,7 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
       "AP Credit Accepted" = "AP",
       "Dual Enrollment Credit Accepted" = "DUAL",
       "Study Abroad Programs" = "STUDY_ABROAD",
-      "Required to Live on Campus" = "LIVE_ONCAMP",
+      "Freshman Required to Live on Campus" = "LIVE_ONCAMP",
       "Meals per Week" = "MEALSWK"
 
     ) %>%
@@ -105,7 +106,7 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
            "AP Credit Accepted",
            "Dual Enrollment Credit Accepted",
            "Study Abroad Programs",
-           "Required to Live on Campus",
+           "Freshman Required to Live on Campus",
            "Meals per Week"
     )
 
@@ -114,6 +115,14 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
     filter(`Institution ID` == Institution1_ID | `Institution ID` == Institution2_ID)
     #filter(`Institution ID` %in% c(Institution1_ID, Institution2_ID)) %>%
     #pivot_longer("Institution ID")
+
+  c_df2 <- c_df2 %>%
+    mutate(`Degrees Offered` = ifelse(`Degrees Offered` == 1, "Yes", "No"),
+           `AP Credit Accepted`= ifelse(`AP Credit Accepted` == 1, "Yes", "No"),
+           `Dual Enrollment Credit Accepted`= ifelse(`Dual Enrollment Credit Accepted` == 1, "Yes", "No"),
+           `Study Abroad Programs` = ifelse(`Study Abroad Programs` == 1, "Yes", "No"),
+           `Freshman Required to Live on Campus` = ifelse(`Freshman Required to Live on Campus` == 1, "Yes", "No")
+           )
 
   df2 <- data.frame(t(c_df2[-1]))
   colnames(df2) <- c_df2[, 1]

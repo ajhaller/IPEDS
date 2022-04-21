@@ -7,9 +7,9 @@
 compare_int(Institution1_ID, Institution2_ID)
 }
 \arguments{
-\item{Institution1_ID}{(numeric) 1st Institution chosen by user to be compared against Institution2 (100000-500000)}
+\item{Institution1_ID}{(numeric) 1st Institution chosen by user to be compared against Institution2}
 
-\item{Institution2_ID}{(numeric) 2nd Institution chosen by user to be compared against Institution1 (100000-500000)}
+\item{Institution2_ID}{(numeric) 2nd Institution chosen by user to be compared against Institution1}
 }
 \value{
 A 2 column table with the qualities of the 2 institutions being compared in the rows.
