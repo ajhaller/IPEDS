@@ -16,8 +16,8 @@ Postsecondary Education Data System (IPEDS). IPEDS is a system of
 interrelated surveys conducted annually by the U.S. Department of
 Education’s National Center for Education Statistics (NCES). IPEDS
 annually gathers information from about 6,400 colleges, universities,
-and technical and vocational institutions that participate in the
-federal student aid programs.
+and technical & vocational institutions that participate in the federal
+student aid programs.
 
 ## Installation
 
