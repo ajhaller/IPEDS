@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 options(width=10000)
 ```
 
-# IPEDS <img src="data-raw/Sticker/hex_IPEDS.png" align="right" height=140/>
+# IPEDS <img src="data-raw/Sticker/hex_IPEDSII.png" align="right" height=140/>
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
