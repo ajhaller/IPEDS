@@ -47,7 +47,7 @@ library(IPEDS)
 -   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
 -   `offerings2020`: dataset of Institutional Offerings for 2020
 -   `relig_aff`: dataset of Religious Affiliations (from
-    `offerings2020`)
+    `offerings2020`, `relig_aff` column)
 -   `staff_cat`: dataset of Staff Categories based on (from `admin2020`
     dataset, `staff_cat` column).
 
