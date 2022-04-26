@@ -30,9 +30,9 @@ A data frame of 6264 rows representing institutions and 114 variables
 \item{MASTERS}{What award levels are offered by your institution? Master's degree }
 \item{POST_MASTERS}{What award levels are offered by your institution? Post-master's certificate}
 \item{OTHER}{What award levels are offered by your institution? Other; please specify }
-\item{DOC_RS}{What award levels are offered by your institution? Doctor’s degree - research/scholarship}
-\item{DOC_P}{What award levels are offered by your institution? Doctor’s degree - professional practice}
-\item{DOC_O}{What award levels are offered by your institution? Doctor’s degree - other}
+\item{DOC_RS}{What award levels are offered by your institution? Doctorate's degree - research/scholarship}
+\item{DOC_P}{What award levels are offered by your institution? Doctorate's degree - professional practice}
+\item{DOC_O}{What award levels are offered by your institution? Doctorate's degree - other}
 \item{CALSYS}{Standard academic term (1	= Semester, 2	= Quarter, 3 = Trimester, 4	= Four-one-four plan, 5	= Other academic year, 6 = Differs by program, 7 = Continuous, -2	= Not applicable)}
 \item{FT_UG}{Undergraduate (academic or occupational programs), full-time students}
 \item{FT_FTUG}{First-time degree/certificate-seeking undergraduate, full-time students}
@@ -123,6 +123,10 @@ A data frame of 6264 rows representing institutions and 114 variables
 \item{MEM_TRACK}{NCAA or NAIA member for cross country/track}
 \item{CON_TRACK}{NCAA or NAIA member for cross country/track, conference specified (See \code{conference} dataset for more details.)}
 }
+}
+\source{
+Download from Integrated Postsecondary Education Data System,
+\url{https://nces.ed.gov/ipeds/datacenter/data/IC2020.zip}.
 }
 \usage{
 offerings2020
