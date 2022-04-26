@@ -9,6 +9,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/IPEDS)](https://CRAN.R-project.org/package=IPEDS)
+[![R-CMD-check](https://github.com/ajhaller/IPEDS/workflows/R-CMD-check/badge.svg)](https://github.com/ajhaller/IPEDS/actions)
 <!-- badges: end -->
 
 `IPEDS` is a package that contains datasets from The Integrated

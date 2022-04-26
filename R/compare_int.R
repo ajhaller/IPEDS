@@ -113,8 +113,6 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
 
   c_df2 <- c_df %>%
     filter(`Institution ID` == Institution1_ID | `Institution ID` == Institution2_ID)
-    #filter(`Institution ID` %in% c(Institution1_ID, Institution2_ID)) %>%
-    #pivot_longer("Institution ID")
 
   c_df2 <- c_df2 %>%
     mutate(`Degrees Offered` = ifelse(`Degrees Offered` == 1, "Yes", "No"),
