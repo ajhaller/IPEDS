@@ -174,8 +174,8 @@
 #' \item{STATE}{State abbreviation}
 #' \item{ZIP}{ZIP code}
 #' \item{FIPS}{FIPS state code}
-#' \item{BEA_REG}{Bureau of Economic Analysis (BEA) regions}
-#' \item{AID_ELIG}{OPE Title IV eligibility indicator code}
+#' \item{BEA_REG}{Bureau of Economic Analysis (BEA) regions} (0 = US Service Schools; 1 = New England CT ME MA NH RI VT; 2 = Mid East DE DC MD NJ NY PA; 3 = Great Lakes IL IN MI OH WI; 4 = Plains IA KS MN MO NE ND SD; 5 = Southeast AL AR FL GA KY LA MS NC SC TN VA WV; 6 = Southwest AZ NM OK TX; 7 = Rocky Mountains CO ID MT UT WY; 8 = Far West AK CA HI NV OR WA; 9 = Outlying areas AS FM GU MH MP PR PW VI; -3 = Not available)
+#' \item{AID_ELIG}{OPE Title IV eligibility indicator code (1 = Participates in Title IV federal financial aid programs; 2 = Branch campus of a main campus that participates in Title IV; 3 = Deferment only - limited participation; 5 = Not currently participating in Title IV, has an OPE ID number; 6 = Not currently participating in Title IV, does not have OPE ID number; 7 = Stopped participating during the survey year; 8 = New participants (became eligible during spring collection)}
 #' \item{WEBSITE}{Institution's internet website address}
 #' \item{ADMIN_WEB}{Admissions office web address}
 #' \item{FINAID_WEB}{Financial aid office web address}
@@ -184,29 +184,29 @@
 #' \item{VET_TUITION}{Veterans and Military Servicemembers tuition policies web address}
 #' \item{ATH_GRAD_RATE}{Student-Right-to-Know student athlete graduation rate web address}
 #' \item{DISABILITY_WEB}{Disability Services Web Address}
-#' \item{INT_LEVEL}{Level of institution}
-#' \item{INT_CONTROL}{Control of institution}
-#' \item{UNGRAD_OFFER}{Undergraduate offering}
-#' \item{GRAD_OFFER}{Graduate offering}
-#' \item{HD_OFFER}{Degree-granting status}
-#' \item{HBCU}{Historically Black College or University}
-#' \item{HOSPITAL}{Institution has hospital}
-#' \item{MEDICAL}{Institution grants a medical degree}
-#' \item{TRIBAL}{Tribal college}
-#' \item{LOCALE}{Degree of urbanization (Urban-centric locale)}
-#' \item{OPENPUBL}{Institution open to the general public}
-#' \item{INT_STATUS}{Status of institution}
+#' \item{INT_LEVEL}{Level of institution (1 = Four or more years; 2 = At least 2 but less than 4 years; 3 = Less than 2 years (below associate); -3 = {Not available})}
+#' \item{INT_CONTROL}{Control of institution (1 = Public; 2 = Private not-for-profit; 3 = Private for-profit; -3 = {Not available})}
+#' \item{UNGRAD_OFFER}{Undergraduate offering (1 = Undergraduate degree or certificate offering; 2 = No undergraduate offering; -3 = {Not available})}
+#' \item{GRAD_OFFER}{Graduate offering (1 = Graduate degree or certificate offering; 2 = No graduate offering; -3 = {Not available})}
+#' \item{HD_OFFER}{Degree-granting status (1 = Degree granting; 2 = Nondegree-granting, primarily post-secondary; -3 = {Not available})}
+#' \item{HBCU}{Historically Black College or University (1 = Yes; 2 = No)}
+#' \item{HOSPITAL}{Institution has hospital (1 = Yes; 2 = No; -1 = Not reported; -2 = Not applicable)}
+#' \item{MEDICAL}{Institution grants a medical degree (1 = Yes; 2 = No; -1 = Not reported; -2 = Not applicable)}
+#' \item{TRIBAL}{Tribal college (1 = Yes; 2 = No)}
+#' \item{LOCALE}{Degree of urbanization (Urban-centric locale) (11 = City: Large; 12 = City: Midsize; 13 = City: Small; 21 = Suburb: Large; 22 = Suburb: Midsize; 23 = Suburb: Small; 31 = Town: Fringe; 32 = Town: Distant; 33 = Town: Remote; 41 = Rural: Fringe; 42 = Rural: Distant; 43 = Rural: Remote; -3 = {Not available})}
+#' \item{OPENPUBL}{Institution open to the general public (1 = Institution is open to the public; 0 = Institution is not open to the public)}
+#' \item{INT_STATUS}{Status of institution (A = Active; N = New(active) - added during the current year; R = Restore(active) restored to the current universe; M = Closed in current year (active has data); C = Combined with other institution; D = Delete out of business; G = Perfect child campus - data reported with main campus, but is listed on college navigator)}
 #' \item{CLOSE_DATE}{Date institution closed}
-#' \item{POST_SEC}{Postsecondary institution indicator}
-#' \item{RPTMTH}{Reporting method for student charges, graduation rates, retention rates and student financial aid}
+#' \item{POST_SEC}{Postsecondary institution indicator (1 = Primarily postsecondary institution; 2 = Not primarily postsecondary)}
+#' \item{RPTMTH}{Reporting method for student charges, graduation rates, retention rates and student financial aid (1 = Student charges for full academic year and fall GR/SFA/retention rate cohort; 2 = Student charges by program and full-year GR/SFA/retention rate cohort; 3 = Student charges for full academic year and full-year GR/SFA/retention rate cohort; -1 = Not reported; -2 = Not applicable)}
 #' \item{CC_U2018}{Carnegie Classification 2018: Undergraduate Instructional Program}
 #' \item{CC_G2018}{Carnegie Classification 2018: Graduate Instructional Program}
 #' \item{CC18_U_PROFILE}{Carnegie Classification 2018: Undergraduate Profile}
-#' \item{CC18_ENROLL}{Carnegie Classification 2018: Enrollment Profile}
+#' \item{CC18_ENROLL}{Carnegie Classification 2018: Enrollment Profile (1 = Exclusively undergraduate two-year; 2 = Exclusively undergraduate 4-year; 3 = Very high undergraduate; 4 = High undergaduate; 5 = Majority undergraduate; 6 = Majority graduate; 7 = Exclusively graduate; 8 = Not applicable)}
 #' \item{CC18_SIZE_SET}{Carnegie Classification 2018: Size and Setting}
 #' \item{C_PROGRAMS}{Carnegie Classification 2000}
 #' \item{INT_SIZE}{Institution size category (1	= Under 1,000; 2 = 1,000 - 4,999; 3	= 5,000 - 9,999; 4 = 10,000 - 19,999; 5	= 20,000 and above; -1 = Not reported; -2	= Not applicable)}
-#' \item{MULT_ORG}{Multi-institution or multi-campus organization}
+#' \item{MULT_ORG}{Multi-institution or multi-campus organization (1 = Institution is part of a multi-institution or multi-campus organization; 2 = Institution is NOT part of a multi-institution or multi-campus organization; -1 = Not reported; -2 = Not applicable)}
 #' \item{MULT_ORG_NAME}{Name of multi-institution or multi-campus organization}
 #' \item{MULT_ORG_CODE}{Identification number of multi-institution or multi-campus organization}
 #' \item{COUNTYCD}{Fips County code}
@@ -410,9 +410,9 @@
 #' \item{MASTERS}{What award levels are offered by your institution? Master's degree }
 #' \item{POST_MASTERS}{What award levels are offered by your institution? Post-master's certificate}
 #' \item{OTHER}{What award levels are offered by your institution? Other; please specify }
-#' \item{DOC_RS}{What award levels are offered by your institution? Doctor’s degree - research/scholarship}
-#' \item{DOC_P}{What award levels are offered by your institution? Doctor’s degree - professional practice}
-#' \item{DOC_O}{What award levels are offered by your institution? Doctor’s degree - other}
+#' \item{DOC_RS}{What award levels are offered by your institution? Doctorate's degree - research/scholarship}
+#' \item{DOC_P}{What award levels are offered by your institution? Doctorate's degree - professional practice}
+#' \item{DOC_O}{What award levels are offered by your institution? Doctorate's degree - other}
 #' \item{CALSYS}{Standard academic term (1	= Semester, 2	= Quarter, 3 = Trimester, 4	= Four-one-four plan, 5	= Other academic year, 6 = Differs by program, 7 = Continuous, -2	= Not applicable)}
 #' \item{FT_UG}{Undergraduate (academic or occupational programs), full-time students}
 #' \item{FT_FTUG}{First-time degree/certificate-seeking undergraduate, full-time students}
@@ -504,6 +504,8 @@
 #' \item{CON_TRACK}{NCAA or NAIA member for cross country/track, conference specified (See `conference` dataset for more details.)}
 #' }
 #'
+#' @source Download from Integrated Postsecondary Education Data System,
+#'   <https://nces.ed.gov/ipeds/datacenter/data/IC2020.zip>.
 #'
 #' @docType data
 "offerings2020"
