@@ -389,11 +389,11 @@
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
-#' \item{OCCUPATIONAL}{OCCUPATIONAL PROGRAM - A program of study consisting of one or more courses, designed to provide the student with sufficient knowledge and skills to perform in a specific occupation.}
-#' \item{ACADEMIC}{ACADEMIC PROGRAM - Instructional program leading toward an associate's, bachelor's, master's, doctor's, or first-professional degree or resulting in credits that can be applied to one of these degrees. }
-#' \item{CONTIN_PROFESS}{CONTINUING PROFESSIONAL EDUCATION - Programs and courses designed specifically for individuals who have completed a professional degree (such as law, medicine, dentistry, or social work) to obtain additional training in their particular field of study }
-#' \item{RECREATE_AVO}{AVOCATIONAL PROGRAMS - Instructional programs in personal interest and leisure categories whose expressed intent is not to produce postsecondary credits, nor to lead to a formal award or an academic degree, nor result in occupationally specific skills.}
-#' \item{REMEDIAL}{ADULT BASIC EDUCATION - Courses designed primarily for students 16 years of age and older to improve basic skills in reading, writing, and arithmetic. These courses are not intended to be part of a program leading to a high school degree, nor are they part of any academic, occupational, or vocational program at the postsecondary level. }
+#' \item{OCCUPATIONAL}{Occupational Program - A program of study consisting of one or more courses, designed to provide the student with sufficient knowledge and skills to perform in a specific occupation.}
+#' \item{ACADEMIC}{Academic Program - Instructional program leading toward an associate's, bachelor's, master's, doctor's, or first-professional degree or resulting in credits that can be applied to one of these degrees. }
+#' \item{CONTIN_PROFESS}{Continuing Professional Education - Programs and courses designed specifically for individuals who have completed a professional degree (such as law, medicine, dentistry, or social work) to obtain additional training in their particular field of study }
+#' \item{RECREATE_AVO}{Avocational Programs - Instructional programs in personal interest and leisure categories whose expressed intent is not to produce postsecondary credits, nor to lead to a formal award or an academic degree, nor result in occupationally specific skills.}
+#' \item{REMEDIAL}{Adult Basic Education - Courses designed primarily for students 16 years of age and older to improve basic skills in reading, writing, and arithmetic. These courses are not intended to be part of a program leading to a high school degree, nor are they part of any academic, occupational, or vocational program at the postsecondary level. }
 #' \item{SECONDARY}{Secondary (high school)}
 #' \item{AFFILIATION}{Institutional control or affiliation (1	= Public, 2	= Private for-profit, 3	= Private not-for-profit (no religious affiliation), 4 = Private not-for-profit (religious affiliation))}
 #' \item{PRIMARY_CON}{Indicates primary control for public institutions (1 = Federal, 2	= State, 3 = Territorial, 4	= School district, 5 = County, 7 = City, 8 = Special district, 9 = Other, -2 = Not applicable)}
@@ -422,22 +422,22 @@
 #' \item{PTGDNIDP}{Graduate (not including doctor's professional practice), part-time students}
 #' \item{DOC_P_E}{Students in doctor's - professional practice programs}
 #' \item{DOC_PF}{Students in doctor's - professional practice programs}
-#' \item{OPENADMP}{OPEN ADMISSION - Admission policy whereby the school will accept any student who applies.}
+#' \item{OPENADMP}{Open Admission - Admission policy whereby the school will accept any student who applies.}
 #' \item{VET_YELLOWR}{Yellow Ribbon Program - A voluntary program through which participating public and private institutions can provide veterans and eligible beneficiaries additional institutional aid to cover the costs of tuitions and fees at their institutions. The Yellow Ribbon Program is a supplementary program to the Post 9/11 GI Bill coverage of in-state tuition and fees. The Department of Veterans Affairs matches the institutional aid provided beyond the in-state tuition and fees, but to certain limit each year}
 #' \item{VET_MTC}{Credit for Military Training - Postsecondary credit granted by institutions to military servicemen or veterans for experiences and training gained while in the service.}
 #' \item{VET_SUPP}{Dedicated point of contact for support services for veterans, military servicemembers, and their families }
 #' \item{VET_ORG}{Recognized student veteran organization }
 #' \item{VET_SOC}{Member of Servicemembers Opportunity Colleges }
 #' \item{VET_NA}{None of aforementioned programs available to veterans, military servicemembers, or their families}
-#' \item{DUAL}{Accept DUAL ENROLLMENT - Refers to students who enroll in college courses offered by an institution of higher education while enrolled in high school or seeking a recognized equivalent. Student performance is recorded on a college transcript and postsecondary credit is awarded for a passing grade in the course. Includes: All postsecondary courses, independent of course delivery mode, course location, course instructor, whether secondary credit is also offered, and whether the student enrolls through a formal state/local program or enrolls outside a formal state/local program. Excludes: Credit-by-exam models such as Advanced Placement and International Baccalaureate in which the student is not enrolled in a postsecondary institution.}
-#' \item{LIFE_EXP}{Accept CREDIT FOR LIFE EXPERIENCES - Credit earned by students for what they have learned through independent study, noncredit adult courses, work experience, portfolio demonstration, previous licensure or certification, or completion of other learning opportunities (military, government, or professional). Credit may also be awarded through a credit by examination program}
-#' \item{AP}{Accept ADVANCED PLACEMENT - Advanced placement courses are college-level courses taught in high school. Students may take an examination at the completion of the course; acceptable scores allow students to earn college credit.}
+#' \item{DUAL}{Accept Dual Enrollment - Refers to students who enroll in college courses offered by an institution of higher education while enrolled in high school or seeking a recognized equivalent. Student performance is recorded on a college transcript and postsecondary credit is awarded for a passing grade in the course. Includes: All postsecondary courses, independent of course delivery mode, course location, course instructor, whether secondary credit is also offered, and whether the student enrolls through a formal state/local program or enrolls outside a formal state/local program. Excludes: Credit-by-exam models such as Advanced Placement and International Baccalaureate in which the student is not enrolled in a postsecondary institution.}
+#' \item{LIFE_EXP}{Accept Credit for Life Experiences - Credit earned by students for what they have learned through independent study, noncredit adult courses, work experience, portfolio demonstration, previous licensure or certification, or completion of other learning opportunities (military, government, or professional). Credit may also be awarded through a credit by examination program}
+#' \item{AP}{Accept Advanced Placement - Advanced placement courses are college-level courses taught in high school. Students may take an examination at the completion of the course; acceptable scores allow students to earn college credit.}
 #' \item{CRED_NA}{Accept none of the aforementioned credit}
 #' \item{ROTC}{ROTC}
 #' \item{ROTC_ARMY}{ROTC Army}
 #' \item{ROTC_NAVY}{ROTC Navy}
 #' \item{ROTC_AIR}{ROTC Air Force}
-#' \item{STUDY_ABROAD}{STUDY ABROAD - Arrangement by which a student completes part of the college program studying in another country. Can be at a campus abroad or through a cooperative agreement with some other U.S. college or an institution of another country.}
+#' \item{STUDY_ABROAD}{Study Abroad - Arrangement by which a student completes part of the college program studying in another country. Can be at a campus abroad or through a cooperative agreement with some other U.S. college or an institution of another country.}
 #' \item{WKEND_EV}{Weekend/evening College - A program that allows students to take a complete course of study and attend classes only on weekends or only in evenings.}
 #' \item{TEACH_CERT}{Teacher certification (below the postsecondary level) }
 #' \item{TEACH_CERT_S}{Teacher certification (below the postsecondary level). Students can complete their  preparation in certain areas of specialization}
@@ -445,41 +445,41 @@
 #' \item{TEACH_CERT_STATE}{Teacher certification (below the postsecondary level). This institution is approved by the state for the initial certification or licensure of teachers }
 #' \item{SLNA}{Institution does not have any of the following special learning opportunities: Accelerated programs, Cooperative (work study), Distance learning, Dual enrollment, ROTC, Study abroad, Weekend college, or Teacher certification (below thepostsecondary level).}
 #' \item{YRSCOLL}{Years of completed college-level work are required for entrance (1 = One, 2	= Two, 3 = Three, 4 = Four, 5 = Five, 6 = Six, 8 = Eight, -1 = Not reported, -2	= Not applicable)}
-#' \item{REME_SERV}{Offers REMEDIAL SERVICES - Instructional activities designed for students deficient in the general competencies necessary for a regular postsecondary curriculum and educational setting.}
-#' \item{ACAREER_SERV}{Offers COUNSELING SERVICE - Activities designed to assist students in making plans and decisions related to their education, career, or personal development.}
-#' \item{EMPLOY_SERV}{Offers EMPLOYMENT SERVICES FOR CURRENT STUDENTS - Activities intended to assist students in obtaining part-time employment as a means of defraying part of the cost of their education.}
-#' \item{PLACE_SERV}{Offers PLACEMENT SERVICES FOR PROGRAM COMPLETERS - Assistance for students in evaluating their career alternatives as well as in obtaining full-time employment upon leaving the institution.}
-#' \item{DAYCARE}{Offers DAY CARE SERVICE - A student service designed to provide appropriate care and protection of infants, preschool, and school-age children so their parents can participate in postsecondary education programs.}
+#' \item{REME_SERV}{Offers Remedial Services - Instructional activities designed for students deficient in the general competencies necessary for a regular postsecondary curriculum and educational setting.}
+#' \item{ACAREER_SERV}{Offers Counseling Services - Activities designed to assist students in making plans and decisions related to their education, career, or personal development.}
+#' \item{EMPLOY_SERV}{Offers Employment Services for Current Students - Activities intended to assist students in obtaining part-time employment as a means of defraying part of the cost of their education.}
+#' \item{PLACE_SERV}{Offers Placement Services for Program Completors - Assistance for students in evaluating their career alternatives as well as in obtaining full-time employment upon leaving the institution.}
+#' \item{DAYCARE}{Offers Daycare Services - A student service designed to provide appropriate care and protection of infants, preschool, and school-age children so their parents can participate in postsecondary education programs.}
 #' \item{SERVNA}{None of the following selected students serveices are offered: Remedial services, Academic/career counseling services, Employment services for current students, Placement services for program completers, or On-campus day care for children of students}
 #' \item{LIB_PHYS}{Library offers Physical facilities}
-#' \item{LIB_PRINT}{Library offers An organized collection of printed materials}
-#' \item{LIB_DIGI}{Library offers Access to digital/electronic resources}
-#' \item{LIB_STAFF}{Library offers A staff trained to provide and interpret library materials}
-#' \item{LIB_HOURS}{Library offers Established library hours}
-#' \item{LIB_COLLECT}{Library offers Access to library collections that are shared with other institutions}
-#' \item{LIB_NA}{Library offers None of the above}
+#' \item{LIB_PRINT}{Library offers an organized collection of printed materials}
+#' \item{LIB_DIGI}{Library offers access to digital/electronic resources}
+#' \item{LIB_STAFF}{Library offers a staff trained to provide and interpret library materials}
+#' \item{LIB_HOURS}{Library offers established library hours}
+#' \item{LIB_COLLECT}{Library offers access to library collections that are shared with other institutions}
+#' \item{LIB_NA}{Library offers none of the above}
 #' \item{TUIT_ALT}{Alternative tuition plans are offered}
-#' \item{TUIT_GUARAN}{Offers Tuition guarantee}
-#' \item{TUIT_PREPAID}{OFfers Prepaid tuition plan}
-#' \item{TUIT_PAY}{Offers Tuition payment plan}
-#' \item{TUIT_OALT}{Offers Other - (not one of the above alternative plans)}
+#' \item{TUIT_GUARAN}{Offers tuition guarantee}
+#' \item{TUIT_PREPAID}{OFfers prepaid tuition plan}
+#' \item{TUIT_PAY}{Offers tuition payment plan}
+#' \item{TUIT_OALT}{Offers other - (not one of the above alternative plans)}
 #' \item{DIST_EDUC_UGC}{Offers Undergraduate level distant education courses}
 #' \item{DIST_EDUC_UGP}{Offers Undergraduate level distant education progams}
 #' \item{DIST_EDUC_UGN}{Undergraduate level distant education not offered}
 #' \item{DIST_EDUC_GC}{Offers Graduate level distant education courses}
 #' \item{DIST_EDUC_GP}{Offers Graduate level distant education progams}
 #' \item{DIST_EDUC_GN}{Graduate level distant education not offered}
-#' \item{DIST_EDUC_C}{Offers A course in which the instructional content is delivered exclusively via distance education}
+#' \item{DIST_EDUC_C}{Offers a course in which the instructional content is delivered exclusively via distance education}
 #' \item{DIST_EDUC_P}{Offers Distant education progams offered}
 #' \item{DIST_EDUC_UGCP}{Offers Undergraduate distance education opportunities}
 #' \item{DIST_EDUC_GCP}{Offers Graduate distance education opportunities}
 #' \item{DIST_EDUC_NA}{Does not offer distance education opportunites}
-#' \item{DIST_EDUC_ALL}{Offers A program for which all the required coursework for program completion is able to be completed via distance education courses.}
+#' \item{DIST_EDUC_ALL}{Offers a program for which all the required coursework for program completion is able to be completed via distance education courses.}
 #' \item{DISAB}{Percentage of all undergraduates enrolled in Fall 2019 who are formally registered as students with disabilities with the institution's office of disability services (or the equivalent office)(1 = 3 percent or less, 2 = More than 3 percent)}
 #' \item{LIVE_ONCAMP}{First-time degree/certificate-seeking students required to live on campus or in institutionally-controlled housing}
 #' \item{TUITVARY}{Charges different tuition for in-district, in-state, or out-of-state students}
 #' \item{ROOM}{Provides on-campus housing}
-#' \item{ROOMCAP}{DORMITORY CAPACITY - The maximum number of students that the institution can provide residential facilities for, whether on or off campus. (off-campus dormitory space that is reserved by the institution).}
+#' \item{ROOMCAP}{Dormitory capcity - The maximum number of students that the institution can provide residential facilities for, whether on or off campus. (off-campus dormitory space that is reserved by the institution).}
 #' \item{BOARD}{Provides board or meal plans to students (1	= Yes, number of meals in the maximum meal plan offered, 2 = Yes, number of meals per week can vary)}
 #' \item{MEALSWK}{Number of meals per week in the maximum meal plan offered}
 #' \item{ROOM_PRICE}{Typical room charges for a student for the full academic year 2018-19 }
