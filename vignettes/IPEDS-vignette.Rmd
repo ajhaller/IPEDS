@@ -13,7 +13,7 @@ css: report_styles.css
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.width = 6, 
+  fig.width = 6,
   fig.height = 4.5,
   warnings = FALSE,
   errors = FALSE
@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 library(IPEDS)
 library(dplyr)
 library(ggplot2)
-options(width=10000)
+options(width = 10000)
 ```
 
 The `IPEDS` package contains data on Post Secondary Institution Statistics in 2020. Some datasets have been filtered to exclude imputation variables, while other datasets are included in full. Details are given below.
@@ -39,7 +39,7 @@ We wanted to create a package that can be used with just a basic R understanding
 
 ## Datasets Included
 
-All the datasets are taken from [IPEDS] (https://nces.ed.gov/ipeds/use-the-data)
+All the datasets are taken from [IPEDS](https://nces.ed.gov/ipeds/use-the-data)
 
 -   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
 -   `admin2020`: dataset of Administration for 2020
@@ -81,15 +81,22 @@ Let's say Sophia, a senior at high school, is interested in going to a private c
 
 Using the `school_preferences` function, Sophia can find a school that perfectly fits her preferences.
 
--   size: 2, selects a school size of 1,000 - 4,999 students
--   region: "New England", selects schools from a particular region
--   alt_credits: "Yes", selects schools that take either AP, Dual or Life Experience credits
--   diversity_students: 36, selects schools where 30% of the students are non-white, or higher
--   financial_aid: 70, selects school where 70% of the students receive financial aid
--   affiliation: 3, selects private (not for profit) institutions
+-   size: `2`, selects a school size of 1,000 - 4,999 students
+-   region: `"New England"`, selects schools from a particular region
+-   alt_credits: `"Yes"`, selects schools that take either AP, Dual or Life Experience credits
+-   diversity_students: `36`, selects schools where 30% of the students are non-white, or higher
+-   financial_aid: `70`, selects school where 70% of the students receive financial aid
+-   affiliation: `3`, selects private (not for profit) institutions
 
 ```{r}
-school_preferences(size = 2, region = "New England", alt_credits = "Yes", diversity_students = 36, financial_aid = 70, affiliation = 3)
+school_preferences(
+  size = 2, 
+  region = "New England", 
+  alt_credits = "Yes", 
+  diversity_students = 36, 
+  financial_aid = 70, 
+  affiliation = 3
+)
 ```
 
 The output is a data frame that includes The Institution name, ID, the % of students that receive aid, the size of the institution, the percent of non-white students and staff, the % of disabled students, the region of the institution, type, and other relevant information about the institution.
@@ -97,17 +104,30 @@ The output is a data frame that includes The Institution name, ID, the % of stud
 We can select the columns Sophia is most interested in:
 
 ```{r, warning=FALSE}
-school_preferences(size = 2, region = "New England", alt_credits = "Yes", diversity_students = 36, financial_aid = 70, affiliation = 3) %>% 
-  select(`Institution`, `Institution Size`, `Region`, `Alternative Credit`, `Student Diversity`, `% of Students Recieved Aid`, `Type of Institution`)
+school_preferences(
+  size = 2, 
+  region = "New England", 
+  alt_credits = "Yes", 
+  diversity_students = 36, 
+  financial_aid = 70, 
+  affiliation = 3
+) %>%
+  select(
+    `Institution`, `Institution Size`, `Region`, 
+    `Alternative Credit`, `Student Diversity`, 
+    `% of Students Recieved Aid`, `Type of Institution`
+  )
 ```
 
 ### Example 2
 
 **What are the admission requirements for my preferred institution?** 
 
-If Sophia is interested in what it takes to apply to one of her preferred schools, Sophia can use the `admission_reqs` function that provides her with a list of the application requirements.
+If Sophia is interested in what it takes to apply to one of her preferred schools, Sophia can use the `admission_reqs()` function that provides her with a list of the application requirements.
 
 ```{r}
+dir_info2020 %>%
+  filter(INSTITUTION == "Smith College")
 admission_reqs(167835)
 ```
 
@@ -117,47 +137,54 @@ Now Sophia knows which application materials are required and recommended, and w
 
 **What's the relationship between the diversity of students and the diversity of staff?**
 
-In another scenario, a educational statistician is interested in the potential relationship between how diverse a student body is and the diversity of their staff. We'll data visualize the % of diversity from the resulting dataframe output by the `school_preferences` function.
+In another scenario, a educational statistician is interested in the potential relationship between how diverse a student body is and the diversity of their staff. We'll data visualize the % of diversity from the resulting dataframe output by the `school_preferences()` function.
 
 ```{r, warning=FALSE}
-data <- school_preferences()
-
-ggplot(data, aes(x = `Staff Diversity`, y = `Student Diversity`)) +
+school_preferences() %>%
+  ggplot(aes(x = `Staff Diversity`, y = `Student Diversity`)) +
   geom_point() +
-  geom_smooth(method = "lm") +
-  labs(title = "Student Diversity vs. Staff Diversity",
-       y = "Student Diversity (%)",
-       x = "Staff Diversity (%)")
+  geom_smooth(method = "lm", formula = "y ~ sqrt(x)") +
+  labs(
+    title = "Student Diversity vs. Staff Diversity",
+    y = "Student Diversity (%)",
+    x = "Staff Diversity (%)"
+  )
 ```
 
 Due to it's functionality, the statistician could also limit their research to explore this relationship to schools only located in the New England area:
 
 ```{r, warning=FALSE}
-data <- school_preferences(region = "New England")
-
-ggplot(data, aes(x = `Staff Diversity`, y = `Student Diversity`)) +
+school_preferences(region = "New England") %>%
+  ggplot(aes(x = `Staff Diversity`, y = `Student Diversity`)) +
   geom_point() +
   geom_smooth(method = "lm") +
-  labs(title = "Student Diversity vs. Staff Diversity in New England Institutions",
-       y = "Student Diversity (%)",
-       x = "Staff Diversity (%)")
+  labs(
+    title = "Student Diversity vs. Staff Diversity in New England Institutions",
+    y = "Student Diversity (%)",
+    x = "Staff Diversity (%)"
+  )
 ```
 
 In both cases, we can see a moderate to strong positive relationship between student and staff diversity; after noting this relationship the statistician could go further by observing the how the size of an institution, can possibly influence this relationship.
 
 ```{r, warning=FALSE}
-data <- school_preferences(region = "New England") %>% 
-  filter(`Institution Size` != -1 &`Institution Size` != -2 )
-
-data$`Institution Size` <- as.factor(data$`Institution Size`)
-
-ggplot(data, aes(x = `Staff Diversity`, y = `Student Diversity`, color = `Institution Size`)) +
+school_preferences(region = "New England") %>%
+  filter(`Institution Size` != -1 & `Institution Size` != -2) %>%
+  ggplot(
+    aes(
+      x = `Staff Diversity`, y = `Student Diversity`, 
+      color = factor(`Institution Size`)
+      )
+    ) +
   geom_point() +
   scale_fill_viridis_c(option = "magma") +
-  geom_smooth(method = "lm", aes(color=`Institution Size`), se = FALSE) +
-  labs(title = "Student Diversity vs. Staff Diversity in New England Institutions by Size",
-       y = "Student Diversity (%)",
-       x = "Staff Diversity (%)")
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(
+    title = "Student Diversity vs. Staff Diversity in New England Institutions by Size",
+    y = "Student Diversity (%)",
+    x = "Staff Diversity (%)",
+    color = "Institution Size"
+  )
 ```
 
 And they can conclude here doesn't seem to be much of a difference depending on Institution Size in 
@@ -169,13 +196,8 @@ New England Institutions.
 
 Amanda, a high school senior, has to decide where she will attend college soon, but is still debating between her top two choices. 
 
-Using the `compare_int` function, Amanda can take the two schools she is interested in and compare them side by side in a table that lists some of the major qualities of each institution. 
+Using the `compare_int()` function, Amanda can take the two schools she is interested in and compare them side by side in a table that lists some of the major qualities of each institution. 
 
 ```{r}
-
 compare_int(100654, 100663)
-
 ```
-
-
-
