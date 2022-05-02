@@ -68,16 +68,24 @@ head(adm2020)
 ### Data Visualization
 
 ``` r
-ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
+ggplot(adm2020, aes(x = adm_tscores, fill = adm_tscores)) +
   geom_bar() +
-  labs(title = "Amount of Schools vs. Test Score Requirement",
-       x = "Test Score Requirement",
-       y = "Amount of Schools") +
-  scale_fill_discrete(name = "Test Score Requirement",
-                      labels = c("Considered_but_not_required" = "Considered but not Required",
-                                 "Neither_required_nor_recommended" = "Neither Required nor Recommended")) +
-  theme(axis.text.x=element_blank(),
-        axis.ticks.x=element_blank())
+  labs(
+    title = "Amount of Schools vs. Test Score Requirement",
+    x = "Test Score Requirement",
+    y = "Amount of Schools"
+  ) +
+  scale_fill_discrete(
+    name = "Test Score Requirement",
+    labels = c(
+      "Considered_but_not_required" = "Considered but not Required",
+      "Neither_required_nor_recommended" = "Neither Required nor Recommended"
+    )
+  ) +
+  theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
@@ -85,7 +93,7 @@ ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
 ## Example: Directory Information for 2020
 
 ``` r
-head(dir_info2020) 
+head(dir_info2020)
 #>   INSTITUTION_ID                         INSTITUTION                        ADDRESS       CITY STATE        ZIP FIPS   BEA_REG AID_ELIG                    WEBSITE                                      ADMIN_WEB                                                                     FINAID_WEB                                                                   APPLICATION                                                        NPRICE_CALC                                            VET_TUITION                          ATH_GRAD_RATE                                                                 DISABILITY_WEB INT_LEVEL INT_CONTROL UNGRAD_OFFER GRAD_OFFER HD_OFFER HBCU HOSPITAL MEDICAL TRIBAL LOCALE OPENPUBL INT_STATUS CLOSE_DATE POST_SEC RPTMTH CC_U2018 CC_G2018 CC18_U_PROFILE CC18_ENROLL CC18_SIZE_SET C_PROGRAMS INT_SIZE MULT_ORG                    MULT_ORG_NAME MULT_ORG_CODE COUNTYCD          COUNTYNM CONGRESS_DIS_ID  LONGITUD LATITUDE
 #> 1         100654            Alabama A & M University           4900 Meridian Street     Normal    AL      35762    1 Southeast        1              www.aamu.edu/ https://www.aamu.edu/admissions-aid/index.html                             https://www.aamu.edu/admissions-aid/financial-aid/ https://www.aamu.edu/admissions-aid/undergraduate-admissions/apply-today.html www.aamu.edu/admissions-aid/tuition-fees/net-price-calculator.html                                                                                               https://www.aamu.edu/administrativeoffices/VADS/Pages/Disability-Services.aspx         1           1            1          1       12    1        2       2      2     12        1         A          -2        1      1       16       17             10           4            14         16        3        2                               -2            -2     1089    Madison County             105 -86.56850 34.78337
 #> 2         100663 University of Alabama at Birmingham Administration Bldg Suite 1070 Birmingham    AL 35294-0110    1 Southeast        1       https://www.uab.edu/       https://www.uab.edu/students/admissions/                                https://www.uab.edu/students/paying-for-college              https://ssb.it.uab.edu/pls/sctprod/zsapk003_ug_web_appl.new_user                   https://uab.studentaidcalculator.com/survey.aspx                  https://www.uab.edu/students/veterans https://www.uab.edu/registrar/students                                       https://www.uab.edu/students/disability/         1           1            1          1       11    2        1       1      2     12        1         A          -2        1      1       17       17              9           5            15         15        5        1 The University of Alabama System        101050     1073  Jefferson County             107 -86.79935 33.50570
@@ -101,7 +109,7 @@ head(dir_info2020)
 admission_reqs # extracts admission requirements for any institution
 acceptance_rate # calculates acceptance rate for any institution
 school_preferences # provides a dataset of institutions according to your preferences
-compare_int # function allows comparison of two institutions and its important qualities 
+compare_int # function allows comparison of two institutions and its important qualities
 read_data # function for importing raw data from IPEDS
 ```
 
@@ -140,7 +148,7 @@ acceptance_rate(167835)
 ```
 
 For further examples and capabilities, please see the
-[vignette](https://github.com/ajhaller/IPEDS/blob/main/vignettes/IPEDS-vignette.Rmd)
+[vignette](https://github.com/ajhaller/IPEDS/blob/main/vignettes/IPEDS-vignette.Rmd).
 
 ## Contributors
 
