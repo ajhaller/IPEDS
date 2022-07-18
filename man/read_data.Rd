@@ -7,7 +7,7 @@
 read_data(dataset)
 }
 \arguments{
-\item{dataset}{(character) abbrevation of dataset from IPEDS. For the list of all possible datasets to import, visit the \href{https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?year=-1}{IPEDS datacenter} and refer to the \verb{Data File} column.}
+\item{dataset}{(character) abbreviation of dataset from IPEDS. For the list of all possible datasets to import, visit the \href{https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?year=-1}{IPEDS datacenter} and refer to the \verb{Data File} column.}
 }
 \value{
 A dataframe with desired information
