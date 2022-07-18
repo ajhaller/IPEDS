@@ -68,7 +68,7 @@ A data frame of 6264 rows representing institutions and 114 variables
 \item{REME_SERV}{Offers Remedial Services - Instructional activities designed for students deficient in the general competencies necessary for a regular postsecondary curriculum and educational setting.}
 \item{ACAREER_SERV}{Offers Counseling Services - Activities designed to assist students in making plans and decisions related to their education, career, or personal development.}
 \item{EMPLOY_SERV}{Offers Employment Services for Current Students - Activities intended to assist students in obtaining part-time employment as a means of defraying part of the cost of their education.}
-\item{PLACE_SERV}{Offers Placement Services for Program Completors - Assistance for students in evaluating their career alternatives as well as in obtaining full-time employment upon leaving the institution.}
+\item{PLACE_SERV}{Offers Placement Services for Program Completers - Assistance for students in evaluating their career alternatives as well as in obtaining full-time employment upon leaving the institution.}
 \item{DAYCARE}{Offers Daycare Services - A student service designed to provide appropriate care and protection of infants, preschool, and school-age children so their parents can participate in postsecondary education programs.}
 \item{SERVNA}{None of the following selected students services are offered: Remedial services, Academic/career counseling services, Employment services for current students, Placement services for program completers, or On-campus day care for children of students}
 \item{LIB_PHYS}{Library offers Physical facilities}
@@ -93,13 +93,13 @@ A data frame of 6264 rows representing institutions and 114 variables
 \item{DIST_EDUC_P}{Offers Distant education programs offered}
 \item{DIST_EDUC_UGCP}{Offers Undergraduate distance education opportunities}
 \item{DIST_EDUC_GCP}{Offers Graduate distance education opportunities}
-\item{DIST_EDUC_NA}{Does not offer distance education opportunites}
+\item{DIST_EDUC_NA}{Does not offer distance education opportunities}
 \item{DIST_EDUC_ALL}{Offers a program for which all the required coursework for program completion is able to be completed via distance education courses.}
 \item{DISAB}{Percentage of all undergraduates enrolled in Fall 2019 who are formally registered as students with disabilities with the institution's office of disability services (or the equivalent office)(1 = 3 percent or less, 2 = More than 3 percent)}
 \item{LIVE_ONCAMP}{First-time degree/certificate-seeking students required to live on campus or in institutionally-controlled housing}
 \item{TUITVARY}{Charges different tuition for in-district, in-state, or out-of-state students}
 \item{ROOM}{Provides on-campus housing}
-\item{ROOMCAP}{Dormitory capcity - The maximum number of students that the institution can provide residential facilities for, whether on or off campus. (off-campus dormitory space that is reserved by the institution).}
+\item{ROOMCAP}{Dormitory capacity - The maximum number of students that the institution can provide residential facilities for, whether on or off campus. (off-campus dormitory space that is reserved by the institution).}
 \item{BOARD}{Provides board or meal plans to students (1	= Yes, number of meals in the maximum meal plan offered, 2 = Yes, number of meals per week can vary)}
 \item{MEALSWK}{Number of meals per week in the maximum meal plan offered}
 \item{ROOM_PRICE}{Typical room charges for a student for the full academic year 2018-19 }

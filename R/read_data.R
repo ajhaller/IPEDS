@@ -4,7 +4,7 @@ globalVariables(c("dataset", "url", "temp", "out", "IC2020", "HD2020"))
 #'
 #' Outputs data frame with desired information directly from IPEDS
 #'
-#' @param dataset (character) abbrevation of dataset from IPEDS. For the list of all possible datasets to import, visit the [IPEDS datacenter](https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?year=-1) and refer to the `Data File` column.
+#' @param dataset (character) abbreviation of dataset from IPEDS. For the list of all possible datasets to import, visit the [IPEDS datacenter](https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?year=-1) and refer to the `Data File` column.
 #' @return A dataframe with desired information
 #' @examples
 #' read_data("IC2020")
