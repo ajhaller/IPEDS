@@ -150,7 +150,7 @@
 #'
 #' \describe{
 #' \item{Numeric_Code}{Numeric code representing a conference}
-#' \item{Conference}{Explaination of numeric code}
+#' \item{Conference}{Explanation of numeric code}
 #' \item{Sport}{Type of sport for each conference}
 #' }
 #'
@@ -202,7 +202,7 @@
 #' \item{CC_U2018}{Carnegie Classification 2018: Undergraduate Instructional Program (1 = Associate's Colleges: High Transfer; 2 = Associate's Colleges: Mixed Transfer/Career & Technical; 3 = Associate's Colleges: High Career & Technical; 4 = Special Focus: Two-Year Institution; 5 = Baccalaureate/Associates Colleges; 6 = Arts & sciences focus, no graduate coexistence; 7 = Arts & sciences focus, some graduate coexistence; 8 = Arts & sciences focus, high graduate coexistence; 9 = Arts & sciences plus professions, no graduate coexistence; 10 = Arts & sciences plus professions, some graduate coexistence; 11 = Arts & sciences plus professions, high graduate coexistence; 12 = Balanced arts & sciences/professions, no graduate coexistence; 13 = Balanced arts & sciences/professions, some graduate coexistence; 14 = Balanced arts & sciences/professions, high graduate coexistence; 15 = Professions plus arts & sciences, no graduate coexistence; 16 = Professions plus arts & sciences, some graduate coexistence; 17 = Professions plus arts & sciences, high graduate coexistence; 18 = Professions focus, no graduate coexistence; 19 = Professions focus, some graduate coexistence; 20 = Professions focus, high graduate coexistence; 0 = Not Classified (Exclusively Graduate Programs); -2 = Not applicable, not in Carnegie universe (not accredited or nondegree-granting))}
 #' \item{CC_G2018}{Carnegie Classification 2018: Graduate Instructional Program (1 = Postbaccalaureate: Single program-Education; 2 = Postbaccalaureate: Single program-Business; 3 = Postbaccalaureate: Single program-Other; 4 = Postbaccalaureate: Comprehensive programs; 5 = Postbaccalaureate: Arts & sciences-dominant; 6 = Postbaccalaureate: Education-dominant, with Arts & Sciences; 7 = Postbaccalaureate: Business-dominant, with Arts & Sciences; 8 = Postbaccalaureate: Other-dominant, with Arts & Sciences; 9 = Postbaccalaureate: Education-dominant, with other professional programs; 10 = Postbaccalaureate: Business-dominant, with other professional programs; 11 = Postbaccalaureate: Other-dominant, with other professional programs; 12 = Research Doctoral: Single program-Education; 13 = Research Doctoral: Single program-Other; 14 = Research Doctoral: Comprehensive programs, with medical/veterinary school; 15 = Research Doctoral: Comprehensive programs, no medical/veterinary school; 16 = Research Doctoral: Humanities/social sciences-dominant; 17 = Research Doctoral: STEM-dominant; 18 = Research Doctoral: Professional-dominant; 0 = Not classified (Exclusively Undergraduate); -2 =  Not applicable, not in Carnegie universe (not accredited or nondegree-granting))}
 #' \item{CC18_U_PROFILE}{Carnegie Classification 2018: Undergraduate Profile (1 = Two-year, higher part-time; 2 = Two-year, mixed part/full-time; 3 = Two-year, medium full-time; 4 = Two-year, higher full-time; 5 = Four-year, higher part-time; 6 = Four-year, medium full-time, inclusive, lower transfer-in; 7 = Four-year, medium full-time, inclusive, higher transfer-in; 8 = Four-year, medium full-time, selective, lower transfer-in; 9 = Four-year, medium full-time , selective, higher transfer-in; 10 = Four-year, full-time, inclusive, lower transfer-in; 11 = Four-year, full-time, inclusive, higher transfer-in; 12 = Four-year, full-time, selective, lower transfer-in; 13 = Four-year, full-time, selective, higher transfer-in; 14 = Four-year, full-time, more selective, lower transfer-in; 15 = Four-year, full-time, more selective, higher transfer-in; 0 = Not classified (Exclusively Graduate); -2 = Not applicable, not in Carnegie universe (not accredited or nondegree-granting))}
-#' \item{CC18_ENROLL}{Carnegie Classification 2018: Enrollment Profile (1 = Exclusively undergraduate two-year; 2 = Exclusively undergraduate 4-year; 3 = Very high undergraduate; 4 = High undergaduate; 5 = Majority undergraduate; 6 = Majority graduate; 7 = Exclusively graduate; 8 = Not applicable)}
+#' \item{CC18_ENROLL}{Carnegie Classification 2018: Enrollment Profile (1 = Exclusively undergraduate two-year; 2 = Exclusively undergraduate 4-year; 3 = Very high undergraduate; 4 = High undergraduate; 5 = Majority undergraduate; 6 = Majority graduate; 7 = Exclusively graduate; 8 = Not applicable)}
 #' \item{CC18_SIZE_SET}{Carnegie Classification 2018: Size and Setting (1 = Two-year, very small; 2 = Two-year, small; 3 = Two-year, medium; 4 = Two-year, large; 5 = Two-year, very large; 6 = Four-year, very small, primarily nonresidential; 7 = Four-year, very small, primarily residential; 8 = Four-year, very small, highly residential; 9 = Four-year, small, primarily nonresidential; 10 = Four-year, small, primarily residential; 11 = Four-year, small, highly residential; 12 = Four-year, medium, primarily nonresidential; 13 = Four-year, medium, primarily residential; 14 = Four-year, medium, highly residential; 15 = Four-year, large, primarily nonresidential; 16 = Four-year, large, primarily residential; 17 = Four-year, large, highly residential; 18 = Exclusively graduate/professional; -2 =  Not applicable, not in Carnegie universe (not accredited or nondegree-granting))}
 #' \item{C_PROGRAMS}{Carnegie Classification 2000 (15 = Doctoral/Research Universities--Extensive; 16 = Doctoral/Research Universities--Intensive; 21 = Masters Colleges and Universities I; 22 = Masters Colleges and Universities II; 31 = Baccalaureate Colleges--Liberal Arts; 32 = Baccalaureate Colleges--General; 33 = Baccalaureate/Associates Colleges; 40 = Associates Colleges; 51 = Theological seminaries and other specialized faith-related institutions; 52 = Medical schools and medical centers; 53 = Other separate health profession schools; 54 = Schools of engineering and technology; 55 = Schools of business and management; 56 = Schools of art, music, and design; 57 = Schools of law; 58 = Teachers colleges; 59 = Other specialized institutions; 60 = Tribal colleges; -2 = Not applicable, not in Carnegie universe (not accredited or nondegree-granting))}
 #' \item{INT_SIZE}{Institution size category (1	= Under 1,000; 2 = 1,000 - 4,999; 3	= 5,000 - 9,999; 4 = 10,000 - 19,999; 5	= 20,000 and above; -1 = Not reported; -2	= Not applicable)}
@@ -423,7 +423,7 @@
 #' \item{DOC_P_E}{Students in doctor's - professional practice programs}
 #' \item{DOC_PF}{Students in doctor's - professional practice programs}
 #' \item{OPENADMP}{Open Admission - Admission policy whereby the school will accept any student who applies.}
-#' \item{VET_YELLOWR}{Yellow Ribbon Program - A voluntary program through which participating public and private institutions can provide veterans and eligible beneficiaries additional institutional aid to cover the costs of tuitions and fees at their institutions. The Yellow Ribbon Program is a supplementary program to the Post 9/11 GI Bill coverage of in-state tuition and fees. The Department of Veterans Affairs matches the institutional aid provided beyond the in-state tuition and fees, but to certain limit each year}
+#' \item{VET_YELLOWR}{Yellow Ribbon Program - A voluntary program through which participating public and private institutions can provide veterans and eligible beneficiaries additional institutional aid to cover the costs of tuition and fees at their institutions. The Yellow Ribbon Program is a supplementary program to the Post 9/11 GI Bill coverage of in-state tuition and fees. The Department of Veterans Affairs matches the institutional aid provided beyond the in-state tuition and fees, but to certain limit each year}
 #' \item{VET_MTC}{Credit for Military Training - Postsecondary credit granted by institutions to military servicemen or veterans for experiences and training gained while in the service.}
 #' \item{VET_SUPP}{Dedicated point of contact for support services for veterans, military servicemembers, and their families }
 #' \item{VET_ORG}{Recognized student veteran organization }
@@ -450,7 +450,7 @@
 #' \item{EMPLOY_SERV}{Offers Employment Services for Current Students - Activities intended to assist students in obtaining part-time employment as a means of defraying part of the cost of their education.}
 #' \item{PLACE_SERV}{Offers Placement Services for Program Completors - Assistance for students in evaluating their career alternatives as well as in obtaining full-time employment upon leaving the institution.}
 #' \item{DAYCARE}{Offers Daycare Services - A student service designed to provide appropriate care and protection of infants, preschool, and school-age children so their parents can participate in postsecondary education programs.}
-#' \item{SERVNA}{None of the following selected students serveices are offered: Remedial services, Academic/career counseling services, Employment services for current students, Placement services for program completers, or On-campus day care for children of students}
+#' \item{SERVNA}{None of the following selected students services are offered: Remedial services, Academic/career counseling services, Employment services for current students, Placement services for program completers, or On-campus day care for children of students}
 #' \item{LIB_PHYS}{Library offers Physical facilities}
 #' \item{LIB_PRINT}{Library offers an organized collection of printed materials}
 #' \item{LIB_DIGI}{Library offers access to digital/electronic resources}
@@ -460,17 +460,17 @@
 #' \item{LIB_NA}{Library offers none of the above}
 #' \item{TUIT_ALT}{Alternative tuition plans are offered}
 #' \item{TUIT_GUARAN}{Offers tuition guarantee}
-#' \item{TUIT_PREPAID}{OFfers prepaid tuition plan}
+#' \item{TUIT_PREPAID}{Offers prepaid tuition plan}
 #' \item{TUIT_PAY}{Offers tuition payment plan}
 #' \item{TUIT_OALT}{Offers other - (not one of the above alternative plans)}
 #' \item{DIST_EDUC_UGC}{Offers Undergraduate level distant education courses}
-#' \item{DIST_EDUC_UGP}{Offers Undergraduate level distant education progams}
+#' \item{DIST_EDUC_UGP}{Offers Undergraduate level distant education programs}
 #' \item{DIST_EDUC_UGN}{Undergraduate level distant education not offered}
 #' \item{DIST_EDUC_GC}{Offers Graduate level distant education courses}
-#' \item{DIST_EDUC_GP}{Offers Graduate level distant education progams}
+#' \item{DIST_EDUC_GP}{Offers Graduate level distant education programs}
 #' \item{DIST_EDUC_GN}{Graduate level distant education not offered}
 #' \item{DIST_EDUC_C}{Offers a course in which the instructional content is delivered exclusively via distance education}
-#' \item{DIST_EDUC_P}{Offers Distant education progams offered}
+#' \item{DIST_EDUC_P}{Offers Distant education programs offered}
 #' \item{DIST_EDUC_UGCP}{Offers Undergraduate distance education opportunities}
 #' \item{DIST_EDUC_GCP}{Offers Graduate distance education opportunities}
 #' \item{DIST_EDUC_NA}{Does not offer distance education opportunites}
@@ -518,7 +518,7 @@
 #'
 #' \describe{
 #' \item{Numeric_Code}{Numeric code representing a religious affiliation}
-#' \item{Religious_Affiliation}{Explaination of numeric code}
+#' \item{Religious_Affiliation}{Explanation of numeric code}
 #' }
 #'
 #'
@@ -533,7 +533,7 @@
 #'
 #' \describe{
 #' \item{Numeric_Code}{Numeric code representing a staff category}
-#' \item{Category}{Explaination of numeric code}
+#' \item{Category}{Explanation of numeric code}
 #' }
 #'
 #'
