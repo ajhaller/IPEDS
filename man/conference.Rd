@@ -9,7 +9,7 @@ A data frame of 500 rows representing conferences and 3 variables
 
 \describe{
 \item{Numeric_Code}{Numeric code representing a conference}
-\item{Conference}{Explaination of numeric code}
+\item{Conference}{Explanation of numeric code}
 \item{Sport}{Type of sport for each conference}
 }
 }

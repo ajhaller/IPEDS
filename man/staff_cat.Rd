@@ -9,7 +9,7 @@ A data frame of 65 rows representing staff categories and 2 variables
 
 \describe{
 \item{Numeric_Code}{Numeric code representing a staff category}
-\item{Category}{Explaination of numeric code}
+\item{Category}{Explanation of numeric code}
 }
 }
 \usage{

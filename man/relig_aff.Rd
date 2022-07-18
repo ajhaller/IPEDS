@@ -9,7 +9,7 @@ A data frame of 64 rows representing religious affiliations and 2 variables
 
 \describe{
 \item{Numeric_Code}{Numeric code representing a religious affiliation}
-\item{Religious_Affiliation}{Explaination of numeric code}
+\item{Religious_Affiliation}{Explanation of numeric code}
 }
 }
 \usage{
