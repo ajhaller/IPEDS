@@ -1,6 +1,6 @@
 Package: IPEDS
 Title: Data from the Integrated Postsecondary Education Data System
-Version: 0.0.0.9001
+Version: 0.1.0
 Authors@R: 
     person("Aushanae", "Haller", , "aushanaenhaller@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
