@@ -25,7 +25,7 @@ acceptance_rate <- function (institution_id) {
 
   list <- df$INSTITUTION_ID
 
-  if (!(institution_id %in% list) | !(class(institution_id) == "numeric")) {
+  if (!(institution_id %in% list) | (inherits(institution_id, "numeric") == FALSE)) {
     stop("Please input an institution id (numeric) listed in the `adm2020` dataset.")
   }
 
