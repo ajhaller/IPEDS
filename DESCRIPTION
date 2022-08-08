@@ -1,5 +1,5 @@
 Package: IPEDS
-Title: Data from the Integrated Post-secondary Education Data System
+Title: Data from the Integrated Post-Secondary Education Data System
 Version: 0.1.0
 Authors@R: c(
     person("Aushanae", "Haller", , "aushanaenhaller@gmail.com", role = c("aut", "cre"),

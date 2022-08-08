@@ -8,7 +8,6 @@ globalVariables(c("dataset", "url", "temp", "out", "IC2020", "HD2020"))
 #' @return A dataframe with desired information
 #' @examples
 #' read_data("IC2020")
-#' read_data("HD2020")
 #' @import readr
 #' @importFrom utils download.file
 #' @export
