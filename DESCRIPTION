@@ -1,11 +1,12 @@
 Package: IPEDS
 Title: Data from the Integrated Postsecondary Education Data System
 Version: 0.1.0
-Authors@R: 
+Authors@R: c(
     person("Aushanae", "Haller", , "aushanaenhaller@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-    person("Alejandra", "Munoz", , "amunozgarcia@smith.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))   
+           comment = c(ORCID = "0000-0002-2090-1952"))
+    person("Alejandra", "Munoz", , "amunozgarcia@smith.edu", role = "aut")
+           )
+Maintainer: Aushanar Haller <aushanaenhaller@gmail.com>
 Description: The IPEDS package contains data on Postsecondary Institution Statistics in 2020. The package allows easy access to a wide variety of information regarding Postsecondary Institutions, its students, faculty, and their demographics, financial aid, educational and recreational offerings, and completions. This package can be used by students, college counselors, or involved parents interested in pursuing higher education, considering their options, and securing admission into their school of choice.
 License: MIT + file LICENSE
 Suggests: 
