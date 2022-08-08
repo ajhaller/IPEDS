@@ -3,7 +3,7 @@ Title: Data from the Integrated Postsecondary Education Data System
 Version: 0.1.0
 Authors@R: c(
     person("Aushanae", "Haller", , "aushanaenhaller@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-2090-1952"))
+           comment = c(ORCID = "0000-0002-2090-1952")),
     person("Alejandra", "Munoz", , "amunozgarcia@smith.edu", role = "aut")
            )
 Maintainer: Aushanae Haller <aushanaenhaller@gmail.com>
