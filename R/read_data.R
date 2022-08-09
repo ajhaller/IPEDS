@@ -12,7 +12,38 @@ globalVariables(c("dataset", "url", "temp", "out", "IC2020", "HD2020"))
 #' @importFrom utils download.file
 #' @export
 read_data <- function(dataset) {
+
+  #Errors
+
+  if(inherits(dataset, "character") == FALSE) {
+    stop("For 'dataset' please input a valid dataset abbreviation from IPEDS. For more information please refer to the man file.")
+  }
+
+  #Read url
   url <- paste0("https://nces.ed.gov/ipeds/datacenter/data/", dataset, ".zip")
+
+  #Error catch from url
+
+  out <- tryCatch({
+    url
+  },
+  error = function(e){
+    message(paste("This URL may not exist:", url))
+    message("This was the error message")
+    message(e)
+    return(NA)
+  },
+  warning = function(w){
+    message(paste("This URL threw a warning:", url))
+    message("This was the warning message:")
+    message(w)
+    return(NULL)
+  },
+  finally = {
+    message(paste("This URL has been processed:", url))
+  })
+
+  #Finish function
   temp <- tempfile()
   download.file(url, temp)
   out <- read_csv(temp)
