@@ -16,5 +16,7 @@ A dataframe with desired information
 Outputs data frame with desired information directly from IPEDS
 }
 \examples{
+\donttest{
 read_data("IC2020")
+}
 }
