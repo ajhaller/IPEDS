@@ -21,11 +21,12 @@ read_data <- function(dataset) {
 
   #Read url
   url <- paste0("https://nces.ed.gov/ipeds/datacenter/data/", dataset, ".zip")
+  temp <- tempfile()
 
   #Error catch from url
 
   out <- tryCatch({
-    url
+    download.file(url, temp)
   },
   error = function(e){
     message(paste("This URL may not exist:", url))
@@ -44,8 +45,6 @@ read_data <- function(dataset) {
   })
 
   #Finish function
-  temp <- tempfile()
-  download.file(url, temp)
   out <- read_csv(temp)
   return(out)
 }
