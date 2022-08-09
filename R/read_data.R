@@ -7,7 +7,9 @@ globalVariables(c("dataset", "url", "temp", "out", "IC2020", "HD2020"))
 #' @param dataset (character) abbreviation of dataset from IPEDS. For the list of all possible datasets to import, visit the [IPEDS datacenter](https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?year=-1) and refer to the `Data File` column.
 #' @return A dataframe with desired information
 #' @examples
+#' \donttest{
 #' read_data("IC2020")
+#' }
 #' @import readr
 #' @importFrom utils download.file
 #' @export
