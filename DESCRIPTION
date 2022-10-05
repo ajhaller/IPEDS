@@ -7,7 +7,7 @@ Authors@R: c(
     person("Alejandra", "Munoz", , "amunozgarcia@smith.edu", role = "aut")
            )
 Maintainer: Aushanae Haller <aushanaenhaller@gmail.com>
-Description: The 'IPEDS' package contains data on Post-secondary Institution Statistics in 2020. The package allows easy access to a wide variety of information regarding Post-secondary Institutions, its students, faculty, and their demographics, financial aid, educational and recreational offerings, and completions. This package can be used by students, college counselors, or involved parents interested in pursuing higher education, considering their options, and securing admission into their school of choice.
+Description: The 'IPEDS' package contains data on Post-secondary Institution Statistics in 2020 <https://nces.ed.gov/ipeds/use-the-data>. The package allows easy access to a wide variety of information regarding Post-secondary Institutions, its students, faculty, and their demographics, financial aid, educational and recreational offerings, and completions. This package can be used by students, college counselors, or involved parents interested in pursuing higher education, considering their options, and securing admission into their school of choice.
 License: MIT + file LICENSE
 Suggests: 
     knitr,
