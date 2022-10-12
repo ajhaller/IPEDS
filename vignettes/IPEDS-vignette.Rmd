@@ -24,6 +24,9 @@ knitr::opts_chunk$set(
 library(IPEDS)
 library(dplyr)
 library(ggplot2)
+
+# Saves old options and declares new one for vignette
+original_width <- options("width")
 options(width=10000)
 ```
 
@@ -177,5 +180,9 @@ compare_int(100654, 100663)
 
 ```
 
+```{r, include=FALSE}
+# Resets user-level options
+options(original_width)
+```
 
 

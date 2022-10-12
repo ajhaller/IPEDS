@@ -46,13 +46,8 @@ admission_reqs <- function(institution_id) {
     pivot_longer(everything(), names_to = "Requirements", values_to = "Priority") %>%
     arrange(desc(Priority))
 
-  # Print requirements
+  # Return requirements
 
-  sen1 <- "The Requirements for"
-  name <- df$INSTITUTION[row]
-  sen2 <- "are:"
-
-  cat(sen1, name, sen2, "\n")
-  print(reqs)
+  return(reqs)
 
 }
