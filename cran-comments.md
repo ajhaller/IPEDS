@@ -3,7 +3,7 @@
 0 errors | 0 warnings | 0 note
 
 
-# Resubmission
+# Resubmission #1
 This is a resubmission. In this version I have:
 
 * Provided a link to the used data to the description field
@@ -16,3 +16,8 @@ with angle brackets for auto-linking and no space after 'http:' and
 
 * Removed messages printed to console from R/admission_reqs.R, and it instead returns a tibble that can be used to extract the
 information a user is interested in, and then print() that object.
+
+# Resubmission #2
+This is a resubmission. In this version I have:
+
+* Changed start of the description to not include "This package", package name, title or similar.
