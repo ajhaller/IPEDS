@@ -22,6 +22,13 @@ student aid programs.
 
 ## Installation
 
+You can install IPEDS from
+[CRAN](https://cran.r-project.org/) with:
+
+``` r
+install.packages("IPEDS")
+```
+
 You can install the development version of IPEDS from
 [GitHub](https://github.com/) with:
 
