@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/IPEDS)](https://CRAN.R-project.org/package=IPEDS)
 [![R-CMD-check](https://github.com/ajhaller/IPEDS/workflows/R-CMD-check/badge.svg)](https://github.com/ajhaller/IPEDS/actions)
@@ -22,19 +22,36 @@ student aid programs.
 
 ## Installation
 
-You can install IPEDS from
-[CRAN](https://cran.r-project.org/) with:
+You can install IPEDS from [CRAN](https://cran.r-project.org/) with:
 
 ``` r
-install.packages("IPEDS")
+#install.packages("IPEDS")
 ```
 
-You can install the development version of IPEDS from
+Or you can install the development version of IPEDS from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("ajhaller/IPEDS")
+#> Downloading GitHub repo ajhaller/IPEDS@HEAD
+#> cpp11      (0.4.2 -> 0.4.3) [CRAN]
+#> vctrs      (0.4.2 -> 0.5.0) [CRAN]
+#> tidyselect (1.1.2 -> 1.2.0) [CRAN]
+#> lifecycle  (1.0.2 -> 1.0.3) [CRAN]
+#> purrr      (0.3.4 -> 0.3.5) [CRAN]
+#> Installing 5 packages: cpp11, vctrs, tidyselect, lifecycle, purrr
+#> 
+#> The downloaded binary packages are in
+#>  /var/folders/25/lrxs2nld6k348v54c5p996qc0000gn/T//RtmpgkSrzt/downloaded_packages
+#>      checking for file ‘/private/var/folders/25/lrxs2nld6k348v54c5p996qc0000gn/T/RtmpgkSrzt/remotesdea15450349a/ajhaller-IPEDS-c34da74/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/25/lrxs2nld6k348v54c5p996qc0000gn/T/RtmpgkSrzt/remotesdea15450349a/ajhaller-IPEDS-c34da74/DESCRIPTION’ (1.1s)
+#>   ─  preparing ‘IPEDS’:
+#>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>   ─  building ‘IPEDS_0.1.0.9000.tar.gz’
+#>      
+#> 
 ```
 
 ## Load
@@ -45,19 +62,18 @@ library(IPEDS)
 
 ## Available Tables
 
--   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
--   `admin2020`: dataset of Administration for 2020
--   `complete2020`: dataset of Completions in 2020
--   `conference`: dataset of Conferences for sports (from
-    `offerings2020`)
--   `dir_info2020`: dataset of Directory Information for 2020
--   `fall_enroll2020`: dataset of Fall Enrollment for 2020
--   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
--   `offerings2020`: dataset of Institutional Offerings for 2020
--   `relig_aff`: dataset of Religious Affiliations (from
-    `offerings2020`, `relig_aff` column)
--   `staff_cat`: dataset of Staff Categories based on (from `admin2020`
-    dataset, `staff_cat` column).
+- `adm2020`: dataset of Admissions and Test Scores for Fall 2020
+- `admin2020`: dataset of Administration for 2020
+- `complete2020`: dataset of Completions in 2020
+- `conference`: dataset of Conferences for sports (from `offerings2020`)
+- `dir_info2020`: dataset of Directory Information for 2020
+- `fall_enroll2020`: dataset of Fall Enrollment for 2020
+- `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
+- `offerings2020`: dataset of Institutional Offerings for 2020
+- `relig_aff`: dataset of Religious Affiliations (from `offerings2020`,
+  `relig_aff` column)
+- `staff_cat`: dataset of Staff Categories based on (from `admin2020`
+  dataset, `staff_cat` column).
 
 ## Example: Admissions and Test Scores for Fall 2020
 
@@ -87,7 +103,7 @@ ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
         axis.ticks.x=element_blank())
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 ## Example: Directory Information for 2020
 
@@ -114,7 +130,6 @@ read_data # function for importing raw data from IPEDS
 
 ``` r
 admission_reqs(167835)
-#> The Requirements for Smith College are: 
 #> # A tibble: 9 × 2
 #>   Requirements                            Priority                        
 #>   <chr>                                   <chr>                           
@@ -151,5 +166,5 @@ For further examples and capabilities, please see the
 
 ## Contributors
 
--   [Aushanae Haller](https://github.com/ajhaller)
--   [Alejandra Munoz Garcia](https://github.com/alejanmg)
+- [Aushanae Haller](https://github.com/ajhaller)
+- [Alejandra Munoz Garcia](https://github.com/alejanmg)

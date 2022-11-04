@@ -18,7 +18,7 @@ options(width=10000)
 # IPEDS <img src="data-raw/Sticker/hex_IPEDSII.png" align="right" height=140/>
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN status](https://www.r-pkg.org/badges/version/IPEDS)](https://CRAN.R-project.org/package=IPEDS)
 [![R-CMD-check](https://github.com/ajhaller/IPEDS/workflows/R-CMD-check/badge.svg)](https://github.com/ajhaller/IPEDS/actions)
 <!-- badges: end -->
@@ -27,9 +27,15 @@ options(width=10000)
 
 ## Installation
 
-You can install the development version of IPEDS from [GitHub](https://github.com/) with:
+You can install IPEDS from [CRAN](https://cran.r-project.org/) with:
 
-``` r
+```{r}
+#install.packages("IPEDS")
+```
+
+Or you can install the development version of IPEDS from [GitHub](https://github.com/) with:
+
+``` {r}
 # install.packages("devtools")
 devtools::install_github("ajhaller/IPEDS")
 ```
