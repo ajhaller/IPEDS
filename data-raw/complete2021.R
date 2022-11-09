@@ -1,12 +1,12 @@
-## code to prepare `complete2020` dataset goes here
+## code to prepare `complete2021` dataset goes here
 
 library(tidyverse)
 
 temp <- tempfile()
-download.file("https://nces.ed.gov/ipeds/datacenter/data/C2020_C.zip", temp)
-complete2020 <- read.table(unz(temp, "c2020_c.csv"), sep = ",", header = TRUE)
+download.file("https://nces.ed.gov/ipeds/datacenter/data/C2021_C.zip", temp)
+complete2021 <- read.table(unz(temp, "c2021_c.csv"), sep = ",", header = TRUE)
 
-complete2020 <- complete2020 %>%
+complete2021 <- complete2021 %>%
   select(-starts_with("X")) %>%
   rename(INSTITUTION_ID = UNITID,
          AWARD_LVL = AWLEVELC,
@@ -31,4 +31,4 @@ complete2020 <- complete2020 %>%
 
 unlink(temp)
 
-usethis::use_data(complete2020, overwrite = TRUE)
+usethis::use_data(complete2021, overwrite = TRUE)

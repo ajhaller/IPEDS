@@ -5,7 +5,7 @@
 \alias{adm2021}
 \title{Admissions and Test Scores 2021 Data}
 \format{
-A data frame of 1989 rows representing institutions and 39 variables
+A data frame of 1981 rows representing institutions and 39 variables
 
 \describe{
 \item{INSTITUTION_ID}{Unique identification number of the institution}

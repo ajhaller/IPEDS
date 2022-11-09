@@ -45,8 +45,8 @@ We wanted to create a package that can be used with just a basic R understanding
 All the datasets are taken from [IPEDS] (https://nces.ed.gov/ipeds/use-the-data)
 
 -   `adm2021`: dataset of Admissions and Test Scores for Fall 2021
--   `staff2021`: dataset of Administration for 2020
--   `complete2020`: dataset of Completions in 2020
+-   `staff2021`: dataset of Administration for 2021
+-   `complete2021`: dataset of Completions in 2021
 -   `conference`: dataset of Conferences for sports (from `offerings2020`)
 -   `dir_info2020`: dataset of Directory Information for 2020
 -   `fall_enroll2020`: dataset of Fall Enrollment for 2020
@@ -61,10 +61,10 @@ This package can be used by students, college counselors, or involved parents in
 
 ## What does the data look like?
 
-Here's the first 5 rows of the `complete2020` dataset
+Here's the first 5 rows of the `complete2021` dataset
 
 ```{r}
-head(complete2020)
+head(complete2021)
 ```
 ## What can we do with this data?
 
