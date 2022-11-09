@@ -54,7 +54,7 @@
 #' @docType data
 "adm2021"
 
-#' Administration 2020 Data
+#' Staff 2020 Data
 #'
 #' This file contains the number of full-time instructional staff on the payroll of the institution as of November 1,  by faculty and tenure status, academic rank, race/ethnicity and gender. This file has multiple records per institution.  Each record is uniquely defined by the variables IPEDS ID (INSTIUTION_ID). These data are applicable to degree-granting institutions with 15 or more full-time employees and related administrative offices.
 #'
@@ -103,7 +103,7 @@
 #'   <https://nces.ed.gov/ipeds/datacenter/data/S2020_IS.zip>.
 #'
 #' @docType data
-"admin2020"
+"staff2021"
 
 #' Completions 2020 Data
 #'
@@ -527,7 +527,7 @@
 
 #' Staff Categories Data
 #'
-#' This file contains the details for staff categories in the Administration 2020 (`admin2020`) dataset.
+#' This file contains the details for staff categories in the Staff 2020 (`staff2021`) dataset.
 #'
 #' @format A data frame of 65 rows representing staff categories and 2 variables
 #'
@@ -547,8 +547,8 @@
 #' @section Datasets:
 #' \if{html}{\figure{hex_IPEDS.png}{options: align = "right" width="45\%" alt="Figure: hex_IPEDS.png"}}
 #' \itemize{
-#'   \item Admissions and Test Scores for Fall 2020: [adm2020]
-#'   \item Administration for 2020: [admin2020]
+#'   \item Admissions and Test Scores for Fall 2020: [adm2021]
+#'   \item Administration for 2020: [staff2021]
 #'   \item Completions in 2020: [complete2020]
 #'   \item Conferences for Sports: [conference]
 #'   \item Directory Information for 2020: [dir_info2020]
