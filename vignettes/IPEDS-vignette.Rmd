@@ -1,6 +1,6 @@
 ---
 title: "IPEDS"
-author: "Aushanae Haller, and Alejandra Munoz-Garcia"
+author: "Aushanae Haller and Alejandra Munoz-Garcia"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{IPEDS}
@@ -30,7 +30,7 @@ original_width <- options("width")
 options(width=10000)
 ```
 
-The `IPEDS` package contains data on Post Secondary Institution Statistics in 2020. Some datasets have been filtered to exclude imputation variables, while other datasets are included in full. Details are given below.
+The `IPEDS` package contains data on Post Secondary Institution Statistics in 2021. Some datasets have been filtered to exclude imputation variables, while other datasets are included in full. Details are given below.
 
 ## Inspiration
 
@@ -44,7 +44,7 @@ We wanted to create a package that can be used with just a basic R understanding
 
 All the datasets are taken from [IPEDS] (https://nces.ed.gov/ipeds/use-the-data)
 
--   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
+-   `adm2021`: dataset of Admissions and Test Scores for Fall 2021
 -   `admin2020`: dataset of Administration for 2020
 -   `complete2020`: dataset of Completions in 2020
 -   `conference`: dataset of Conferences for sports (from `offerings2020`)

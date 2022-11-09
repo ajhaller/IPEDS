@@ -1,4 +1,4 @@
-globalVariables(c("acceptance_rate", "institution_id", "row", "adm2020", "INSTITUTION_ID", "institution",
+globalVariables(c("acceptance_rate", "institution_id", "row", "adm2021", "INSTITUTION_ID", "institution",
                   "acceptance", "df"))
 
 
@@ -16,9 +16,9 @@ globalVariables(c("acceptance_rate", "institution_id", "row", "adm2020", "INSTIT
 
 acceptance_rate <- function (institution_id) {
 
-  row <- which(adm2020$INSTITUTION_ID == institution_id)
+  row <- which(adm2021$INSTITUTION_ID == institution_id)
 
-  df <- left_join(adm2020, dir_info2020, by = "INSTITUTION_ID")
+  df <- left_join(adm2021, dir_info2020, by = "INSTITUTION_ID")
   institution <- df$INSTITUTION[row]
 
   # Error Handling
@@ -26,10 +26,10 @@ acceptance_rate <- function (institution_id) {
   list <- df$INSTITUTION_ID
 
   if (!(institution_id %in% list) | (inherits(institution_id, "numeric") == FALSE)) {
-    stop("Please input an institution id (numeric) listed in the `adm2020` dataset.")
+    stop("Please input an institution id (numeric) listed in the `adm2021` dataset.")
   }
 
-  acceptance <- round(adm2020$ADMSSN[row]/adm2020$APPLCN[row] * 100, 0)
+  acceptance <- round(adm2021$ADMSSN[row]/adm2021$APPLCN[row] * 100, 0)
 
 
   df <- tibble(Institution = c(institution),

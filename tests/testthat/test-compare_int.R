@@ -35,8 +35,8 @@ testthat::test_that("Smith College is in the city of Northampton", {
   expect_equal((compare_test[6,1]) == "Northampton", TRUE)
 })
 
-testthat::test_that("Wellesley College has more students than Smith College", {
-  expect_equal((compare_test[2,1] < compare_test[2,2]), TRUE)
+testthat::test_that("Wellesley College has less students than Smith College", {
+  expect_equal((compare_test[2,1] < compare_test[2,2]), FALSE)
 })
 
 

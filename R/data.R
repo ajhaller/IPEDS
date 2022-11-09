@@ -1,4 +1,4 @@
-#' Admissions and Test Scores 2020 Data
+#' Admissions and Test Scores 2021 Data
 #'
 #' This file contains information about the undergraduate selection process for entering first-time, degree/certificate-seeking students. This includes information about admission considerations,  applicants, applicants that were admitted, and admitted students who enrolled. SAT and ACT test scores are included for institutions, that require test scores for admission. These data are applicable for institutions that do not have an open admissions policy for entering first-time students. Beginning with 2016, writing scores for both SAT and ACT are no longer collected. The possible values for the admission consideration variables have changed from data prior to 2016.
 #'
@@ -49,10 +49,10 @@
 #' }
 #'
 #' @source Download from Integrated Postsecondary Education Data System,
-#'   <https://nces.ed.gov/ipeds/datacenter/data/ADM2020.zip>.
+#'   <https://nces.ed.gov/ipeds/datacenter/data/ADM2021.zip>.
 #'
 #' @docType data
-"adm2020"
+"adm2021"
 
 #' Administration 2020 Data
 #'
