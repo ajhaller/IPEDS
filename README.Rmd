@@ -30,12 +30,12 @@ options(width=10000)
 You can install IPEDS from [CRAN](https://cran.r-project.org/) with:
 
 ```{r}
-#install.packages("IPEDS")
+# install.packages("IPEDS")
 ```
 
 Or you can install the development version of IPEDS from [GitHub](https://github.com/) with:
 
-``` {r}
+``` {r, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("ajhaller/IPEDS")
 ```

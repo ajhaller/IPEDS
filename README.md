@@ -25,7 +25,7 @@ student aid programs.
 You can install IPEDS from [CRAN](https://cran.r-project.org/) with:
 
 ``` r
-#install.packages("IPEDS")
+# install.packages("IPEDS")
 ```
 
 Or you can install the development version of IPEDS from
@@ -34,24 +34,6 @@ Or you can install the development version of IPEDS from
 ``` r
 # install.packages("devtools")
 devtools::install_github("ajhaller/IPEDS")
-#> Downloading GitHub repo ajhaller/IPEDS@HEAD
-#> cpp11      (0.4.2 -> 0.4.3) [CRAN]
-#> vctrs      (0.4.2 -> 0.5.0) [CRAN]
-#> tidyselect (1.1.2 -> 1.2.0) [CRAN]
-#> lifecycle  (1.0.2 -> 1.0.3) [CRAN]
-#> purrr      (0.3.4 -> 0.3.5) [CRAN]
-#> Installing 5 packages: cpp11, vctrs, tidyselect, lifecycle, purrr
-#> 
-#> The downloaded binary packages are in
-#>  /var/folders/25/lrxs2nld6k348v54c5p996qc0000gn/T//RtmpgkSrzt/downloaded_packages
-#>      checking for file ‘/private/var/folders/25/lrxs2nld6k348v54c5p996qc0000gn/T/RtmpgkSrzt/remotesdea15450349a/ajhaller-IPEDS-c34da74/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/25/lrxs2nld6k348v54c5p996qc0000gn/T/RtmpgkSrzt/remotesdea15450349a/ajhaller-IPEDS-c34da74/DESCRIPTION’ (1.1s)
-#>   ─  preparing ‘IPEDS’:
-#>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-#>   ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>   ─  building ‘IPEDS_0.1.0.9000.tar.gz’
-#>      
-#> 
 ```
 
 ## Load
