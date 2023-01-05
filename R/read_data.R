@@ -1,4 +1,4 @@
-globalVariables(c("dataset", "url", "temp", "out", "IC2020", "HD2020"))
+globalVariables(c("dataset", "url", "temp", "out", "IC2021", "HD2021"))
 
 #' Function for importing raw data from IPEDS
 #'
@@ -8,7 +8,7 @@ globalVariables(c("dataset", "url", "temp", "out", "IC2020", "HD2020"))
 #' @return A dataframe with desired information
 #' @examples
 #' \donttest{
-#' read_data("IC2020")
+#' read_data("IC2021")
 #' }
 #' @import readr
 #' @importFrom utils download.file

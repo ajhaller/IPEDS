@@ -1,12 +1,12 @@
-## code to prepare `offerings2020` dataset goes here
+## code to prepare `offerings2021` dataset goes here
 
 library(tidyverse)
 
 temp <- tempfile()
-download.file("https://nces.ed.gov/ipeds/datacenter/data/IC2020.zip", temp)
-offerings2020 <- read.table(unz(temp, "ic2020.csv"), sep = ",", header = TRUE)
+download.file("https://nces.ed.gov/ipeds/datacenter/data/IC2021.zip", temp)
+offerings2021 <- read.table(unz(temp, "ic2021.csv"), sep = ",", header = TRUE)
 
-offerings2020 <- offerings2020 %>%
+offerings2021 <- offerings2021 %>%
   rename(INSTITUTION_ID = UNITID,
          OCCUPATIONAL = PEO1ISTR,
          ACADEMIC = PEO2ISTR,
@@ -109,4 +109,4 @@ offerings2020 <- offerings2020 %>%
 
 unlink(temp)
 
-usethis::use_data(offerings2020, overwrite = TRUE)
+usethis::use_data(offerings2021, overwrite = TRUE)

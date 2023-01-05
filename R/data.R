@@ -93,7 +93,7 @@
 
 #' Conferences Data
 #'
-#' This file contains the details for conferences in the Offerings 2020 (`offerings2020`) dataset.
+#' This file contains the details for conferences in the Offerings 2021 (`offerings2021`) dataset.
 #'
 #' @format A data frame of 500 rows representing conferences and 3 variables
 #'
@@ -334,7 +334,7 @@
 #'
 #' Note: Unless otherwise defined, 1 = Yes; 0 = Implied No; -1 = Not Reported; and -2 = Not Applicable
 #'
-#' @format A data frame of 6264 rows representing institutions and 114 variables
+#' @format A data frame of 6179 rows representing institutions and 114 variables
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
@@ -454,14 +454,14 @@
 #' }
 #'
 #' @source Download from Integrated Postsecondary Education Data System,
-#'   <https://nces.ed.gov/ipeds/datacenter/data/IC2020.zip>.
+#'   <https://nces.ed.gov/ipeds/datacenter/data/IC2021.zip>.
 #'
 #' @docType data
-"offerings2020"
+"offerings2021"
 
 #' Religious Affiliations Data
 #'
-#' This file contains the details for religious affiliations in the Offerings 2020 (`offerings2020`) dataset.
+#' This file contains the details for religious affiliations in the Offerings 2021 (`offerings2021`) dataset.
 #'
 #' @format A data frame of 64 rows representing religious affiliations and 2 variables
 #'
@@ -547,15 +547,15 @@
 #' @section Datasets:
 #' \if{html}{\figure{hex_IPEDS.png}{options: align = "right" width="45\%" alt="Figure: hex_IPEDS.png"}}
 #' \itemize{
-#'   \item Admissions and Test Scores for Fall 2020: [adm2021]
-#'   \item Administration for 2020: [staff2021]
-#'   \item Completions in 2020: [complete2021]
+#'   \item Admissions and Test Scores for Fall 2021: [adm2021]
+#'   \item Completions in 2021: [complete2021]
 #'   \item Conferences for Sports: [conference]
-#'   \item Directory Information for 2020: [dir_info2020]
+#'   \item Directory Information for 2021: [dir_info2021]
 #'   \item Fall Enrollment for 2020: [fall_enroll2020]
 #'   \item Financial Aid Statistics for 2019-2020: [fin_aid1920]
-#'   \item Institutional Offerings for 2020: [offerings2020]
+#'   \item Institutional Offerings for 2021: [offerings2021]
 #'   \item Religious Affiliations of Institutions: [relig_aff]
+#'   \item Fall Staff for 2021: [staff2021]
 #'   \item Staff Categories of Faculty within Institutions: [staff_cat]
 #' }
 #'

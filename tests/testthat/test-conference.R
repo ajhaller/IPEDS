@@ -9,19 +9,19 @@ testthat::test_that("number of columns in conference df is correct", {
 })
 
 test_that("number of rows in conference df is correct", {
-  expect_equal(nrow(conference), 500)
+  expect_equal(nrow(conference), 497)
 })
 
 test_that("Number of conferences for football is correct", {
-  expect_equal(length(which(conference$Sport =="Football")), 101)
+  expect_equal(length(which(conference$Sport =="Football")), 98)
 })
 
 test_that("Number of conferences for basketball is correct", {
-  expect_equal(length(which(conference$Sport =="Basketball")), 134)
+  expect_equal(length(which(conference$Sport =="Basketball")), 133)
 })
 
 test_that("Number of conferences for baseball is correct", {
-  expect_equal(length(which(conference$Sport =="Baseball")), 131)
+  expect_equal(length(which(conference$Sport =="Baseball")), 132)
 })
 
 test_that("Number of conferences for track is correct", {

@@ -10,7 +10,7 @@ globalVariables(c("dir_info2021", "fin_aid1920", "fall_enroll2020", "staff2021",
                   "Alternative Tuition Payment", "Distance Education", "Counseling Services",
                   "Employment Services", "Daycare Services", "Live On-Campus", "Room Price",
                   "Board Price", "Undergraduate Application Fee", "Graduate Application Fee", "places", "relig",
-                  "relig_aff", "offerings2020", "DISAB", "VET_PROGRAMS", "ALT_CREDIT", "DIST_EDUC"))
+                  "relig_aff", "offerings2021", "DISAB", "VET_PROGRAMS", "ALT_CREDIT", "DIST_EDUC"))
 
 #' Function for Selecting Institution by Preferences
 #'
@@ -73,7 +73,7 @@ school_preferences <- function(financial_aid = 0 , size = -Inf, region = NULL, d
   }
 
   else if (affiliation < 1 & affiliation != -Inf | affiliation > 4) {
-    stop("Please input an affiliation between 1 and 4. Refer to the `offerings2020` dataset in the `AFFILIATION` column for further details." )
+    stop("Please input an affiliation between 1 and 4. Refer to the `offerings2021` dataset in the `AFFILIATION` column for further details." )
   }
 
   else if (!is_null(relig_affil) == TRUE) {
@@ -84,24 +84,24 @@ school_preferences <- function(financial_aid = 0 , size = -Inf, region = NULL, d
 
   else if (!is_null(calsys) == TRUE) {
     if (calsys < 1 | calsys > 7) {
-    stop("Please input an calendar system between 1 and 7, or leave blank for no preference. Refer to the `offerings2020` dataset in the `CALSYS` column for further details.")
+    stop("Please input an calendar system between 1 and 7, or leave blank for no preference. Refer to the `offerings2021` dataset in the `CALSYS` column for further details.")
     }
   }
 
   else if (openadmp < 1 & openadmp != -Inf | openadmp > 2) {
-    stop("Please input an open admissions policy as 1, 2, or leave blank for no preference. Refer to the `offerings2020` dataset in the `OPENADMP` column for further details.")
+    stop("Please input an open admissions policy as 1, 2, or leave blank for no preference. Refer to the `offerings2021` dataset in the `OPENADMP` column for further details.")
   }
 
   else if (live_oncamp < 1 & live_oncamp != -Inf | live_oncamp > 2) {
-    stop("Please input 1, 2, or leave blank for no preference. Refer to the `offerings2020` dataset in the `LIVE_ONCAMP` column for further details.")
+    stop("Please input 1, 2, or leave blank for no preference. Refer to the `offerings2021` dataset in the `LIVE_ONCAMP` column for further details.")
   }
 
   else if (room_price < 0 | room_price > 9990) {
-    stop("Please input a room price between 0 and 9990. Refer to the `offerings2020` dataset in the `ROOM_PRICE` column for further details.")
+    stop("Please input a room price between 0 and 9990. Refer to the `offerings2021` dataset in the `ROOM_PRICE` column for further details.")
   }
 
   else if (board_price < 0 | board_price > 9760) {
-    stop("Please input a board price between 0 and 9760. Refer to the `offerings2020` dataset in the `BOARD_PRICE` column for further details.")
+    stop("Please input a board price between 0 and 9760. Refer to the `offerings2021` dataset in the `BOARD_PRICE` column for further details.")
   }
 
   else if (app_fee < 0 | app_fee > 99) {
@@ -154,7 +154,7 @@ school_preferences <- function(financial_aid = 0 , size = -Inf, region = NULL, d
   df <- left_join(dir_info2021, fin_aid1920, by = "INSTITUTION_ID")
   df <- left_join(df, fall_enroll2020, by = "INSTITUTION_ID")
   df <- left_join(df, staff2021, by = "INSTITUTION_ID")
-  df <- left_join(df, offerings2020, by = "INSTITUTION_ID")
+  df <- left_join(df, offerings2021, by = "INSTITUTION_ID")
   df <- df[!duplicated(df$INSTITUTION_ID),]
 
   # Select needed variables for preferences
