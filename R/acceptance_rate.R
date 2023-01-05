@@ -6,7 +6,7 @@ globalVariables(c("acceptance_rate", "institution_id", "row", "adm2021", "INSTIT
 #'
 #' Provides the acceptance rate for the inputted institution
 #'
-#' @param institution_id Institution id. Find matching name and ids in the `dir_info2020` dataset.
+#' @param institution_id Institution id. Find matching name and ids in the `dir_info2021` dataset.
 #' @return A statement with the acceptance rate for inputted institution.
 #' @examples
 #' acceptance_rate(167835)
@@ -18,7 +18,7 @@ acceptance_rate <- function (institution_id) {
 
   row <- which(adm2021$INSTITUTION_ID == institution_id)
 
-  df <- left_join(adm2021, dir_info2020, by = "INSTITUTION_ID")
+  df <- left_join(adm2021, dir_info2021, by = "INSTITUTION_ID")
   institution <- df$INSTITUTION[row]
 
   # Error Handling

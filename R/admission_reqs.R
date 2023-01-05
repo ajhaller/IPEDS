@@ -1,11 +1,11 @@
-globalVariables(c("adm2021", "dir_info2020", "hs_gpa", "hs_record", "adm_tscores", "test_eng_FL", "hs_rank",
+globalVariables(c("adm2021", "dir_info2021", "hs_gpa", "hs_record", "adm_tscores", "test_eng_FL", "hs_rank",
                   "cprep_program", "competencies", "recs", "other_test", "Priority"))
 
 #' Function for Admission Requirements for an Institution
 #'
 #' Lists and orders requirements for admission by priority
 #'
-#' @param institution_id Institution ID. Find these on the `dir_info2020` dataset.
+#' @param institution_id Institution ID. Find these on the `dir_info2021` dataset.
 #' @return A tibble of the requirements for the inputted institution.
 #' @examples
 #' admission_reqs(167835)
@@ -15,7 +15,7 @@ globalVariables(c("adm2021", "dir_info2020", "hs_gpa", "hs_record", "adm_tscores
 #' @export
 admission_reqs <- function(institution_id) {
 
-  df <- full_join(adm2021, dir_info2020, by = "INSTITUTION_ID")
+  df <- full_join(adm2021, dir_info2021, by = "INSTITUTION_ID")
 
   # Error Handling
 
@@ -24,7 +24,7 @@ admission_reqs <- function(institution_id) {
   }
 
   if (!(institution_id %in% df$INSTITUTION_ID)) {
-    stop("This instituion could not be found. Please check the `dir_info2020` dataframe for your desired instituion id.")
+    stop("This instituion could not be found. Please check the `dir_info2021` dataframe for your desired instituion id.")
   }
 
   # Identify wanted institution

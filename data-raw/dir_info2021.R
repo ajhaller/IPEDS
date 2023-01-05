@@ -1,19 +1,19 @@
-## code to prepare `hd2020` dataset goes here
+## code to prepare `hd2021` dataset goes here
 
 library(tidyverse)
 
 temp <- tempfile()
-download.file("https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip", temp)
-dir_info2020 <- read.table(unz(temp, "hd2020.csv"), sep = ",", header = TRUE, encoding = "UTF-8")
+download.file("https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip", temp)
+dir_info2021 <- read.table(unz(temp, "hd2021.csv"), sep = ",", header = TRUE, encoding = "UTF-8")
 
-dir_info2020 <- dir_info2020 %>%
+dir_info2021 <- dir_info2021 %>%
   select(-IALIAS, -CHFNM, -CHFTITLE, -GENTELE, -EIN, -DUNS, -OPEID, -SECTOR,
          -HLOFFER, -DEGGRANT, -NEWID, -DEATHYR, -CYACTIVE, -POSTSEC, -PSET4FLG,
-         -INSTCAT, -C18BASIC, -C15BASIC, -CCBASIC, -LANDGRNT, -CBSA, -CBSATYPE,
+         -INSTCAT, -C21BASIC, -C18BASIC, -C15BASIC, -CCBASIC, -LANDGRNT, -CBSA, -CBSATYPE,
          -CSA, -NECTA, -DFRCGID, -DFRCUSCG) %>%
   filter(CLOSEDAT == -2 & PSEFLAG == 1)
 
-dir_info2020 <- dir_info2020 %>%
+dir_info2021 <- dir_info2021 %>%
   rename(
     INSTITUTION_ID = UNITID,
     INSTITUTION = INSTNM,
@@ -37,11 +37,11 @@ dir_info2020 <- dir_info2020 %>%
     INT_STATUS = ACT,
     CLOSE_DATE = CLOSEDAT,
     POST_SEC = PSEFLAG,
-    CC_U2018 = C18IPUG,
-    CC_G2018 = C18IPGRD,
-    CC18_U_PROFILE = C18UGPRF,
-    CC18_ENROLL = C18ENPRF,
-    CC18_SIZE_SET = C18SZSET,
+    CC_U2021 = C21IPUG,
+    CC_G2021 = C21IPGRD,
+    CC21_U_PROFILE = C21UGPRF,
+    CC21_ENROLL = C21ENPRF,
+    CC21_SIZE_SET = C21SZSET,
     C_PROGRAMS = CARNEGIE,
     INT_SIZE = INSTSIZE,
     MULT_ORG = F1SYSTYP,
@@ -50,7 +50,7 @@ dir_info2020 <- dir_info2020 %>%
     CONGRESS_DIS_ID = CNGDSTCD
   )
 
-dir_info2020 <- dir_info2020 %>%
+dir_info2021 <- dir_info2021 %>%
   mutate(BEA_REG =
            case_when(BEA_REG == 0 ~ "U.S Service Schools",
                      BEA_REG == 1 ~ "New England",
@@ -66,4 +66,4 @@ dir_info2020 <- dir_info2020 %>%
 
 unlink(temp)
 
-usethis::use_data(dir_info2020, overwrite = TRUE)
+usethis::use_data(dir_info2021, overwrite = TRUE)

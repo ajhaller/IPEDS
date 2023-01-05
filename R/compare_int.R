@@ -1,4 +1,4 @@
-globalVariables(c("dir_info2020", "fin_aid1920", "adm2021", "offerings2020","INSTITUTION_ID",
+globalVariables(c("dir_info2021", "fin_aid1920", "adm2021", "offerings2020","INSTITUTION_ID",
                   "INSTITUTION", "INT_SIZE", "FT_enroll", "PT_enroll", "AVG_AID", "AVG_AWRD",
                   "CITY", "STATE", "BEA_REG", "LOCALE", "CALSYS", "adm_tscores", "R_B_PRICE",
                   "APPLFEEU", "ACADEMIC", "AP", "DUAL", "STUDY_ABROAD", "LIVE_ONCAMP","MEALSWK",
@@ -30,15 +30,15 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
 
   # Errors
 
-  schools <- unique(dir_info2020$INSTITUTION_ID)
+  schools <- unique(dir_info2021$INSTITUTION_ID)
 
 
   if (Institution1_ID < 100000  | Institution1_ID > 500000 | !(Institution1_ID %in% schools) == TRUE) {
-      stop("For `Institution1_ID` please input a valid Institution ID from `dir_info2020`")
+      stop("For `Institution1_ID` please input a valid Institution ID from `dir_info2021`")
       }
 
   else if (Institution2_ID < 100000 | Institution2_ID > 500000 | !(Institution2_ID %in% schools) == TRUE) {
-          stop("For `Institution2_ID` please input a valid Institution ID from `dir_info2020`")
+          stop("For `Institution2_ID` please input a valid Institution ID from `dir_info2021`")
     }
 
   # combine dataframes into one
@@ -47,7 +47,7 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
 
   c_df <- left_join(c_df, offerings2020, by = "INSTITUTION_ID")
 
-  c_df <- left_join(c_df, dir_info2020, by = "INSTITUTION_ID")
+  c_df <- left_join(c_df, dir_info2021, by = "INSTITUTION_ID")
 
   c_df <- c_df[!duplicated(c_df$INSTITUTION_ID),]
 

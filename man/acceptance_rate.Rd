@@ -7,7 +7,7 @@
 acceptance_rate(institution_id)
 }
 \arguments{
-\item{institution_id}{Institution id. Find matching name and ids in the \code{dir_info2020} dataset.}
+\item{institution_id}{Institution id. Find matching name and ids in the \code{dir_info2021} dataset.}
 }
 \value{
 A statement with the acceptance rate for inputted institution.

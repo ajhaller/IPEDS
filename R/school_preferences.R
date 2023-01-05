@@ -1,4 +1,4 @@
-globalVariables(c("dir_info2020", "fin_aid1920", "fall_enroll2020", "staff2021", "INSTITUTION", "INSTITUTION_ID",
+globalVariables(c("dir_info2021", "fin_aid1920", "fall_enroll2020", "staff2021", "INSTITUTION", "INSTITUTION_ID",
                   "Institution ID", "PCT_AID", "INT_SIZE", "ACAREER_SERV", "Years Required For Entering",
                   "BEA_REG", "WHITE_ENROLL", "ENROLL", "TOTAL", "WHITE_TOTAL", "UNKNOWN_RACE_ENROLL", "UNKNOWN_TOTAL",
                   "Student Diversity", "Staff Diversity", "Institution", "% of Students Recieved Aid", "Institution Size",
@@ -53,7 +53,7 @@ school_preferences <- function(financial_aid = 0 , size = -Inf, region = NULL, d
 
   # Error Handling
 
-  places <- unique(dir_info2020$BEA_REG)
+  places <- unique(dir_info2021$BEA_REG)
   relig <- unique(relig_aff$Numeric_Code)
 
   if (financial_aid < 0 | financial_aid > 100 | diversity_students < 0 | diversity_students > 100 |
@@ -68,7 +68,7 @@ school_preferences <- function(financial_aid = 0 , size = -Inf, region = NULL, d
 
   else if (!is_null(region) == TRUE) {
     if (!(region %in% places) == TRUE){
-    stop("Please input a region included in the `dir_info2020` dataframe in the `BEA_REG` column, or leave blank for no preference." )
+    stop("Please input a region included in the `dir_info2021` dataframe in the `BEA_REG` column, or leave blank for no preference." )
     }
   }
 
@@ -151,7 +151,7 @@ school_preferences <- function(financial_aid = 0 , size = -Inf, region = NULL, d
 
   # Join dataframes together
 
-  df <- left_join(dir_info2020, fin_aid1920, by = "INSTITUTION_ID")
+  df <- left_join(dir_info2021, fin_aid1920, by = "INSTITUTION_ID")
   df <- left_join(df, fall_enroll2020, by = "INSTITUTION_ID")
   df <- left_join(df, staff2021, by = "INSTITUTION_ID")
   df <- left_join(df, offerings2020, by = "INSTITUTION_ID")

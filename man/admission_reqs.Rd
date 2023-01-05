@@ -7,7 +7,7 @@
 admission_reqs(institution_id)
 }
 \arguments{
-\item{institution_id}{Institution ID. Find these on the \code{dir_info2020} dataset.}
+\item{institution_id}{Institution ID. Find these on the \code{dir_info2021} dataset.}
 }
 \value{
 A tibble of the requirements for the inputted institution.

@@ -5,7 +5,7 @@
 \alias{complete2021}
 \title{Completions 2021 Data}
 \format{
-A data frame of 15937 rows representing institutions and 19 variables
+A data frame of 15980 rows representing institutions and 19 variables
 
 \describe{
 \item{INSTITUTION_ID}{Unique identification number of the institution}
@@ -31,7 +31,7 @@ A data frame of 15937 rows representing institutions and 19 variables
 }
 \source{
 Download from Integrated Postsecondary Education Data System,
-\url{https://nces.ed.gov/ipeds/datacenter/data/C2020_C.zip}.
+\url{https://nces.ed.gov/ipeds/datacenter/data/C2021_C.zip}.
 }
 \usage{
 complete2021
