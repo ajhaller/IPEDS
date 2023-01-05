@@ -7,7 +7,7 @@ testthat::test_that("number of columns in Admissions Fall 2020 df is correct", {
 
 
 test_that("number of rows in Admissions Fall 2020 df is correct", {
-  expect_equal(nrow(staff2021), 63843)
+  expect_equal(nrow(staff2021), 63625)
 })
 
 
@@ -15,7 +15,7 @@ test_that("Number of unique institution IDs is 3594", {
   staff2021_2 <- staff2021 %>%
     dplyr::group_by(INSTITUTION_ID) %>%
     dplyr::summarise(n = dplyr::n())
-  expect_equal(nrow(staff2021_2), 3594)
+  expect_equal(nrow(staff2021_2), 3586)
 })
 
 test_that("Number of unique instructional staff categories is 65", {

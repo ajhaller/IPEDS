@@ -3,9 +3,9 @@
 \docType{data}
 \name{staff2021}
 \alias{staff2021}
-\title{Staff 2020 Data}
+\title{Staff 2021 Data}
 \format{
-A data frame of  63,843 rows representing full-time instructional staff on the payroll of the institution and 34 variables
+A data frame of 63,625 rows representing full-time instructional staff on the payroll of the institution and 34 variables
 
 \describe{
 \item{INSTITUTION_ID}{Unique identification number of the institution}
@@ -46,7 +46,7 @@ A data frame of  63,843 rows representing full-time instructional staff on the p
 }
 \source{
 Download from Integrated Postsecondary Education Data System,
-\url{https://nces.ed.gov/ipeds/datacenter/data/S2020_IS.zip}.
+\url{https://nces.ed.gov/ipeds/datacenter/data/S2021_IS.zip}.
 }
 \usage{
 staff2021

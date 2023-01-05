@@ -474,13 +474,13 @@
 #' @docType data
 "relig_aff"
 
-#' Staff 2020 Data
+#' Staff 2021 Data
 #'
 #' This file contains the number of full-time instructional staff on the payroll of the institution as of November 1,  by faculty and tenure status, academic rank, race/ethnicity and gender. This file has multiple records per institution.  Each record is uniquely defined by the variables IPEDS ID (INSTIUTION_ID). These data are applicable to degree-granting institutions with 15 or more full-time employees and related administrative offices.
 #'
 #' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
 #'
-#' @format A data frame of  63,843 rows representing full-time instructional staff on the payroll of the institution and 34 variables
+#' @format A data frame of 63,625 rows representing full-time instructional staff on the payroll of the institution and 34 variables
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
@@ -520,14 +520,14 @@
 #' }
 #'
 #' @source Download from Integrated Postsecondary Education Data System,
-#'   <https://nces.ed.gov/ipeds/datacenter/data/S2020_IS.zip>.
+#'   <https://nces.ed.gov/ipeds/datacenter/data/S2021_IS.zip>.
 #'
 #' @docType data
 "staff2021"
 
 #' Staff Categories Data
 #'
-#' This file contains the details for staff categories in the Staff 2020 (`staff2021`) dataset.
+#' This file contains the details for staff categories in the Staff 2021 (`staff2021`) dataset.
 #'
 #' @format A data frame of 65 rows representing staff categories and 2 variables
 #'

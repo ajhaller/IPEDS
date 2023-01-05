@@ -1,14 +1,14 @@
-## code to prepare `admin2020` dataset goes here
+## code to prepare `staff2021` dataset goes here
 
 library(tidyverse)
 
 temp <- tempfile()
-download.file("https://nces.ed.gov/ipeds/datacenter/data/S2020_IS.zip", temp)
-admin2020 <- read.table(unz(temp, "s2020_is.csv"), sep = ",", header = TRUE)
+download.file("https://nces.ed.gov/ipeds/datacenter/data/S2021_IS.zip", temp)
+staff2021 <- read.table(unz(temp, "s2021_is.csv"), sep = ",", header = TRUE)
 
 #renaming variables
 
-admin2020 <- admin2020 %>%
+staff2021 <- staff2021 %>%
   select(-starts_with("X")) %>%
   rename(INSTITUTION_ID = UNITID,
          STAFF_CAT = SISCAT,
@@ -46,7 +46,7 @@ admin2020 <- admin2020 %>%
 
 # contextualizing ARANK
 
-admin2020 <- admin2020 %>%
+staff2021 <- staff2021 %>%
   mutate(ARANK =
            case_when(ARANK == 0 ~ "All ranks",
                      ARANK == 1 ~ "Professors",
@@ -58,4 +58,4 @@ admin2020 <- admin2020 %>%
 
 unlink(temp)
 
-usethis::use_data(admin2020, overwrite = TRUE)
+usethis::use_data(staff2021, overwrite = TRUE)
