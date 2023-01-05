@@ -48,7 +48,7 @@ All the datasets are taken from [IPEDS] (https://nces.ed.gov/ipeds/use-the-data)
 -   `complete2021`: dataset of Completions in 2021
 -   `conference`: dataset of Conferences for sports (from `offerings2021`)
 -   `dir_info2021`: dataset of Directory Information for 2021
--   `fall_enroll2020`: dataset of Fall Enrollment for 2020
+-   `fall_enroll2021`: dataset of Fall Enrollment for 2021
 -   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
 -   `offerings2021`: dataset of Institutional offerings for 2021
 -   `relig_aff`: dataset of Religious Affiliations (from `offerings2021`)

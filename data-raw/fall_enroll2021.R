@@ -1,18 +1,18 @@
-## code to prepare `fall_enroll2020` dataset goes here
+## code to prepare `fall_enroll2021` dataset goes here
 
 library(tidyverse)
 
 temp <- tempfile()
-download.file("https://nces.ed.gov/ipeds/datacenter/data/EF2020A.zip", temp)
-fall_enroll2020 <- read.table(unz(temp, "ef2020a.csv"), sep = ",", header = TRUE)
+download.file("https://nces.ed.gov/ipeds/datacenter/data/EF2021A.zip", temp)
+fall_enroll2021 <- read.table(unz(temp, "ef2021a.csv"), sep = ",", header = TRUE)
 
-fall_enroll2020 <- fall_enroll2020 %>%
+fall_enroll2021 <- fall_enroll2021 %>%
   select(-starts_with("X")) %>%
   select(-EFALEVEL, -LINE, -SECTION, -LSTUDY) %>%
   group_by(UNITID) %>%
   summarise_all(sum)
 
-fall_enroll2020 <- fall_enroll2020 %>%
+fall_enroll2021 <- fall_enroll2021 %>%
   rename(
     INSTITUTION_ID = UNITID,
     ENROLL = EFTOTLT,
@@ -49,4 +49,4 @@ fall_enroll2020 <- fall_enroll2020 %>%
 
 unlink(temp)
 
-usethis::use_data(fall_enroll2020, overwrite = TRUE)
+usethis::use_data(fall_enroll2021, overwrite = TRUE)
