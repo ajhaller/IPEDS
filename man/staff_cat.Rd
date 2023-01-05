@@ -16,6 +16,6 @@ A data frame of 65 rows representing staff categories and 2 variables
 staff_cat
 }
 \description{
-This file contains the details for staff categories in the Administration 2020 (\code{admin2020}) dataset.
+This file contains the details for staff categories in the Staff 2020 (\code{staff2021}) dataset.
 }
 \keyword{datasets}

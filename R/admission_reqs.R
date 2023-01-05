@@ -1,4 +1,4 @@
-globalVariables(c("adm2020", "dir_info2020", "hs_gpa", "hs_record", "adm_tscores", "test_eng_FL", "hs_rank",
+globalVariables(c("adm2021", "dir_info2020", "hs_gpa", "hs_record", "adm_tscores", "test_eng_FL", "hs_rank",
                   "cprep_program", "competencies", "recs", "other_test", "Priority"))
 
 #' Function for Admission Requirements for an Institution
@@ -15,7 +15,7 @@ globalVariables(c("adm2020", "dir_info2020", "hs_gpa", "hs_record", "adm_tscores
 #' @export
 admission_reqs <- function(institution_id) {
 
-  df <- full_join(adm2020, dir_info2020, by = "INSTITUTION_ID")
+  df <- full_join(adm2021, dir_info2020, by = "INSTITUTION_ID")
 
   # Error Handling
 
@@ -33,7 +33,7 @@ admission_reqs <- function(institution_id) {
 
   # Extract and order requirements for admission
 
-  reqs <- adm2020[row, 2:10] %>%
+  reqs <- adm2021[row, 2:10] %>%
     rename(`High School GPA` = hs_gpa,
            `High School Record` = hs_record,
            `Admission Test Scores` = adm_tscores,

@@ -1,4 +1,4 @@
-globalVariables(c("dir_info2020", "fin_aid1920", "adm2020", "offerings2020","INSTITUTION_ID",
+globalVariables(c("dir_info2020", "fin_aid1920", "adm2021", "offerings2020","INSTITUTION_ID",
                   "INSTITUTION", "INT_SIZE", "FT_enroll", "PT_enroll", "AVG_AID", "AVG_AWRD",
                   "CITY", "STATE", "BEA_REG", "LOCALE", "CALSYS", "adm_tscores", "R_B_PRICE",
                   "APPLFEEU", "ACADEMIC", "AP", "DUAL", "STUDY_ABROAD", "LIVE_ONCAMP","MEALSWK",
@@ -43,7 +43,7 @@ compare_int <- function(Institution1_ID, Institution2_ID) {
 
   # combine dataframes into one
 
-  c_df <- left_join(fin_aid1920, adm2020, by = "INSTITUTION_ID")
+  c_df <- left_join(fin_aid1920, adm2021, by = "INSTITUTION_ID")
 
   c_df <- left_join(c_df, offerings2020, by = "INSTITUTION_ID")
 

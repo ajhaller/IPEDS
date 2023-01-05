@@ -1,10 +1,10 @@
-#' Admissions and Test Scores 2020 Data
+#' Admissions and Test Scores 2021 Data
 #'
 #' This file contains information about the undergraduate selection process for entering first-time, degree/certificate-seeking students. This includes information about admission considerations,  applicants, applicants that were admitted, and admitted students who enrolled. SAT and ACT test scores are included for institutions, that require test scores for admission. These data are applicable for institutions that do not have an open admissions policy for entering first-time students. Beginning with 2016, writing scores for both SAT and ACT are no longer collected. The possible values for the admission consideration variables have changed from data prior to 2016.
 #'
 #' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
 #'
-#' @format A data frame of 1989 rows representing institutions and 39 variables
+#' @format A data frame of 1981 rows representing institutions and 39 variables
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
@@ -49,69 +49,18 @@
 #' }
 #'
 #' @source Download from Integrated Postsecondary Education Data System,
-#'   <https://nces.ed.gov/ipeds/datacenter/data/ADM2020.zip>.
+#'   <https://nces.ed.gov/ipeds/datacenter/data/ADM2021.zip>.
 #'
 #' @docType data
-"adm2020"
+"adm2021"
 
-#' Administration 2020 Data
+#' Completions 2021 Data
 #'
-#' This file contains the number of full-time instructional staff on the payroll of the institution as of November 1,  by faculty and tenure status, academic rank, race/ethnicity and gender. This file has multiple records per institution.  Each record is uniquely defined by the variables IPEDS ID (INSTIUTION_ID). These data are applicable to degree-granting institutions with 15 or more full-time employees and related administrative offices.
+#' This file contains the number of students receiving a degree or certificate by level of award and by race/ethnicity,  gender and age categories. Data covers awards granted between July 1, 2020 and June 30, 2021. This file contains multiple records per institution. Each record will contain the total number of students receiving awards;  number of  men and women receiving awards: number of students receiving awards for all nine race/ethnicity categories; number of students receiving awards are also available for the following age groups: under 18, 18-24, 25-39, 40 and above.
 #'
 #' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
 #'
-#' @format A data frame of  63,843 rows representing full-time instructional staff on the payroll of the institution and 34 variables
-#'
-#' \describe{
-#' \item{INSTITUTION_ID}{Unique identification number of the institution}
-#' \item{STAFF_CAT}{Staff Category (Refer to `staff_cat` dataset for more details.)}
-#' \item{FACSTAT}{Faculty and tenure status (0 = All full-time instructional staff; 10 = With faculty status, total; 20	= With faculty status, tenured; 30 = With faculty status, on tenure track; 40	= With faculty status not on tenure track/No tenure system, total; 41	= With faculty status not on tenure track/No tenure system, multi-year and indefinite contract; 44 = With faculty status not on tenure track/No tenure system, multi-year contract; 45 = With faculty status not on tenure track/No tenure system, indefinite contract; 42 = With faculty status not on tenure track/No tenure system, annual contract; 43 = With faculty status not on tenure track/No tenure system, less-than-annual contract; 50 = Without faculty status)}
-#' \item{ARANK}{Academic rank: a factor with 7 levels: `All ranks`, `Professors`, `Associate professors`, `Assistant professors`, `Instructors`, `Lecturers` and `No academic rank`}{Academic rank}
-#' \item{TOTAL}{Grand total individuals}
-#' \item{TOTAL_M}{Grand total men}
-#' \item{TOTAL_W}{Grand total women}
-#' \item{NATIVE_TOTAL}{American Indian or Alaska Native total}
-#' \item{NATIVE_MEN}{American Indian or Alaska Native men}
-#' \item{NATIVE_WOMEN}{American Indian or Alaska Native women}
-#' \item{ASIAN_TOTAL}{Asian total}
-#' \item{ASIAN_M}{Asian men}
-#' \item{ASIAN_W}{Asian men}
-#' \item{BLACK_TOTAL}{Black or African American total}
-#' \item{BLACK_M}{Black or African American men}
-#' \item{BLACK_W}{Black or African American women}
-#' \item{HISP_TOTAL}{Hispanic or Latino total}
-#' \item{HISP_M}{Hispanic or Latino men}
-#' \item{HISP_W}{Hispanic or Latino women}
-#' \item{NHPI_TOTAL}{Native Hawaiian or Other Pacific Islander total}
-#' \item{NHPI_M}{Native Hawaiian or Other Pacific Islander men}
-#' \item{NHPI_W}{Native Hawaiian or Other Pacific Islander women}
-#' \item{WHITE_TOTAL}{White total}
-#' \item{WHITE_M}{White men}
-#' \item{WHITE_W}{White women}
-#' \item{MULT_TOTAL}{Two or more races total}
-#' \item{MULT_M}{Two or more races men}
-#' \item{MULT_W}{Two or more races women}
-#' \item{UNKNOWN_TOTAL}{Race/ethnicity unknown total}
-#' \item{UNKNOWN_M}{Race/ethnicity unknown men}
-#' \item{UNKNOWN_W}{Race/ethnicity unknown women}
-#' \item{NRA_TOTAL}{Nonresident alien total}
-#' \item{NRA_M}{Nonresident alien men}
-#' \item{NRA_W}{Nonresident alien women}
-#' }
-#'
-#' @source Download from Integrated Postsecondary Education Data System,
-#'   <https://nces.ed.gov/ipeds/datacenter/data/S2020_IS.zip>.
-#'
-#' @docType data
-"admin2020"
-
-#' Completions 2020 Data
-#'
-#' This file contains the number of students receiving a degree or certificate by level of award and by race/ethnicity,  gender and age categories. Data covers awards granted between July 1, 2019 and June 30, 2020. This file contains multiple records per institution. Each record will contain the total number of students receiving awards;  number of  men and women receiving awards: number of students receiving awards for all nine race/ethnicity categories; number of students receiving awards are also available for the following age groups: under 18, 18-24, 25-39, 40 and above.
-#'
-#' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
-#'
-#' @format A data frame of 15937 rows representing institutions and 19 variables
+#' @format A data frame of 15980 rows representing institutions and 19 variables
 #'
 #' \describe{
 #' \item{INSTITUTION_ID}{Unique identification number of the institution}
@@ -140,7 +89,7 @@
 #'   <https://nces.ed.gov/ipeds/datacenter/data/C2020_C.zip>.
 #'
 #' @docType data
-"complete2020"
+"complete2021"
 
 #' Conferences Data
 #'
@@ -525,9 +474,60 @@
 #' @docType data
 "relig_aff"
 
+#' Staff 2020 Data
+#'
+#' This file contains the number of full-time instructional staff on the payroll of the institution as of November 1,  by faculty and tenure status, academic rank, race/ethnicity and gender. This file has multiple records per institution.  Each record is uniquely defined by the variables IPEDS ID (INSTIUTION_ID). These data are applicable to degree-granting institutions with 15 or more full-time employees and related administrative offices.
+#'
+#' Provisional release data have undergone all NCES data quality control procedures. Data are imputed for nonresponding institutions.
+#'
+#' @format A data frame of  63,843 rows representing full-time instructional staff on the payroll of the institution and 34 variables
+#'
+#' \describe{
+#' \item{INSTITUTION_ID}{Unique identification number of the institution}
+#' \item{STAFF_CAT}{Staff Category (Refer to `staff_cat` dataset for more details.)}
+#' \item{FACSTAT}{Faculty and tenure status (0 = All full-time instructional staff; 10 = With faculty status, total; 20	= With faculty status, tenured; 30 = With faculty status, on tenure track; 40	= With faculty status not on tenure track/No tenure system, total; 41	= With faculty status not on tenure track/No tenure system, multi-year and indefinite contract; 44 = With faculty status not on tenure track/No tenure system, multi-year contract; 45 = With faculty status not on tenure track/No tenure system, indefinite contract; 42 = With faculty status not on tenure track/No tenure system, annual contract; 43 = With faculty status not on tenure track/No tenure system, less-than-annual contract; 50 = Without faculty status)}
+#' \item{ARANK}{Academic rank: a factor with 7 levels: `All ranks`, `Professors`, `Associate professors`, `Assistant professors`, `Instructors`, `Lecturers` and `No academic rank`}{Academic rank}
+#' \item{TOTAL}{Grand total individuals}
+#' \item{TOTAL_M}{Grand total men}
+#' \item{TOTAL_W}{Grand total women}
+#' \item{NATIVE_TOTAL}{American Indian or Alaska Native total}
+#' \item{NATIVE_MEN}{American Indian or Alaska Native men}
+#' \item{NATIVE_WOMEN}{American Indian or Alaska Native women}
+#' \item{ASIAN_TOTAL}{Asian total}
+#' \item{ASIAN_M}{Asian men}
+#' \item{ASIAN_W}{Asian men}
+#' \item{BLACK_TOTAL}{Black or African American total}
+#' \item{BLACK_M}{Black or African American men}
+#' \item{BLACK_W}{Black or African American women}
+#' \item{HISP_TOTAL}{Hispanic or Latino total}
+#' \item{HISP_M}{Hispanic or Latino men}
+#' \item{HISP_W}{Hispanic or Latino women}
+#' \item{NHPI_TOTAL}{Native Hawaiian or Other Pacific Islander total}
+#' \item{NHPI_M}{Native Hawaiian or Other Pacific Islander men}
+#' \item{NHPI_W}{Native Hawaiian or Other Pacific Islander women}
+#' \item{WHITE_TOTAL}{White total}
+#' \item{WHITE_M}{White men}
+#' \item{WHITE_W}{White women}
+#' \item{MULT_TOTAL}{Two or more races total}
+#' \item{MULT_M}{Two or more races men}
+#' \item{MULT_W}{Two or more races women}
+#' \item{UNKNOWN_TOTAL}{Race/ethnicity unknown total}
+#' \item{UNKNOWN_M}{Race/ethnicity unknown men}
+#' \item{UNKNOWN_W}{Race/ethnicity unknown women}
+#' \item{NRA_TOTAL}{Nonresident alien total}
+#' \item{NRA_M}{Nonresident alien men}
+#' \item{NRA_W}{Nonresident alien women}
+#' }
+#'
+#' @source Download from Integrated Postsecondary Education Data System,
+#'   <https://nces.ed.gov/ipeds/datacenter/data/S2020_IS.zip>.
+#'
+#' @docType data
+"staff2021"
+
 #' Staff Categories Data
 #'
-#' This file contains the details for staff categories in the Administration 2020 (`admin2020`) dataset.
+#' This file contains the details for staff categories in the Staff 2020 (`staff2021`) dataset.
 #'
 #' @format A data frame of 65 rows representing staff categories and 2 variables
 #'
@@ -547,9 +547,9 @@
 #' @section Datasets:
 #' \if{html}{\figure{hex_IPEDS.png}{options: align = "right" width="45\%" alt="Figure: hex_IPEDS.png"}}
 #' \itemize{
-#'   \item Admissions and Test Scores for Fall 2020: [adm2020]
-#'   \item Administration for 2020: [admin2020]
-#'   \item Completions in 2020: [complete2020]
+#'   \item Admissions and Test Scores for Fall 2020: [adm2021]
+#'   \item Administration for 2020: [staff2021]
+#'   \item Completions in 2020: [complete2021]
 #'   \item Conferences for Sports: [conference]
 #'   \item Directory Information for 2020: [dir_info2020]
 #'   \item Fall Enrollment for 2020: [fall_enroll2020]

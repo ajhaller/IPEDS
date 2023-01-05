@@ -1,4 +1,4 @@
-globalVariables(c("dir_info2020", "fin_aid1920", "fall_enroll2020", "admin2020", "INSTITUTION", "INSTITUTION_ID",
+globalVariables(c("dir_info2020", "fin_aid1920", "fall_enroll2020", "staff2021", "INSTITUTION", "INSTITUTION_ID",
                   "Institution ID", "PCT_AID", "INT_SIZE", "ACAREER_SERV", "Years Required For Entering",
                   "BEA_REG", "WHITE_ENROLL", "ENROLL", "TOTAL", "WHITE_TOTAL", "UNKNOWN_RACE_ENROLL", "UNKNOWN_TOTAL",
                   "Student Diversity", "Staff Diversity", "Institution", "% of Students Recieved Aid", "Institution Size",
@@ -153,7 +153,7 @@ school_preferences <- function(financial_aid = 0 , size = -Inf, region = NULL, d
 
   df <- left_join(dir_info2020, fin_aid1920, by = "INSTITUTION_ID")
   df <- left_join(df, fall_enroll2020, by = "INSTITUTION_ID")
-  df <- left_join(df, admin2020, by = "INSTITUTION_ID")
+  df <- left_join(df, staff2021, by = "INSTITUTION_ID")
   df <- left_join(df, offerings2020, by = "INSTITUTION_ID")
   df <- df[!duplicated(df$INSTITUTION_ID),]
 
