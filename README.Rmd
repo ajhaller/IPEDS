@@ -29,13 +29,13 @@ options(width=10000)
 
 You can install IPEDS from [CRAN](https://cran.r-project.org/) with:
 
-```{r}
-#install.packages("IPEDS")
+```{r, eval=FALSE}
+install.packages("IPEDS")
 ```
 
 Or you can install the development version of IPEDS from [GitHub](https://github.com/) with:
 
-``` {r}
+``` {r, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("ajhaller/IPEDS")
 ```
@@ -53,27 +53,27 @@ library(ggplot2)
 
 ## Available Tables
 
--   `adm2020`: dataset of Admissions and Test Scores for Fall 2020
--   `admin2020`: dataset of Administration for 2020
--   `complete2020`: dataset of Completions in 2020
+-   `adm2021`: dataset of Admissions and Test Scores for Fall 2021
+-   `staff2021`: dataset of Administration for 2021
+-   `complete2021`: dataset of Completions in 2021
 -   `conference`: dataset of Conferences for sports (from `offerings2020`)
--   `dir_info2020`: dataset of Directory Information for 2020
+-   `dir_info2021`: dataset of Directory Information for 2021
 -   `fall_enroll2020`: dataset of Fall Enrollment for 2020
 -   `fin_aid1920`: dataset of Financial Aid Statistics for 2019-2020
--   `offerings2020`: dataset of Institutional Offerings for 2020
--   `relig_aff`: dataset of Religious Affiliations (from `offerings2020`, `relig_aff` column)
--   `staff_cat`: dataset of Staff Categories based on (from `admin2020` dataset, `staff_cat` column).
+-   `offerings2020`: dataset of Institutional offerings for 2020
+-   `relig_aff`: dataset of Religious Affiliations (from `offerings2020`)
+-   `staff_cat`: dataset of Staff Categories based on `staff2021$staff_cat`
 
-## Example: Admissions and Test Scores for Fall 2020
+## Example: Admissions and Test Scores for Fall 2021
 
 ```{r}
-head(adm2020)
+head(adm2021)
 ```
 
 ### Data Visualization
 
 ```{r}
-ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
+ggplot(adm2021, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
   geom_bar() +
   labs(title = "Amount of Schools vs. Test Score Requirement",
        x = "Test Score Requirement",
@@ -85,10 +85,10 @@ ggplot(adm2020, mapping = aes(x = adm_tscores, fill = adm_tscores)) +
         axis.ticks.x=element_blank())
 ```
 
-## Example: Directory Information for 2020
+## Example: Directory Information for 2021
 
 ```{r}
-head(dir_info2020) 
+head(dir_info2021) 
 ```
 
 ## Functionality
