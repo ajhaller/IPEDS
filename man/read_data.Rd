@@ -17,6 +17,6 @@ Outputs data frame with desired information directly from IPEDS
 }
 \examples{
 \donttest{
-read_data("IC2020")
+read_data("IC2021")
 }
 }

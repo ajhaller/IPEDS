@@ -16,6 +16,6 @@ A data frame of 64 rows representing religious affiliations and 2 variables
 relig_aff
 }
 \description{
-This file contains the details for religious affiliations in the Offerings 2020 (\code{offerings2020}) dataset.
+This file contains the details for religious affiliations in the Offerings 2021 (\code{offerings2021}) dataset.
 }
 \keyword{datasets}

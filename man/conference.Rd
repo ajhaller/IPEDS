@@ -17,6 +17,6 @@ A data frame of 500 rows representing conferences and 3 variables
 conference
 }
 \description{
-This file contains the details for conferences in the Offerings 2020 (\code{offerings2020}) dataset.
+This file contains the details for conferences in the Offerings 2021 (\code{offerings2021}) dataset.
 }
 \keyword{datasets}
